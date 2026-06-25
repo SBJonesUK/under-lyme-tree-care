@@ -1,0 +1,24 @@
+<section class="stats{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  <div class="container stats__inner">
+    <div class="section-intro section-intro--center">
+      {{ partial:section_intro_heading level="2" }}
+
+      {{ if intro }}
+        <p class="section-intro__description section-intro__description--large">
+          {{ intro }}
+        </p>
+      {{ /if }}
+    </div>
+
+    {{ if stats }}
+      <div class="stats__grid">
+        {{ stats }}
+          <article class="stats__card">
+            <p class="stats__value">{{ value }}</p>
+            <p class="stats__label">{{ label }}</p>
+          </article>
+        {{ /stats }}
+      </div>
+    {{ /if }}
+  </div>
+</section>

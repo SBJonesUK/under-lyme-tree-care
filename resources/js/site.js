@@ -1,10 +1,10 @@
-import initCtaForm001 from './sets/cta_form_001';
+import initCtaForm from './sets/cta_form';
 import initGallery from './sets/gallery';
-import initHeader001 from './patterns/header_001';
+import initHeader from './patterns/header';
 
 const initMainContent = () => {
   [
-    initCtaForm001,
+    initCtaForm,
     initGallery,
   ].forEach((init) => init());
 };
@@ -14,5 +14,5 @@ window.StarterKit = {
   initMainContent,
 };
 
-initHeader001();
+initHeader();
 initMainContent();

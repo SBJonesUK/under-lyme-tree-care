@@ -42,16 +42,16 @@ tabs:
                 - anchor
               remove_empty_nodes: false
               sets:
-                media_001:
+                media:
                   display: Media
                   fields:
                     -
-                      import: blocks/media_001
-                quote_001:
+                      import: blocks/media
+                quote:
                   display: Quote
                   fields:
                     -
-                      import: blocks/quote_001
+                      import: blocks/quote
       -
         display: CTA
         fields:

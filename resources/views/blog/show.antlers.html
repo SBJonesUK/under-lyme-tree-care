@@ -66,8 +66,8 @@
   </div>
 </article>
 {{ if cta_title || cta_intro || cta_buttons }}
-  <section class="cta-001 boxed">
-    <div class="container cta-001__inner theme-dark">
+  <section class="cta boxed">
+    <div class="container cta__inner theme-dark">
       <div class="section-intro section-intro--center">
         {{ partial:section_intro_heading level="2" eyebrow="{cta_eyebrow}" title="{cta_title}" title_modifier="cta" }}
 
@@ -90,8 +90,8 @@
     </div>
   </section>
 {{ /if }}
-<section class="featured-blog-posts-001">
-  <div class="container featured-blog-posts-001__inner">    
+<section class="featured-blog-posts">
+  <div class="container featured-blog-posts__inner">    
     <div class="section-intro section-intro--inline">
       <h2 class="section-intro__title section-intro__title--h2">Read next</h2>
 
@@ -100,7 +100,7 @@
         <iconify-icon icon="ph:arrow-right" aria-hidden="true"></iconify-icon>
       </a>
     </div>
-    <div class="featured-blog-posts-001__grid featured-blog-posts-001__grid--3">
+    <div class="featured-blog-posts__grid featured-blog-posts__grid--3">
       {{ if related_posts_source == "selected" && selected_posts }}
         {{ selected_posts }}
           {{ partial:blog/card }}

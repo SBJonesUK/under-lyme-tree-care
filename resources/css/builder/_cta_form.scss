@@ -1,0 +1,146 @@
+.cta-form__inner {
+  display: grid;
+  gap: var(--space-xl);
+  background: var(--theme-bg-container);
+  padding: clamp(2rem, 3vw + 1.4rem, 4rem);
+  border-radius: var(--border-radius-lg);
+
+  @media (width >= 960px) {
+    & {
+      align-items: start;
+      gap: var(--space-2xl);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+.cta-form__form {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.cta-form__form.is-submitting {
+  pointer-events: none;
+}
+
+.cta-form__fields {
+  display: grid;
+  gap: var(--space-md);
+}
+
+.cta-form__field {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.cta-form__field.has-error .cta-form__control input,
+.cta-form__field.has-error .cta-form__control textarea {
+  border-color: var(--theme-danger);
+}
+
+.cta-form__label {
+  align-items: baseline;
+  display: flex;
+  gap: var(--space-2xs);
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-md);
+  color: var(--theme-text)
+}
+
+.cta-form__optional {
+  color: var(--theme-text-muted);
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-regular);
+}
+
+.cta-form__control {
+  display: grid;
+  gap: var(--space-2xs);
+}
+
+.cta-form__control input,
+.cta-form__control textarea {
+  background: var(--theme-input-bg);
+  border: var(--border-width-thin) solid var(--theme-input-border);
+  color: var(--theme-input-text);
+  padding: var(--space-sm);
+  width: 100%;
+}
+
+.cta-form__control textarea {
+  min-height: 12rem;
+  resize: vertical;
+}
+
+.cta-form__control input::placeholder,
+.cta-form__control textarea::placeholder {
+  color: var(--theme-text-muted);
+}
+
+.cta-form__field--checkbox {
+  font-size: var(--text-sm);
+  line-height: var(--line-height-md);
+  color: var(--theme-text-muted);
+}
+
+.cta-form__field--checkbox .cta-form__control label {
+  display: inline-flex;
+  align-items: start;
+}
+
+.cta-form__field--checkbox .cta-form__control input {
+  margin-inline-end: var(--space-sm);
+  width: auto;
+  transform: scale(1.4);
+  transform-origin: top left;
+  accent-color: var(--theme-button-primary-bg);
+}
+
+.cta-form__field--checkbox .cta-form__control a {
+  color: var(--theme-link);
+}
+
+.cta-form__field--checkbox .cta-form__control a:hover {
+  color: var(--theme-link-hover);
+}
+
+.cta-form__instructions,
+.cta-form__error,
+.cta-form__errors,
+.cta-form__success {
+  font-size: var(--text-sm);
+  line-height: var(--line-height-md);
+}
+
+.cta-form__instructions {
+  color: var(--theme-text-muted);
+}
+
+.cta-form__error,
+.cta-form__errors {
+  color: var(--theme-danger);
+}
+
+.cta-form__error[hidden],
+.cta-form__errors[hidden],
+.cta-form__success[hidden] {
+  display: none;
+}
+
+.cta-form__errors {
+  display: grid;
+  gap: var(--space-3xs);
+}
+
+.cta-form__success {
+  color: var(--color-success-600);
+  padding: var(--space-xs) var(--space-sm);
+  background: var(--color-success-50);
+  border: 1px solid var(--color-success-300);
+  border-radius: var(--border-radius-md);
+}
+
+.cta-form__form.is-submitting [data-form-submit] {
+  opacity: 0.7;
+}

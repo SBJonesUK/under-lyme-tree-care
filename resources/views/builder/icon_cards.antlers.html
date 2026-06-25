@@ -1,0 +1,45 @@
+<section class="icon-cards{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  <div class="container icon-cards__inner">
+    <div class="section-intro section-intro--center">
+      {{ partial:section_intro_heading level="2" }}
+
+      {{ if intro }}
+        <p class="section-intro__description section-intro__description--large">
+          {{ intro }}
+        </p>
+      {{ /if }}
+    </div>
+
+    {{ if items }}
+      <div class="icon-cards__grid icon-cards__grid--{{ items_per_row }}">
+        {{ items }}
+          <article class="icon-cards-card">
+            {{ if icon }}
+              <span class="icon-cards-card__icon-wrapper" aria-hidden="true">
+                <iconify-icon class="icon-cards-card__icon" icon="{{ icon }}" height="none"></iconify-icon>
+              </span>
+            {{ /if }}
+
+            <div class="icon-cards-card__content">
+              <h3 class="icon-cards-card__title">{{ title }}</h3>
+
+              {{ if text }}
+                <p class="icon-cards-card__text">{{ text }}</p>
+              {{ /if }}
+            </div>
+          </article>
+        {{ /items }}
+      </div>
+    {{ /if }}
+
+    {{ if button }}
+      <div class="button-group button-group--center">
+        {{ button }}
+          <a href="{{ url }}" class="button button--{{ style }}">
+            {{ label }}
+          </a>
+        {{ /button }}
+      </div>
+    {{ /if }}
+  </div>
+</section>

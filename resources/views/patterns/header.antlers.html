@@ -1,0 +1,80 @@
+<header class="header" data-header>
+  <div class="container header__inner">
+    <a href="/" aria-label="Go to homepage">
+      <img src="/assets/under-lyme-tree-care-logo.svg">
+    </a>
+
+    <button
+      type="button"
+      class="header__menu-toggle"
+      data-menu-toggle
+      aria-expanded="false"
+      aria-controls="site-navigation"
+      aria-label="Toggle navigation"
+    >
+      <iconify-icon class="header__menu-toggle-icon" icon="ph:list" aria-hidden="true"></iconify-icon>
+    </button>
+
+    <nav
+      id="site-navigation"
+      class="header__nav"
+      data-nav-panel
+      aria-label="Primary Navigation"
+    >
+      <ul class="header__menu">
+        {{ nav:main }}
+          <li
+            class="header__item {{ if children }}header__item--has-children{{ /if }} {{ if is_current || is_parent }}header__item--active{{ /if }}"
+            {{ if children }}data-has-children{{ /if }}
+          >
+            {{ if children }}
+              <div class="header__item-row">
+                <a
+                  href="{{ url }}"
+                  class="header__link {{ if link_style == 'button_primary' }}button button--primary{{ elseif link_style == 'button_secondary' }}button button--secondary{{ /if }}"
+                  {{ if is_current }}aria-current="page"{{ /if }}
+                >
+                  {{ title }}
+                </a>
+
+                <button
+                  type="button"
+                  class="header__dropdown-toggle"
+                  data-dropdown-toggle
+                  aria-expanded="false"
+                  aria-label="Toggle {{ title }} submenu"
+                >
+                  <iconify-icon class="header__caret" icon="ph:caret-down-bold" aria-hidden="true"></iconify-icon>
+                </button>
+              </div>
+
+              <div class="header__dropdown" data-dropdown-panel>
+                <ul class="header__submenu">
+                  {{ children }}
+                    <li class="header__submenu-item {{ if is_current || is_parent }}header__submenu-item--active{{ /if }}">
+                      <a
+                        href="{{ url }}"
+                        class="header__submenu-link {{ if link_style == 'button_primary' }}button button--primary{{ elseif link_style == 'button_secondary' }}button button--secondary{{ /if }}"
+                        {{ if is_current }}aria-current="page"{{ /if }}
+                      >
+                        {{ title }}
+                      </a>
+                    </li>
+                  {{ /children }}
+                </ul>
+              </div>
+            {{ else }}
+              <a
+                href="{{ url }}"
+                class="header__link {{ if link_style == 'button_primary' }}button button--primary{{ elseif link_style == 'button_secondary' }}button button--secondary{{ /if }}"
+                {{ if is_current }}aria-current="page"{{ /if }}
+              >
+                {{ title }}
+              </a>
+            {{ /if }}
+          </li>
+        {{ /nav:main }}
+      </ul>
+    </nav>
+  </div>
+</header>

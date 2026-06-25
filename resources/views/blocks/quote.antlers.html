@@ -1,0 +1,22 @@
+<figure class="block-quote break">
+  <blockquote class="block-quote__quote">
+    <p>"{{ quote }}"</p>
+  </blockquote>
+
+  <figcaption class="block-quote__author">
+    {{ if image }}
+      {{ image }}
+        <img
+          src="{{ url }}"
+          alt="{{ alt ?? client_name }}"
+          class="block-quote__image"
+        >
+      {{ /image }}
+    {{ /if }}
+
+    <div class="block-quote__details">
+      <p class="block-quote__name">{{ client_name }}</p>
+      <p class="block-quote__meta">{{ job_title }}, {{ company }}</p>
+    </div>
+  </figcaption>
+</figure>

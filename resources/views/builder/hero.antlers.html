@@ -1,0 +1,37 @@
+<section class="hero{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  <div class="container hero__inner">
+    <div class="section-intro">
+      <div class="google-rating"></div>
+        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+        <p class="">Rated 5 stars on Google</p>
+     </div>
+      {{ partial:section_intro_heading level="1" }}
+
+      {{ if intro }}
+        <p class="section-intro__description section-intro__description--large">
+          {{ intro }}
+        </p>
+      {{ /if }}
+
+      {{ if buttons }}
+        <div class="button-group">
+          {{ buttons }}
+            <a href="{{ url }}" class="button button--{{ style }}">
+              {{ label }}
+            </a>
+          {{ /buttons }}
+        </div>
+      {{ /if }}
+    </div>
+
+    {{ if image }}
+      {{ image }}
+        <img src="{{ url }}" alt="{{ alt ?? title }}" class="hero__image">
+      {{ /image }}
+    {{ /if }}
+  </div>
+</section>

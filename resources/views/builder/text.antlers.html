@@ -1,0 +1,29 @@
+<section class="text{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  <div class="container">
+    <div class="text__inner">
+      <div class="section-intro">
+        {{ partial:section_intro_heading level="2" }}
+      </div>
+
+      <div class="text__content">
+        {{ if body }}
+          <div class="text__body flow">
+            {{ body }}
+          </div>
+        {{ /if }}
+
+        {{ if button }}
+          <div class="button-group">
+            {{ button }}
+              <a href="{{ url }}" class="button button--{{ style }}">
+                {{ label }}
+              </a>
+            {{ /button }}
+          </div>
+        {{ /if }}
+      </div>
+
+
+    </div>
+  </div>
+</section>

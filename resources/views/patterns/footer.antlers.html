@@ -1,0 +1,97 @@
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__top">
+      <div class="footer__column">
+        <h2 class="footer__heading">{{ footer:column_one_heading }}</h2>
+        <nav class="footer__nav" aria-label="{{ footer:column_one_heading }}">
+          <ul class="footer__link-list">
+            {{ nav:footer_column_one }}
+              <li><a href="{{ url }}">{{ title }}</a></li>
+            {{ /nav:footer_column_one }}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__heading">{{ footer:column_two_heading }}</h2>
+        <nav class="footer__nav" aria-label="{{ footer:column_two_heading }}">
+          <ul class="footer__link-list">
+            {{ nav:footer_column_two }}
+              <li><a href="{{ url }}">{{ title }}</a></li>
+            {{ /nav:footer_column_two }}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__heading">{{ footer:contact_heading }}</h2>
+
+        {{ if footer:address }}
+          <p class="footer__address">{{ footer:address }}</p>
+        {{ /if }}
+
+        <ul class="footer__contact-list">
+          {{ if footer:phone }}
+            <li>
+              <a href="tel:{{ footer:phone | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}" class="footer__contact-link">
+                <iconify-icon icon="ph:phone-call" aria-hidden="true"></iconify-icon>
+                <span>{{ footer:phone }}</span>
+              </a>
+            </li>
+          {{ /if }}
+
+          {{ if footer:email }}
+            <li>
+              <a href="mailto:{{ footer:email }}" class="footer__contact-link">
+                <iconify-icon icon="ph:envelope-simple" aria-hidden="true"></iconify-icon>
+                <span>{{ footer:email }}</span>
+              </a>
+            </li>
+          {{ /if }}
+        </ul>
+      </div>
+
+      <div class="footer__column">
+        <h2 class="footer__heading">{{ footer:social_heading }}</h2>
+
+        <ul class="footer__social-links">
+          {{ footer:social_links }}
+            <li>
+              <a href="{{ url }}" class="footer__social-link" aria-label="{{ platform }}">
+                {{ if platform == "facebook" }}
+                  <iconify-icon icon="ph:facebook-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "instagram" }}
+                  <iconify-icon icon="ph:instagram-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "linkedin" }}
+                  <iconify-icon icon="ph:linkedin-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "x" }}
+                  <iconify-icon icon="ph:x-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "youtube" }}
+                  <iconify-icon icon="ph:youtube-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "tiktok" }}
+                  <iconify-icon icon="ph:tiktok-logo" aria-hidden="true"></iconify-icon>
+                {{ /if }}
+              </a>
+            </li>
+          {{ /footer:social_links }}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p class="footer__meta">Copyright © 2026 Starter Kit</p>
+
+      <nav class="footer__legal" aria-label="Legal">
+        <ul class="footer__legal-links">
+          {{ nav:footer_legal }}
+            <li><a href="{{ url }}">{{ title }}</a></li>
+          {{ /nav:footer_legal }}
+        </ul>
+      </nav>
+
+      <p class="footer__credit">
+        <a href="https://threeparkscreative.com">Website by Three Parks Creative</a>
+      </p>
+    </div>
+  </div> 
+</footer>

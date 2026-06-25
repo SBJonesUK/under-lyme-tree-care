@@ -1,0 +1,29 @@
+<section class="text-media{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }} {{ if media_position == 'left' }}text-media--left{{ /if }}">
+  <div class="container text-media__inner">
+    <div class="section-intro">
+      {{ partial:section_intro_heading level="2" }}
+
+      {{ if body }}
+        <div class="section-intro__description">
+          {{ body }}
+        </div>
+      {{ /if }}
+
+      {{ if button }}
+        <div class="button-group">
+          {{ button }}
+            <a href="{{ url }}" class="button button--{{ style }}">
+              {{ label }}
+            </a>
+          {{ /button }}
+        </div>
+      {{ /if }}
+    </div>
+
+    {{ if image }}
+      {{ image }}
+        <img src="{{ url }}" alt="{{ alt ?? title }}" class="text-media__image">
+      {{ /image }}
+    {{ /if }}
+  </div>
+</section>

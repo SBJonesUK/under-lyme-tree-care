@@ -1,0 +1,45 @@
+<section class="media{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  <div class="container media__inner">
+    <div class="section-intro section-intro--center">
+      {{ partial:section_intro_heading level="2" }}
+
+      {{ if intro }}
+        <p class="section-intro__description section-intro__description--large">
+          {{ intro }}
+        </p>
+      {{ /if }}
+    </div>
+
+    <figure class="media__figure">
+      <div class="media__frame">
+        {{ if media_source == "upload" && media_asset }}
+          {{ media_asset }}
+            {{ if is_video }}
+              <video class="media__video" src="{{ url }}" controls playsinline preload="metadata"></video>
+            {{ else }}
+              <img src="{{ url }}" alt="{{ alt ?? title }}" class="media__image">
+            {{ /if }}
+          {{ /media_asset }}
+        {{ elseif media_source == "embed" && embed_type == "code" && embed_code }}
+          <div class="media__embed">
+            {{ embed_code }}
+          </div>
+        {{ elseif media_source == "embed" && video_url }}
+          <iframe
+            class="media__embed"
+            src="{{ video_url | embed_url }}"
+            title="{{ title }}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        {{ else }}
+          <div class="media__placeholder"></div>
+        {{ /if }}
+      </div>
+
+      {{ if caption }}
+        <figcaption class="media__caption">{{ caption }}</figcaption>
+      {{ /if }}
+    </figure>
+  </div>
+</section>

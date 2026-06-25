@@ -16,8 +16,6 @@ preferences:
         - date
         - author
         - status
-    case_studies:
-      view: list
     gallery:
       view: list
       columns:

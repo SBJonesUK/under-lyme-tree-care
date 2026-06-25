@@ -1,9 +1,8 @@
 tree:
   -
-    id: 65d4f729-0ae6-49c1-b05e-35b43f1e1b4b
-    entry: home
-    data:
-      link_style: link
+    id: b6313dcb-4596-4683-9a7d-e6f5ee60670c
+    title: About
+    url: /about
   -
     id: 085ad22c-5ba4-4ebf-877e-6724621aa79e
     title: Services
@@ -11,18 +10,32 @@ tree:
     children:
       -
         id: c6f6592b-7caf-4965-b165-b02365fa1e5f
-        title: 'Web Design'
-        url: /web-design
+        title: 'Tree Pruning'
+        url: /tree-pruning
       -
         id: f3a5e2c4-a425-43cd-8820-858b8569db24
-        title: Branding
-        url: /branding
+        title: 'Tree Removal'
+        url: /tree-removal
+      -
+        id: 44612724-c99b-4b2d-8cf8-29da4403b69e
+        title: 'Hedge Cutting'
+        url: /hedge-cutting
+      -
+        id: c8903975-abaf-4ae6-8a5c-51a0031815f6
+        title: 'Tree Surveys'
+        url: /tree-surveys
+      -
+        id: 9d2d8c46-3d90-4b83-9187-2344dce55867
+        title: 'Tree Reports'
+        url: /tree-reports
+      -
+        id: 5744b97e-8090-40d5-b9a6-1b1dda655e44
+        title: 'Tree Consultancy'
+        url: /tree-consultancy
   -
-    id: 0a55f1eb-068c-4c44-be3b-5959f854c428
-    title: 'Case Studies'
-    url: /case-studies
-    data:
-      link_style: link
+    id: fab97eec-4a1d-413e-8cd5-b0d521d41aed
+    title: Gallery
+    url: /gallery
   -
     id: 3491f37c-cc11-4647-b8dd-8e8ea75d581a
     title: Blog
@@ -31,7 +44,7 @@ tree:
       link_style: link
   -
     id: f45dbb74-e1dd-42cb-897e-8d27a36c16b2
-    title: 'Contact Us'
+    title: Contact
     url: /contact
     data:
       link_style: button_primary

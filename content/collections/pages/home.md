@@ -3,55 +3,30 @@ id: home
 blueprint: page
 title: Home
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1781993401
+updated_at: 1782424856
 page_builder:
   -
-    id: gFpTTG8ib2PLhVUFjB60r
-    title: Hero
-    intro: 'Lorem laboris elit laboris eu. Aliquip adipisicing reprehenderit non duis aliqua aliqua labore laboris. Esse elit mollit ullamco id nulla dolore amet ea consequat consectetur non cupidatat deserunt fugiat eiusmod.'
-    buttons:
-      -
-        id: 5WFpLvQRzhSvrUwBI3tTf
-        label: 'Book a Call'
-        url: 'https://www.google.com'
-        style: primary
-        type: button
-        enabled: true
-      -
-        id: nhXGy9qMVUe4cTIhQZ9pW
-        label: 'View Work'
-        url: 'https://www.google.com'
-        style: secondary
-        type: button
-        enabled: true
-    theme: theme-light
-    type: hero_001
-    enabled: true
-    background_image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-    eyebrow: 'Lorem ipsum'
-  -
     id: oN8NQ1Am
-    type: hero_002
+    type: hero
     enabled: true
-    eyebrow: 'Lorem ipsum'
-    title: 'Building standout brands and high-converting websites'
-    intro: 'Aliqua commodo laborum ea. Cillum sit ut qui reprehenderit pariatur ad magna do est minim magna anim. Officia quis pariatur ad Lorem eiusmod consectetur minim eiusmod pariatur nulla proident ea aute aute est.'
+    title: 'Professional Tree Care Across Staffordshire & Cheshire'
+    intro: 'Safe, expert tree pruning, tree removal, hedge cutting and arboricultural consultancy carried out by a qualified tree surgeon.'
     buttons:
       -
         id: rqDIgdHj
-        label: 'Book a Call'
-        url: 'https://www.google.com'
+        label: 'Get a FREE quote'
+        url: /contact
         style: primary
         type: button
         enabled: true
       -
         id: Y7SX1OZ05HZlgnh0yDRFV
-        label: 'View Work'
-        url: 'https://www.google.com'
+        label: 'Learn more'
+        url: /about
         style: secondary
         type: button
         enabled: true
-    theme: theme-dark
+    theme: theme-light
     image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
   -
     id: UUed4X_Fyxic1hdFrWuz8
@@ -89,7 +64,7 @@ page_builder:
         logo_height: 2.5
         url: 'https://www.google.com'
     theme: theme-muted
-    type: logos_001
+    type: logos
     enabled: true
     text: 'Trusted by some of the biggest names in the industry'
   -
@@ -114,7 +89,7 @@ page_builder:
     image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
     media_position: left
     theme: theme-light
-    type: text_media_001
+    type: text_media
     enabled: true
   -
     id: KbUcs7WycrXx6Oh1uQQYz
@@ -138,7 +113,7 @@ page_builder:
     image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
     media_position: right
     theme: theme-light
-    type: text_media_001
+    type: text_media
     enabled: true
   -
     id: t7erVgrUdh8Mvpx-AUKeO
@@ -170,7 +145,7 @@ page_builder:
             type: text
             text: 'Lorem ea dolore qui culpa. Qui nostrud proident aliqua occaecat quis amet sit do laborum reprehenderit ea. Ea irure exercitation amet fugiat nisi in enim ut. Laborum veniam culpa nisi enim veniam et. Et sunt enim labore ullamco ut cillum sint cillum occaecat reprehenderit cupidatat eiusmod Lorem sit consequat. Cillum amet sint exercitation dolore enim nostrud ea. Eiusmod tempor irure Lorem eu eu pariatur et laboris.'
     theme: theme-muted
-    type: text_001
+    type: text
     enabled: true
     button:
       -
@@ -212,7 +187,7 @@ page_builder:
         type: stat
         enabled: true
     theme: theme-light
-    type: stats_001
+    type: stats
     enabled: true
   -
     id: aeFGkPygVpr-ogTpW4BrW
@@ -222,7 +197,7 @@ page_builder:
     post_source: latest
     posts_limit: 3
     theme: theme-light
-    type: featured_blog_posts_001
+    type: featured_blog_posts
     enabled: true
     button:
       -
@@ -239,7 +214,7 @@ page_builder:
     title: Accordion
     intro: 'Dolor exercitation reprehenderit est excepteur fugiat consectetur proident labore magna quis aliqua voluptate commodo.'
     theme: theme-light
-    type: accordion_001
+    type: accordion
     enabled: true
     items:
       -
@@ -402,7 +377,7 @@ page_builder:
         type: item
         enabled: true
     theme: theme-light
-    type: icon_cards_001
+    type: icon_cards
     enabled: true
     button:
       -
@@ -448,7 +423,7 @@ page_builder:
         type: item
         enabled: true
     theme: theme-light
-    type: image_cards_001
+    type: image_cards
     enabled: true
     button:
       -
@@ -467,7 +442,7 @@ page_builder:
     embed_type: url
     video_url: 'https://www.youtube.com/watch?v=iObuiaspLLI&list=PLBpy-YllkBayfAi3Hc7VfAI2pqQN6Aj3Q&index=48'
     theme: theme-light
-    type: media_001
+    type: media
     enabled: true
     caption: 'Anim elit ea nulla laborum cupidatat velit anim.'
   -
@@ -498,7 +473,7 @@ page_builder:
         type: item
         enabled: true
     theme: theme-light
-    type: timeline_001
+    type: timeline
     enabled: true
   -
     id: qmxA0rNQtVGzc8KEDw-qc
@@ -536,28 +511,10 @@ page_builder:
         type: button
         enabled: true
     theme: theme-light
-    type: testimonials_001
+    type: testimonials
     enabled: true
     items_per_row: 3
     testimonials_per_row: 3
-  -
-    id: ipTHJ3FBhnK4VI3lnnNpL
-    eyebrow: 'Lorem ipsum'
-    title: 'Latest work'
-    intro: 'Cillum anim in sint ut non ullamco velit ex ad dolore. Culpa non ullamco laborum minim adipisicing nisi magna occaecat aliqua incididunt duis irure quis. Testing to see how well this works?'
-    case_study_source: latest
-    button:
-      -
-        id: bqtxE3T9NYDl3vF5vBIf1
-        label: 'View all case studies'
-        url: /case-studies
-        style: primary
-        type: button
-        enabled: true
-    theme: theme-light
-    type: featured_case_studies_001
-    enabled: true
-    case_studies_limit: 4
   -
     id: gLIf3sMYOB9Zdf9X6dck7
     eyebrow: 'Lorem ipsum'
@@ -566,7 +523,7 @@ page_builder:
     gallery_source: selected
     items_per_row: 4
     theme: theme-light
-    type: gallery_001
+    type: gallery
     enabled: true
     selected_gallery_items:
       - deep-doshi-a-k7e3u0-gc-unsplash.jpg
@@ -589,7 +546,7 @@ page_builder:
         type: button
         enabled: true
     theme: theme-dark
-    type: cta_001
+    type: cta
     enabled: true
     intro: 'Anim reprehenderit non adipisicing sunt adipisicing cillum officia. Voluptate proident dolore reprehenderit mollit proident aliqua elit elit pariatur nulla labore ea ut aliquip laborum. Eu id elit nisi labore duis non incididunt cillum ut dolor id ea.'
   -
@@ -598,7 +555,7 @@ page_builder:
     title: 'CTA w/ Form'
     description: 'Nisi ipsum amet culpa mollit et eu irure pariatur consectetur elit. Eiusmod pariatur veniam ea laboris. Aliqua dolore est excepteur aliquip officia officia eu esse aliqua dolore.'
     theme: theme-dark
-    type: cta_form_001
+    type: cta_form
     enabled: true
     intro: 'Anim reprehenderit non adipisicing sunt adipisicing cillum officia. Voluptate proident dolore reprehenderit mollit proident aliqua elit elit pariatur nulla labore ea ut aliquip laborum. Eu id elit nisi labore duis non incididunt cillum ut dolor id ea.'
 ---
