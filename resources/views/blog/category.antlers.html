@@ -1,0 +1,27 @@
+<section class="section blog-index">
+  <div class="container">
+    <div class="blog-index__header">
+      <div class="blog-index__header-copy">
+        <p class="blog-index__eyebrow">Blog Category</p>
+        <h1 class="blog-index__title">{{ term:title }}</h1>
+        <p class="blog-index__intro">Articles filed under {{ term:title | lower }}.</p>
+      </div>
+
+      {{ partial:category_select selected="{term:slug}" }}
+    </div>
+
+    {{ entries paginate="10" sort="date:desc" }}
+      <div class="blog-index__grid">
+        {{ results }}
+          {{ partial:blog/card }}
+        {{ /results }}
+      </div>
+
+      {{ paginate }}
+        {{ if total_pages > 1 }}
+          {{ partial:pagination summary_label="results" }}
+        {{ /if }}
+      {{ /paginate }}
+    {{ /entries }}
+  </div>
+</section>

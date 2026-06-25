@@ -1,0 +1,6 @@
+name: 'Sam Jones'
+email_address: sam@example.com
+company: 'Three Parks'
+message: Hello
+privacy_policy:
+  - agree

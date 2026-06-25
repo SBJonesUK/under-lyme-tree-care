@@ -1,0 +1,15 @@
+<section class="section case-studies-index">
+  <div class="container">
+    <div class="case-studies-index__header">
+      <p class="case-studies-index__eyebrow">Portfolio</p>
+      <h1 class="case-studies-index__title">Case Studies</h1>
+      <p class="case-studies-index__intro">A selection of recent projects, outcomes, and the thinking behind the work.</p>
+    </div>
+
+    <div class="case-studies-index__grid">
+      {{ collection:case_studies }}
+        {{ partial:case_studies/card }}
+      {{ /collection:case_studies }}
+    </div>
+  </div>
+</section>

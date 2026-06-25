@@ -1,0 +1,16 @@
+<article class="gallery-card" data-gallery-entry>
+  <button
+    type="button"
+    class="gallery-card__button"
+    data-gallery-item
+    data-gallery-image-url="{{ url }}"
+    data-gallery-alt="{{ alt ?? basename | entities }}"
+    data-gallery-title="{{ basename | entities }}"
+    data-gallery-caption="{{ caption | entities }}"
+    data-gallery-categories="{{ if gallery_categories }}{{ gallery_categories }}{{ slug }}{{ unless last }}|{{ /unless }}{{ /gallery_categories }}{{ /if }}"
+    aria-label="Open {{ alt ?? basename | entities }}"
+  >
+    <img src="{{ url }}" alt="{{ alt ?? basename }}" class="gallery-card__image">
+    <span class="sr-only">{{ alt ?? basename }}</span>
+  </button>
+</article>

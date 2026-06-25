@@ -1,0 +1,14 @@
+title: Case Studies
+icon: collections
+route: '/case-studies/{slug}'
+template: case_studies/show
+layout: layout
+revisions: false
+date: false
+taxonomies:
+  - case_study_categories
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: false

@@ -1,0 +1,101 @@
+title: Featured Case Studies
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: case_study_source
+    field:
+      type: select
+      display: Case Study Source
+      options:
+        latest: Latest case studies
+        selected: Selected case studies
+      default: latest
+      instructions: Choose whether to show the most recent case studies or manually select specific entries.
+
+  -
+    handle: case_studies_limit
+    field:
+      type: integer
+      display: Number of Case Studies
+      default: 4
+      min: 1
+      max: 4
+      instructions: Choose the total number of case studies to show.
+      if:
+        case_study_source: 'equals latest'
+
+  -
+    handle: selected_case_studies
+    field:
+      type: entries
+      display: Selected Case Studies
+      collections:
+        - case_studies
+      max_items: 4
+      instructions: Choose which case studies to show.
+      if:
+        case_study_source: 'equals selected'
+
+  -
+    handle: button
+    field:
+      type: replicator
+      display: Button
+      collapse: true
+      max_sets: 1
+      sets:
+        button:
+          display: Button
+          fields:
+            -
+              handle: label
+              field:
+                type: text
+                display: Label
+                validate: required
+
+            -
+              handle: url
+              field:
+                type: link
+                display: URL
+
+            -
+              handle: style
+              field:
+                type: select
+                display: Style
+                options:
+                  primary: Primary
+                  secondary: Secondary
+                default: primary
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

@@ -1,0 +1,120 @@
+<article class="blog-article">
+  <div class="container container--article">
+    <header class="blog-article__header">
+    
+      {{ if blog_categories }}
+        {{ partial:tags class="tags tags--center" entries="{blog_categories}" url_prefix="/blog/category" }}
+      {{ /if }}
+
+      <h1 class="blog-article__title">{{ title }}</h1>
+
+      <p class="blog-article__meta">
+        {{ date format="j F Y" }}
+        {{ if author }}
+          {{ author }}
+            <span aria-hidden="true">&nbsp;&nbsp;•&nbsp;&nbsp;</span>
+            <span>By {{ name }}</span>
+          {{ /author }}
+        {{ /if }}
+      </p>
+
+    </header>
+
+    {{ if featured_image }}
+      {{ featured_image }}
+        <figure class="blog-article__featured-image">
+          <img src="{{ url }}" alt="{{ alt ?? title }}" class="blog-article__image">
+        </figure>
+      {{ /featured_image }}
+    {{ /if }}
+
+    {{ if content }}
+      <div class="blog-article__content">
+        {{ content }}
+          {{ if type == "text" }}
+            <div class="blog-article__text flow">
+              {{ text }}
+            </div>
+          {{ else }}
+            {{ partial src="blocks/{type}" }}
+          {{ /if }}
+        {{ /content }}
+      </div>
+    {{ /if }}
+    {{ if author }}
+      {{ author }}
+        <div class="blog-article__author">
+          {{ if avatar }}
+            {{ avatar }}
+              <img
+                src="{{ url }}"
+                alt="{{ alt ?? name }}"
+                class="blog-article__author-avatar"
+              >
+            {{ /avatar }}
+          {{ /if }}
+
+          <div class="blog-article__author-info">
+            <h3 class="blog-article__author-name">Written by {{ name }}</h3>
+            {{ if bio }}
+              <p class="blog-article__author-bio">{{ bio }}</p>
+            {{ /if }}
+          </div>
+        </div>
+      {{ /author }}
+    {{ /if }}
+  </div>
+</article>
+{{ if cta_title || cta_intro || cta_buttons }}
+  <section class="cta-001 boxed">
+    <div class="container cta-001__inner theme-dark">
+      <div class="section-intro section-intro--center">
+        {{ partial:section_intro_heading level="2" eyebrow="{cta_eyebrow}" title="{cta_title}" title_modifier="cta" }}
+
+        {{ if cta_intro }}
+          <p class="section-intro__description section-intro__description--large">
+            {{ cta_intro }}
+          </p>
+        {{ /if }}
+
+        {{ if cta_buttons }}
+          <div class="button-group button-group--center">
+            {{ cta_buttons }}
+              <a href="{{ url }}" class="button button--{{ style }}">
+                {{ label }}
+              </a>
+            {{ /cta_buttons }}
+          </div>
+        {{ /if }}
+      </div>
+    </div>
+  </section>
+{{ /if }}
+<section class="featured-blog-posts-001">
+  <div class="container featured-blog-posts-001__inner">    
+    <div class="section-intro section-intro--inline">
+      <h2 class="section-intro__title section-intro__title--h2">Read next</h2>
+
+      <a href="/blog" class="section-intro__link">
+        <span>View All Blog Posts</span>
+        <iconify-icon icon="ph:arrow-right" aria-hidden="true"></iconify-icon>
+      </a>
+    </div>
+    <div class="featured-blog-posts-001__grid featured-blog-posts-001__grid--3">
+      {{ if related_posts_source == "selected" && selected_posts }}
+        {{ selected_posts }}
+          {{ partial:blog/card }}
+        {{ /selected_posts }}
+      {{ else }}
+        {{ collection:blog
+          sort="date:desc"
+          limit="3"
+          query_scope="related_blog_posts"
+          current_id="{id}"
+        }}
+          {{ partial:blog/card }}
+        {{ /collection:blog }}
+      {{ /if }}
+    </div>
+  </div>
+</section>

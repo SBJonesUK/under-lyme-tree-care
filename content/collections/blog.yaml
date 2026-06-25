@@ -1,0 +1,18 @@
+title: Blog
+icon: collections
+route: '/blog/{slug}'
+template: blog/show
+layout: layout
+revisions: false
+date: true
+taxonomies:
+  - blog_categories
+sort_dir: desc
+date_behavior:
+  past: public
+  future: private
+preview_targets:
+  -
+    label: Entry
+    url: '{permalink}'
+    refresh: false

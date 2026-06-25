@@ -1,0 +1,62 @@
+// Index
+
+.blog-index__header {
+  display: grid;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-2xl);
+
+  @media (width >= 960px) {
+    align-items: end;
+    grid-template-columns: minmax(0, 1fr) 400px;
+    gap: var(--space-lg);
+  }
+}
+
+.blog-index__header-copy {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.blog-index__select {
+  width: 100%;
+  padding: var(--space-sm) var(--space-md);
+  padding-right: calc(var(--space-md) + 1.5rem);
+  border: 1px solid var(--theme-border-subtle);
+  background: var(--theme-bg-surface);
+  color: var(--theme-text);
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.blog-index__select-wrap {
+  position: relative;
+}
+
+.blog-index__select-caret {
+  position: absolute;
+  top: 50%;
+  right: var(--space-md);
+  transform: translateY(-50%);
+  font-size: 1rem;
+  color: var(--theme-text);
+  pointer-events: none;
+}
+
+.blog-index__eyebrow {
+  color: var(--theme-text-muted);
+  font-size: var(--text-md);
+}
+
+.blog-index__intro {
+  color: var(--theme-text-muted);
+  font-size: var(--text-lg);
+}
+
+.blog-index__grid {
+  display: grid;
+  gap: var(--space-lg);
+
+  @media (width >= 768px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}

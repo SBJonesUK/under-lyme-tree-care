@@ -1,0 +1,48 @@
+title: 'CTA Form'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: name
+            field:
+              type: text
+              display: Name
+              validate:
+                - required
+          -
+            handle: email_address
+            field:
+              type: text
+              input_type: email
+              autocomplete: email
+              display: 'Email Address'
+              validate:
+                - required
+                - email
+          -
+            handle: company
+            field:
+              type: text
+              display: Company
+          -
+            handle: message
+            field:
+              type: textarea
+              display: Message
+              validate:
+                - required
+          -
+            handle: privacy_policy
+            field:
+              type: checkboxes
+              display: 'Privacy Policy'
+              inline: true
+              options:
+                -
+                  key: agree
+                  value: 'I have read and agree to the <a href="/privacy-policy">Privacy Policy</a>.'
+              validate:
+                - required

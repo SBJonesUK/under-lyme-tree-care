@@ -1,0 +1,88 @@
+title: Gallery
+hide: true
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              validate: required
+          -
+            handle: template
+            field:
+              type: hidden
+              default: gallery/index
+          -
+            handle: eyebrow
+            field:
+              type: text
+              display: Eyebrow
+          -
+            handle: intro
+            field:
+              type: textarea
+              display: Intro
+      -
+        display: Gallery CTA
+        fields:
+          -
+            handle: gallery_cta_eyebrow
+            field:
+              type: text
+              display: Eyebrow
+          -
+            handle: gallery_cta_title
+            field:
+              type: text
+              display: Title
+          -
+            handle: gallery_cta_intro
+            field:
+              type: textarea
+              display: Intro
+          -
+            handle: gallery_cta_buttons
+            field:
+              type: replicator
+              display: Buttons
+              collapse: true
+              max_sets: 2
+              sets:
+                button:
+                  display: Button
+                  fields:
+                    -
+                      handle: label
+                      field:
+                        type: text
+                        display: Label
+                        validate: required
+                    -
+                      handle: url
+                      field:
+                        type: link
+                        display: URL
+                    -
+                      handle: style
+                      field:
+                        type: select
+                        display: Style
+                        options:
+                          primary: Primary
+                          secondary: Secondary
+                        default: primary
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              validate: 'max:200'

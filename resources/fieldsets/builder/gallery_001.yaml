@@ -1,0 +1,88 @@
+title: Gallery
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: gallery_source
+    field:
+      type: select
+      display: Image Source
+      options:
+        category: Images from a category
+        selected: Selected images
+      default: category
+      instructions: Choose whether to pull images automatically from one category or manually choose specific gallery items.
+
+  -
+    handle: selected_gallery_category
+    field:
+      type: terms
+      taxonomies:
+        - gallery_categories
+      max_items: 1
+      display: Gallery Category
+      mode: select
+      instructions: Choose which category of gallery images to show.
+      if:
+        gallery_source: 'equals category'
+
+  -
+    handle: images_limit
+    field:
+      type: integer
+      display: Image Limit
+      min: 1
+      instructions: Leave blank to show every image in the selected category.
+      if:
+        gallery_source: 'equals category'
+
+  -
+    handle: selected_gallery_items
+    field:
+      type: assets
+      display: Selected Images
+      container: gallery
+      instructions: Choose which gallery items to show. Their selected order will be preserved.
+      if:
+        gallery_source: 'equals selected'
+
+  -
+    handle: items_per_row
+    field:
+      type: button_group
+      display: Items Per Row
+      options:
+        2: '2'
+        3: '3'
+        4: '4'
+      default: 3
+      instructions: Choose how many images to show per row on larger screens.
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

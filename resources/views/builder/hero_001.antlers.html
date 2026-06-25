@@ -1,0 +1,31 @@
+<section class="hero-001 no-collapse{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  {{ if background_image }}
+    <div class="hero-001__media">
+      {{ background_image }}
+        <img src="{{ url }}" alt="{{ alt ?? title }}" class="hero-001__background-image">
+      {{ /background_image }}
+    </div>
+  {{ /if }}
+
+  <div class="container hero-001__inner">
+    <div class="section-intro">
+      {{ partial:section_intro_heading level="1" }}
+
+      {{ if intro }}
+        <p class="section-intro__description section-intro__description--large">
+          {{ intro }}
+        </p>
+      {{ /if }}
+
+      {{ if buttons }}
+        <div class="button-group">
+          {{ buttons }}
+            <a href="{{ url }}" class="button button--{{ style }}">
+              {{ label }}
+            </a>
+          {{ /buttons }}
+        </div>
+      {{ /if }}
+    </div>
+  </div>
+</section>

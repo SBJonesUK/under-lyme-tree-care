@@ -1,0 +1,37 @@
+title: Quote
+fields:
+  -
+    handle: quote
+    field:
+      type: textarea
+      display: Quote
+      validate: required
+
+  -
+    handle: image
+    field:
+      type: assets
+      display: Image
+      container: assets
+      max_files: 1
+
+  -
+    handle: client_name
+    field:
+      type: text
+      display: Client Name
+      validate: required
+
+  -
+    handle: job_title
+    field:
+      type: text
+      display: Job Title
+      validate: required
+
+  -
+    handle: company
+    field:
+      type: text
+      display: Company
+      validate: required

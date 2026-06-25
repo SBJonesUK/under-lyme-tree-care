@@ -1,0 +1,159 @@
+:root {
+  /* typography */
+  --font-family-primary: neue-haas-grotesk-display;
+  --font-family-secondary: neue-haas-grotesk-text;
+  --font-family-tertiary: neue-haas-grotesk-text;
+
+  --font-weight-bold: 700;
+  --font-weight-semibold: 600;
+  --font-weight-regular: 400;
+
+  --line-height-2xs: 0.9;
+  --line-height-xs: 1.1;
+  --line-height-sm: 1.2;
+  --line-height-md: 1.6; 
+  --line-height-lg: 1.8;
+
+  /* heading font sizes: https://www.fluid-type-scale.com/calculate?minFontSize=18&minWidth=320&minRatio=1.125&maxFontSize=22&maxWidth=1696&maxRatio=1.25&steps=6%2C5%2C4%2C3%2C2%2C1%2Ctitle&baseStep=5&prefix=h&useContainerWidth=false&includeFallbacks=false&useRems=true&remValue=16&decimals=2&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=900 */
+  --h6: clamp(1rem, 0.12vi + 0.98rem, 1.1rem);
+  --h5: clamp(1.13rem, 0.29vi + 1.07rem, 1.38rem);
+  --h4: clamp(1.27rem, 0.53vi + 1.16rem, 1.72rem);
+  --h3: clamp(1.42rem, 0.84vi + 1.26rem, 2.15rem);
+  --h2: clamp(1.6rem, 1.26vi + 1.35rem, 2.69rem);
+  --h1: clamp(1.8rem, 1.81vi + 1.44rem, 3.36rem);
+  --h-title: clamp(2.03rem, 2.52vi + 1.52rem, 4.2rem);
+
+  /* body font sizes: */ 
+  --text-2xs: clamp(0.61rem, -0.04cqi + 0.62rem, 0.58rem);
+  --text-xs: clamp(0.69rem, 0cqi + 0.69rem, 0.69rem);
+  --text-sm: clamp(0.78rem, 0.06cqi + 0.76rem, 0.83rem);
+  --text-md: 0.875rem;
+  --text-lg: clamp(0.98rem, 0.25cqi + 0.93rem, 1.2rem);
+  --text-xl: clamp(1.11rem, 0.39cqi + 1.03rem, 1.44rem);
+
+    /* colors */
+  --color-primary-base: oklch(86.452% 0.20676 125.937);
+  --color-primary-50: oklch(from var(--color-primary-base) 98% calc(c * 0.1) h);
+  --color-primary-100: oklch(from var(--color-primary-base) 94% calc(c * 0.5) h);
+  --color-primary-200: oklch(from var(--color-primary-base) 86% c h);
+  --color-primary-300: oklch(from var(--color-primary-base) 78% c h);
+  --color-primary-400: oklch(from var(--color-primary-base) 66% c h);
+  --color-primary-500: oklch(from var(--color-primary-base) 56% c h);
+  --color-primary-600: oklch(from var(--color-primary-base) 43% c h);
+  --color-primary-700: oklch(from var(--color-primary-base) 32% c h);
+  --color-primary-800: oklch(from var(--color-primary-base) 24% c h);
+  --color-primary-900: oklch(from var(--color-primary-base) 15% c h);
+
+  --color-neutral-base: oklch(98.559% 0.0016 66.223);
+  --color-neutral-50: oklch(from var(--color-neutral-base) 98% c h);
+  --color-neutral-100: oklch(from var(--color-neutral-base) 94% c h);
+  --color-neutral-200: oklch(from var(--color-neutral-base) 86% c h);
+  --color-neutral-300: oklch(from var(--color-neutral-base) 78% c h);
+  --color-neutral-400: oklch(from var(--color-neutral-base) 66% c h);
+  --color-neutral-500: oklch(from var(--color-neutral-base) 56% c h);
+  --color-neutral-600: oklch(from var(--color-neutral-base) 43% c h);
+  --color-neutral-700: oklch(from var(--color-neutral-base) 32% c h);
+  --color-neutral-800: oklch(from var(--color-neutral-base) 24% c h);
+  --color-neutral-900: oklch(from var(--color-neutral-base) 15% c h);
+
+  --color-info-base: oklch(from var(--color-primary-base) l c 275);
+  --color-info-50: oklch(from var(--color-info-base) 98% calc(c * 0.1) h);
+  --color-info-100: oklch(from var(--color-info-base) 94% calc(c * 0.5) h);
+  --color-info-200: oklch(from var(--color-info-base) 86% c h);
+  --color-info-300: oklch(from var(--color-info-base) 78% c h);
+  --color-info-400: oklch(from var(--color-info-base) 66% c h);
+  --color-info-500: oklch(from var(--color-info-base) 56% c h);
+  --color-info-600: oklch(from var(--color-info-base) 43% c h);
+  --color-info-700: oklch(from var(--color-info-base) 32% c h);
+  --color-info-800: oklch(from var(--color-info-base) 24% c h);
+  --color-info-900: oklch(from var(--color-info-base) 15% c h);
+
+  --color-success-base: oklch(from var(--color-primary-base) l c 130);
+  --color-success-50: oklch(from var(--color-success-base) 98% calc(c * 0.1) h);
+  --color-success-100: oklch(from var(--color-success-base) 94% calc(c * 0.5) h);
+  --color-success-200: oklch(from var(--color-success-base) 86% c h);
+  --color-success-300: oklch(from var(--color-success-base) 78% c h);
+  --color-success-400: oklch(from var(--color-success-base) 66% c h);
+  --color-success-500: oklch(from var(--color-success-base) 56% c h);
+  --color-success-600: oklch(from var(--color-success-base) 43% c h);
+  --color-success-700: oklch(from var(--color-success-base) 32% c h);
+  --color-success-800: oklch(from var(--color-success-base) 24% c h);
+  --color-success-900: oklch(from var(--color-success-base) 15% c h);
+
+  --color-warning-base: oklch(from var(--color-primary-base) l c 90);
+  --color-warning-50: oklch(from var(--color-warning-base) 98% calc(c * 0.1) h);
+  --color-warning-100: oklch(from var(--color-warning-base) 94% calc(c * 0.5) h);
+  --color-warning-200: oklch(from var(--color-warning-base) 86% c h);
+  --color-warning-300: oklch(from var(--color-warning-base) 78% c h);
+  --color-warning-400: oklch(from var(--color-warning-base) 66% c h);
+  --color-warning-500: oklch(from var(--color-warning-base) 56% c h);
+  --color-warning-600: oklch(from var(--color-warning-base) 43% c h);
+  --color-warning-700: oklch(from var(--color-warning-base) 32% c h);
+  --color-warning-800: oklch(from var(--color-warning-base) 24% c h);
+  --color-warning-900: oklch(from var(--color-warning-base) 15% c h);
+
+  --color-danger-base: oklch(from var(--color-primary-base) l c 35);
+  --color-danger-50: oklch(from var(--color-danger-base) 98% calc(c * 0.1) h);
+  --color-danger-100: oklch(from var(--color-danger-base) 94% calc(c * 0.5) h);
+  --color-danger-200: oklch(from var(--color-danger-base) 86% c h);
+  --color-danger-300: oklch(from var(--color-danger-base) 78% c h);
+  --color-danger-400: oklch(from var(--color-danger-base) 66% c h);
+  --color-danger-500: oklch(from var(--color-danger-base) 56% c h);
+  --color-danger-600: oklch(from var(--color-danger-base) 43% c h);
+  --color-danger-700: oklch(from var(--color-danger-base) 32% c h);
+  --color-danger-800: oklch(from var(--color-danger-base) 24% c h);
+  --color-danger-900: oklch(from var(--color-danger-base) 15% c h);
+
+  --color-white: #ffffff;
+  --color-white-a5: oklch(from var(--color-white) l c h / 0.05);
+  --color-white-a10: oklch(from var(--color-white) l c h / 0.10);
+  --color-white-a20: oklch(from var(--color-white) l c h / 0.20);
+  --color-white-a30: oklch(from var(--color-white) l c h / 0.30);
+  --color-white-a40: oklch(from var(--color-white) l c h / 0.40);
+  --color-white-a50: oklch(from var(--color-white) l c h / 0.50);
+  --color-white-a60: oklch(from var(--color-white) l c h / 0.60);
+  --color-white-a70: oklch(from var(--color-white) l c h / 0.70);
+  --color-white-a80: oklch(from var(--color-white) l c h / 0.80);
+  --color-white-a90: oklch(from var(--color-white) l c h / 0.90);
+
+  --color-black: var(--color-neutral-900);
+  --color-black-a5: oklch(from var(--color-black) l c h / 0.05);
+  --color-black-a10: oklch(from var(--color-black) l c h / 0.10);
+  --color-black-a20: oklch(from var(--color-black) l c h / 0.20);
+  --color-black-a30: oklch(from var(--color-black) l c h / 0.30);
+  --color-black-a40: oklch(from var(--color-black) l c h / 0.40);
+  --color-black-a50: oklch(from var(--color-black) l c h / 0.50);
+  --color-black-a60: oklch(from var(--color-black) l c h / 0.60);
+  --color-black-a70: oklch(from var(--color-black) l c h / 0.70);
+  --color-black-a80: oklch(from var(--color-black) l c h / 0.80);
+  --color-black-a90: oklch(from var(--color-black) l c h / 0.90);
+
+  /* borders and radii */
+  --border-width-thin: 1px;
+  --border-width-medium: 2px;
+  --border-width-thick: 4px;
+  --border-radius-none: 0;
+  --border-radius-sm: 0.125rem;
+  --border-radius-md: 0.25rem;
+  --border-radius-lg: 0.5rem;
+  --border-radius-circle: 50%;
+
+  /* spacing */
+  --section-block-padding: clamp(5rem, 4.0698rem + 4.6512vw, 9rem);
+  --section-inline-padding: clamp(1rem, 6.977vw + -0.395rem, 7rem);
+  --space-3xs: clamp(0.1875rem, 0.175rem + 0.0625vw, 0.25rem);
+  --space-2xs: clamp(0.375rem, 0.35rem + 0.125vw, 0.5rem);
+  --space-xs: clamp(0.5625rem, 0.525rem + 0.1875vw, 0.75rem);
+  --space-sm: clamp(0.75rem, 0.7rem + 0.25vw, 1rem);
+  --space-md: clamp(1.125rem, 1.05rem + 0.375vw, 1.5rem);
+  --space-lg: clamp(1.5rem, 1.4rem + 0.5vw, 2rem);
+  --space-xl: clamp(2.25rem, 2.1rem + 0.75vw, 3rem);
+  --space-2xl: clamp(3rem, 2.8rem + 1vw, 4rem);
+  --space-3xl: clamp(4.5rem, 4.2rem + 1.5vw, 6rem);
+  --grid-gap: clamp(1rem, 1vw + 0.8rem, 2rem);
+
+  @media (width >= 768px) {
+      --text-md: 1rem;
+  }
+
+}

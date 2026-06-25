@@ -1,0 +1,17 @@
+tree:
+  -
+    id: ec4f2d5a-32f7-4f60-8580-3ba00be7f100
+    title: 'Dental Implants'
+    url: /dental-implants
+  -
+    id: 8528246d-2b0b-4ad5-b40d-1de4ed032541
+    title: 'Aligner Therapy'
+    url: /aligner-therapy
+  -
+    id: 882cc0bf-4120-4ed0-9cb5-a0ca8e76417c
+    title: 'Same Day Smiles'
+    url: /same-day-smiles
+  -
+    id: 4f6bb822-36dc-489e-b0c4-a88f8a8eb992
+    title: Dentures
+    url: /dentures

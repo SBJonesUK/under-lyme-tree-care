@@ -1,0 +1,35 @@
+<section class="featured-case-studies-001{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  <div class="container featured-case-studies-001__inner">
+    <div class="section-intro section-intro--center">
+      {{ partial:section_intro_heading level="2" }}
+
+      {{ if intro }}
+        <p class="section-intro__description section-intro__description--large">
+          {{ intro }}
+        </p>
+      {{ /if }}
+    </div>
+
+    <div class="featured-case-studies-001__grid">
+      {{ if case_study_source == "selected" && selected_case_studies }}
+        {{ selected_case_studies }}
+          {{ partial:case_studies/card }}
+        {{ /selected_case_studies }}
+      {{ else }}
+        {{ collection:case_studies limit="{case_studies_limit}" }}
+          {{ partial:case_studies/card }}
+        {{ /collection:case_studies }}
+      {{ /if }}
+    </div>
+
+    {{ if button }}
+      <div class="button-group button-group--center">
+        {{ button }}
+          <a href="{{ url }}" class="button button--{{ style }}">
+            {{ label }}
+          </a>
+        {{ /button }}
+      </div>
+    {{ /if }}
+  </div>
+</section>

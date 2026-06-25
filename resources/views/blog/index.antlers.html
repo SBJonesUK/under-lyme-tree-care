@@ -1,0 +1,26 @@
+<section class="section blog-index">
+  <div class="container">
+    <div class="blog-index__header">
+      <div class="blog-index__header-copy">
+        <h1 class="blog-index__title">Blog</h1>
+        <p class="blog-index__intro">Thoughts on strategy, branding, and websites that actually perform.</p>
+      </div>
+
+      {{ partial:category_select }}
+    </div>
+
+    {{ collection:blog sort="date:desc" paginate="12" on_each_side="1" as="posts" }}
+      <div class="blog-index__grid">
+        {{ posts }}
+          {{ partial:blog/card }}
+        {{ /posts }}
+      </div>
+
+      {{ paginate }}
+        {{ if total_pages > 1 }}
+          {{ partial:pagination summary_label="posts" prev_label="&laquo; Prev" next_label="Next &raquo;" }}
+        {{ /if }}
+      {{ /paginate }}
+    {{ /collection:blog }}
+  </div>
+</section>

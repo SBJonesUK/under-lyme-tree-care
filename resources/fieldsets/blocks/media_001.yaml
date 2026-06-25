@@ -1,0 +1,30 @@
+title: Media
+fields:
+  -
+    handle: columns
+    field:
+      type: button_group
+      display: Columns
+      options:
+        1: '1'
+        2: '2'
+        3: '3'
+      default: 1
+      instructions: Choose how many media items to show per row on larger screens.
+
+  -
+    handle: assets
+    field:
+      type: assets
+      display: Assets
+      container: assets
+      mode: grid
+      instructions: Add one or more images or video files.
+      validate:
+        - required
+
+  -
+    handle: caption
+    field:
+      type: textarea
+      display: Caption

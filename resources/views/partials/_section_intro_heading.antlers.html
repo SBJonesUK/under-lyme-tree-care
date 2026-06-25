@@ -1,0 +1,11 @@
+{{ if eyebrow }}
+  <h{{ level }} class="section-intro__eyebrow">{{ eyebrow }}</h{{ level }}>
+
+  {{ if title }}
+    <p class="section-intro__title{{ if !title_modifier }} section-intro__title--h{{ level }}{{ /if }}{{ if title_modifier }} section-intro__title--{{ title_modifier }}{{ /if }}">{{ title }}</p>
+  {{ /if }}
+{{ else }}
+  {{ if title }}
+    <h{{ level }} class="section-intro__title{{ if !title_modifier }} section-intro__title--h{{ level }}{{ /if }}{{ if title_modifier }} section-intro__title--{{ title_modifier }}{{ /if }}">{{ title }}</h{{ level }}>
+  {{ /if }}
+{{ /if }}

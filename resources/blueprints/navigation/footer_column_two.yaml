@@ -1,0 +1,16 @@
+title: 'Footer Column Two'
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      width: 100
+      required: true
+  -
+    handle: url
+    field:
+      type: link
+      display: URL
+      width: 100
+      required: true

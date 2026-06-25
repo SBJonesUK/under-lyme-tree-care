@@ -1,0 +1,25 @@
+title: Gallery Asset
+fields:
+  -
+    handle: alt
+    field:
+      display: 'Alt Text'
+      type: text
+      instructions: Description of the image for accessibility.
+
+  -
+    handle: caption
+    field:
+      type: textarea
+      display: Caption
+      instructions: Optional lightbox caption shown beneath the enlarged image.
+
+  -
+    handle: gallery_categories
+    field:
+      type: terms
+      taxonomies:
+        - gallery_categories
+      display: Categories
+      mode: select
+      instructions: Assign this image to one or more gallery categories.

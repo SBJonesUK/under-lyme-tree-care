@@ -1,0 +1,8 @@
+title: CTA Form
+honeypot: website
+store: true
+email:
+  -
+    to: sam@sbjones.co.uk
+    reply_to: "{{ email_address }}"
+    subject: "New CTA form submission"

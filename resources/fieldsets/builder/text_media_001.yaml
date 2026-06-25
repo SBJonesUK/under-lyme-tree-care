@@ -1,0 +1,91 @@
+title: Text + Media
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: body
+    field:
+      type: bard
+      display: Body
+      buttons:
+        - bold
+        - italic
+        - unorderedlist
+        - orderedlist
+        - anchor
+      remove_empty_nodes: false
+
+  -
+    handle: button
+    field:
+      type: replicator
+      display: Button
+      collapse: true
+      max_sets: 1
+      sets:
+        button:
+          display: Button
+          fields:
+            -
+              handle: label
+              field:
+                type: text
+                display: Label
+                validate: required
+
+            -
+              handle: url
+              field:
+                type: link
+                display: URL
+
+            -
+              handle: style
+              field:
+                type: select
+                display: Style
+                options:
+                  primary: Primary
+                  secondary: Secondary
+                default: primary
+
+  -
+    handle: image
+    field:
+      type: assets
+      display: Image
+      container: assets
+      max_files: 1
+
+  -
+    handle: media_position
+    field:
+      type: button_group
+      display: Media Position
+      options:
+        left: Left
+        right: Right
+      default: right
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

@@ -1,0 +1,75 @@
+title: Accordion
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: items
+    field:
+      type: replicator
+      display: Items
+      collapse: true
+      min_sets: 1
+      sets:
+        item:
+          display: Item
+          fields:
+            -
+              handle: question
+              field:
+                type: text
+                display: Question
+                validate: required
+
+            -
+              handle: answer
+              field:
+                type: bard
+                display: Answer
+                buttons:
+                  - bold
+                  - italic
+                  - unorderedlist
+                  - orderedlist
+                  - anchor
+                remove_empty_nodes: false
+
+  -
+    handle: footer
+    field:
+      type: bard
+      display: Footer
+      instructions: Optional rich text shown underneath the accordion items.
+      buttons:
+        - bold
+        - italic
+        - anchor
+      remove_empty_nodes: false
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

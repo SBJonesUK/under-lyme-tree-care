@@ -1,0 +1,33 @@
+// box sizing
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+// remove margins and padding
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+// make images easier to work with
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+// make form elements easier to work with
+input, textarea, button, select {
+    font: inherit;
+}
+
+// balance heading line lengths
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+// body copy
+p,
+li {
+  text-wrap: pretty;
+}

@@ -1,0 +1,29 @@
+<section class="logos-001{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  <div class="container logos-001__inner">
+    {{ if text }}
+      <p class="logos-001__text">{{ text }}</p>
+    {{ /if }}
+
+    {{ if items }}
+      <div class="logos-001__grid">
+        {{ items }}
+          <div class="logos-001__item"{{ if logo_height }} style="--logos-max-height: {{ logo_height }}rem;"{{ /if }}>
+            {{ if url }}
+              <a href="{{ url }}" class="logos-001__link" aria-label="{{ name ?? 'Logo link' }}">
+                {{ logo }}
+                  <img src="{{ url }}" alt="{{ alt ?? name ?? 'Logo' }}" class="logos-001__image">
+                {{ /logo }}
+              </a>
+            {{ else }}
+              <div class="logos-001__media">
+                {{ logo }}
+                  <img src="{{ url }}" alt="{{ alt ?? name ?? 'Logo' }}" class="logos-001__image">
+                {{ /logo }}
+              </div>
+            {{ /if }}
+          </div>
+        {{ /items }}
+      </div>
+    {{ /if }}
+  </div>
+</section>

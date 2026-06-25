@@ -1,0 +1,80 @@
+<header class="header-001" data-header-001>
+  <div class="container header-001__inner">
+    <a href="/" class="header-001__brand" aria-label="Go to homepage">
+      {{ config:app:name }}
+    </a>
+
+    <button
+      type="button"
+      class="header-001__menu-toggle"
+      data-menu-toggle
+      aria-expanded="false"
+      aria-controls="site-navigation"
+      aria-label="Toggle navigation"
+    >
+      <iconify-icon class="header-001__menu-toggle-icon" icon="ph:list" aria-hidden="true"></iconify-icon>
+    </button>
+
+    <nav
+      id="site-navigation"
+      class="header-001__nav"
+      data-nav-panel
+      aria-label="Primary Navigation"
+    >
+      <ul class="header-001__menu">
+        {{ nav:main }}
+          <li
+            class="header-001__item {{ if children }}header-001__item--has-children{{ /if }} {{ if is_current || is_parent }}header-001__item--active{{ /if }}"
+            {{ if children }}data-has-children{{ /if }}
+          >
+            {{ if children }}
+              <div class="header-001__item-row">
+                <a
+                  href="{{ url }}"
+                  class="header-001__link {{ if link_style == 'button_primary' }}button button--primary{{ elseif link_style == 'button_secondary' }}button button--secondary{{ /if }}"
+                  {{ if is_current }}aria-current="page"{{ /if }}
+                >
+                  {{ title }}
+                </a>
+
+                <button
+                  type="button"
+                  class="header-001__dropdown-toggle"
+                  data-dropdown-toggle
+                  aria-expanded="false"
+                  aria-label="Toggle {{ title }} submenu"
+                >
+                  <iconify-icon class="header-001__caret" icon="ph:caret-down-fill" aria-hidden="true"></iconify-icon>
+                </button>
+              </div>
+
+              <div class="header-001__dropdown" data-dropdown-panel>
+                <ul class="header-001__submenu">
+                  {{ children }}
+                    <li class="header-001__submenu-item {{ if is_current || is_parent }}header-001__submenu-item--active{{ /if }}">
+                      <a
+                        href="{{ url }}"
+                        class="header-001__submenu-link {{ if link_style == 'button_primary' }}button button--primary{{ elseif link_style == 'button_secondary' }}button button--secondary{{ /if }}"
+                        {{ if is_current }}aria-current="page"{{ /if }}
+                      >
+                        {{ title }}
+                      </a>
+                    </li>
+                  {{ /children }}
+                </ul>
+              </div>
+            {{ else }}
+              <a
+                href="{{ url }}"
+                class="header-001__link {{ if link_style == 'button_primary' }}button button--primary{{ elseif link_style == 'button_secondary' }}button button--secondary{{ /if }}"
+                {{ if is_current }}aria-current="page"{{ /if }}
+              >
+                {{ title }}
+              </a>
+            {{ /if }}
+          </li>
+        {{ /nav:main }}
+      </ul>
+    </nav>
+  </div>
+</header>

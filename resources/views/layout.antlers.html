@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- meta-->
+        {{ seo_pro:meta }}
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+        <!-- files and scripts -->
+        <link href="https://use.typekit.net/eoj5ymb.css" rel="stylesheet">
+        <script defer src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+        <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+        {{ vite src="resources/js/site.js|resources/css/site.scss" }}
+
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-NL39K4H6');</script>
+        <!-- End Google Tag Manager -->
+
+        <!-- Microsoft Clarity -->
+        <script type="text/javascript">
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "qk6rl5kv8h");
+        </script>
+        
+        <!-- favicon package -->
+        <link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+        <meta name="apple-mobile-web-app-title" content="Three Parks Creative" />
+        <link rel="manifest" href="/favicon/site.webmanifest" />
+    </head>
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NL39K4H6"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        {{ partial:patterns/header_001 }}
+
+
+        <main>
+
+            {{ template_content }}
+
+        </main>
+
+        {{ partial:patterns/footer_001 }}
+
+        <!-- Custom morphing for Statamic Live Preview -->
+
+        <script>
+            window.StatamicLivePreviewMorph = (currentDocument, updatedDocument) => {
+                const currentMain = currentDocument.querySelector('main');
+                const updatedMain = updatedDocument.querySelector('main');
+                const fallbackScrollX = window.scrollX;
+                const fallbackScrollY = window.scrollY;
+
+                currentDocument.title = updatedDocument.title;
+
+                Array.from(currentDocument.body.attributes).forEach((attribute) => {
+                    if (!updatedDocument.body.hasAttribute(attribute.name)) {
+                        currentDocument.body.removeAttribute(attribute.name);
+                    }
+                });
+
+                Array.from(updatedDocument.body.attributes).forEach((attribute) => {
+                    currentDocument.body.setAttribute(attribute.name, attribute.value);
+                });
+
+                if (!currentMain || !updatedMain) {
+                    currentDocument.body.innerHTML = updatedDocument.body.innerHTML;
+                    window.StarterKit?.initMainContent?.();
+                    window.scrollTo(fallbackScrollX, fallbackScrollY);
+                    return;
+                }
+
+                currentMain.innerHTML = updatedMain.innerHTML;
+                window.StarterKit?.initMainContent?.();
+
+                window.scrollTo(fallbackScrollX, fallbackScrollY);
+            };
+        </script>
+
+    </body>
+
+</html>

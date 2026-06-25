@@ -1,0 +1,45 @@
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+.button-group--center {
+  justify-content: center;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding-inline: var(--space-md);
+  padding-block: var(--space-xs);
+  border: none;
+  border-radius: var(--border-radius-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  text-decoration: none;
+}
+
+.button--primary {
+  background: var(--theme-button-primary-bg);
+  color: var(--theme-button-primary-text);
+
+  &:hover {
+    background: var(--theme-button-primary-bg-hover);
+  }
+}
+
+.button--secondary {
+  background: var(--theme-button-secondary-bg);
+  color: var(--theme-button-secondary-text);
+
+  &:hover {
+    background: var(--theme-button-secondary-bg-hover);
+  }
+}
+
+.button--full-width {
+  width: 100%;
+}

@@ -1,0 +1,24 @@
+<div class="gallery-lightbox" data-gallery-lightbox hidden>
+  <button type="button" class="gallery-lightbox__backdrop" data-gallery-close aria-label="Close lightbox"></button>
+
+  <div class="gallery-lightbox__dialog" role="dialog" aria-modal="true" aria-label="{{ instance_title ?? 'Gallery image' }}">
+    <button type="button" class="gallery-lightbox__close" data-gallery-close aria-label="Close lightbox">
+      <iconify-icon icon="ph:x"></iconify-icon>
+    </button>
+
+    <figure class="gallery-lightbox__figure">
+      <img src="" alt="" class="gallery-lightbox__image" data-gallery-lightbox-image>
+      <figcaption class="gallery-lightbox__caption" data-gallery-lightbox-caption hidden></figcaption>
+    </figure>
+
+    <div class="gallery-lightbox__controls">
+      <button type="button" class="gallery-lightbox__control" data-gallery-prev aria-label="Previous image">
+        <iconify-icon icon="ph:caret-left-bold"></iconify-icon>
+      </button>
+
+      <button type="button" class="gallery-lightbox__control" data-gallery-next aria-label="Next image">
+        <iconify-icon icon="ph:caret-right-bold"></iconify-icon>
+      </button>
+    </div>
+  </div>
+</div>

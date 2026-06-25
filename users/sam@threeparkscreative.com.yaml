@@ -1,0 +1,35 @@
+name: 'Sam Jones'
+super: true
+avatar: henry-perks-uakf5izvcgc-unsplash-(1).jpg
+bio: 'Sam is a designer and developer focused on helping service-based businesses communicate more clearly online through sharper messaging, stronger structure, and more intentional digital experiences.'
+id: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
+password_hash: $2y$12$mSQmnogMt8WIA.GAtz7IA.MXnWsi7r2I2WdCkxclGrsrLUAMeRBNK
+preferences:
+  collections:
+    pages:
+      view: tree
+    blog:
+      view: list
+      columns:
+        - title
+        - slug
+        - date
+        - author
+        - status
+    case_studies:
+      view: list
+    gallery:
+      view: list
+      columns:
+        - image
+        - title
+        - slug
+        - status
+    listing_mode: list
+  forms:
+    cta_form:
+      columns:
+        - datestamp
+        - name
+        - email_address
+        - company

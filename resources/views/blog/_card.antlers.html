@@ -1,0 +1,23 @@
+<article class="blog-card">
+  <a href="{{ url }}">
+    {{ if featured_image }}
+      {{ featured_image }}
+        <img src="{{ url }}" alt="{{ alt ?? title }}" class="blog-card__image">
+      {{ /featured_image }}
+    {{ else }}
+      <div class="blog-card__image blog-card__image--placeholder"></div>
+    {{ /if }}
+  </a>
+
+  <div class="blog-card__content">
+    <p class="blog-card__meta">{{ date format="j F Y" }}</p>
+
+    <h3 class="blog-card__title">
+      <a href="{{ url }}">{{ title }}</a>
+    </h3>
+
+    {{ if blog_categories }}
+      {{ partial:tags class="tags tags--card" entries="{blog_categories}" url_prefix="/blog/category" }}
+    {{ /if }}
+  </div>
+</article>

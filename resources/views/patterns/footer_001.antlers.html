@@ -1,0 +1,97 @@
+<footer class="footer-001">
+  <div class="container footer-001__inner">
+    <div class="footer-001__top">
+      <div class="footer-001__column">
+        <h2 class="footer-001__heading">{{ footer_001:column_one_heading }}</h2>
+        <nav class="footer-001__nav" aria-label="{{ footer_001:column_one_heading }}">
+          <ul class="footer-001__link-list">
+            {{ nav:footer_column_one }}
+              <li><a href="{{ url }}">{{ title }}</a></li>
+            {{ /nav:footer_column_one }}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-001__column">
+        <h2 class="footer-001__heading">{{ footer_001:column_two_heading }}</h2>
+        <nav class="footer-001__nav" aria-label="{{ footer_001:column_two_heading }}">
+          <ul class="footer-001__link-list">
+            {{ nav:footer_column_two }}
+              <li><a href="{{ url }}">{{ title }}</a></li>
+            {{ /nav:footer_column_two }}
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer-001__column">
+        <h2 class="footer-001__heading">{{ footer_001:contact_heading }}</h2>
+
+        {{ if footer_001:address }}
+          <p class="footer-001__address">{{ footer_001:address }}</p>
+        {{ /if }}
+
+        <ul class="footer-001__contact-list">
+          {{ if footer_001:phone }}
+            <li>
+              <a href="tel:{{ footer_001:phone | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}" class="footer-001__contact-link">
+                <iconify-icon icon="ph:phone-call" aria-hidden="true"></iconify-icon>
+                <span>{{ footer_001:phone }}</span>
+              </a>
+            </li>
+          {{ /if }}
+
+          {{ if footer_001:email }}
+            <li>
+              <a href="mailto:{{ footer_001:email }}" class="footer-001__contact-link">
+                <iconify-icon icon="ph:envelope-simple" aria-hidden="true"></iconify-icon>
+                <span>{{ footer_001:email }}</span>
+              </a>
+            </li>
+          {{ /if }}
+        </ul>
+      </div>
+
+      <div class="footer-001__column">
+        <h2 class="footer-001__heading">{{ footer_001:social_heading }}</h2>
+
+        <ul class="footer-001__social-links">
+          {{ footer_001:social_links }}
+            <li>
+              <a href="{{ url }}" class="footer-001__social-link" aria-label="{{ platform }}">
+                {{ if platform == "facebook" }}
+                  <iconify-icon icon="ph:facebook-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "instagram" }}
+                  <iconify-icon icon="ph:instagram-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "linkedin" }}
+                  <iconify-icon icon="ph:linkedin-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "x" }}
+                  <iconify-icon icon="ph:x-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "youtube" }}
+                  <iconify-icon icon="ph:youtube-logo" aria-hidden="true"></iconify-icon>
+                {{ elseif platform == "tiktok" }}
+                  <iconify-icon icon="ph:tiktok-logo" aria-hidden="true"></iconify-icon>
+                {{ /if }}
+              </a>
+            </li>
+          {{ /footer_001:social_links }}
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-001__bottom">
+      <p class="footer-001__meta">Copyright © 2026 Starter Kit</p>
+
+      <nav class="footer-001__legal" aria-label="Legal">
+        <ul class="footer-001__legal-links">
+          {{ nav:footer_legal }}
+            <li><a href="{{ url }}">{{ title }}</a></li>
+          {{ /nav:footer_legal }}
+        </ul>
+      </nav>
+
+      <p class="footer-001__credit">
+        <a href="https://threeparkscreative.com">Website by Three Parks Creative</a>
+      </p>
+    </div>
+  </div> 
+</footer>

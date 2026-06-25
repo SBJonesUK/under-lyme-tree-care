@@ -1,0 +1,31 @@
+<figure class="block-media-001">
+  <div class="block-media-001__grid block-media-001__grid--{{ columns ?? 1 }}">
+    {{ assets }}
+      <div class="block-media-001__item">
+        {{ if is_video }}
+          <video
+            class="block-media-001__media block-media-001__video"
+            autoplay
+            loop
+            muted
+            playsinline
+            aria-label="{{ alt ?? title }}"
+          >
+            <source src="{{ url }}" type="{{ mime_type }}">
+            Your browser does not support the video tag.
+          </video>
+        {{ else }}
+          <img
+            src="{{ url }}"
+            alt="{{ alt ?? title }}"
+            class="block-media-001__media block-media-001__image"
+          >
+        {{ /if }}
+      </div>
+    {{ /assets }}
+  </div>
+
+  {{ if caption }}
+    <figcaption class="block-media-001__caption">{{ caption }}</figcaption>
+  {{ /if }}
+</figure>

@@ -1,0 +1,65 @@
+title: Timeline
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: items
+    field:
+      type: replicator
+      display: Items
+      collapse: true
+      min_sets: 1
+      sets:
+        item:
+          display: Item
+          fields:
+            -
+              handle: label
+              field:
+                type: text
+                display: Label
+                instructions: Add any label you like here, such as a date, step number, or phase name.
+                validate: required
+
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+                validate: required
+
+            -
+              handle: text
+              field:
+                type: textarea
+                display: Text
+                validate: required
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

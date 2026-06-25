@@ -1,0 +1,162 @@
+title: Blog
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              validate:
+                - required
+          -
+            handle: featured_image
+            field:
+              type: assets
+              display: Featured Image
+              container: assets
+              max_files: 1
+          -
+            handle: excerpt
+            field:
+              type: textarea
+              display: Excerpt
+              localizable: true
+          -
+            handle: content
+            field:
+              type: bard
+              display: Content
+              localizable: true
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - quote
+                - anchor
+              remove_empty_nodes: false
+              sets:
+                media_001:
+                  display: Media
+                  fields:
+                    -
+                      import: blocks/media_001
+                quote_001:
+                  display: Quote
+                  fields:
+                    -
+                      import: blocks/quote_001
+      -
+        display: CTA
+        fields:
+          -
+            handle: cta_eyebrow
+            field:
+              type: text
+              display: Eyebrow
+          -
+            handle: cta_title
+            field:
+              type: text
+              display: Title
+          -
+            handle: cta_intro
+            field:
+              type: textarea
+              display: Intro
+          -
+            handle: cta_buttons
+            field:
+              type: replicator
+              display: Buttons
+              collapse: true
+              max_sets: 2
+              sets:
+                button:
+                  display: Button
+                  fields:
+                    -
+                      handle: label
+                      field:
+                        type: text
+                        display: Label
+                        validate: required
+                    -
+                      handle: url
+                      field:
+                        type: link
+                        display: URL
+                    -
+                      handle: style
+                      field:
+                        type: select
+                        display: Style
+                        options:
+                          primary: Primary
+                          secondary: Secondary
+                        default: primary
+      -
+        display: Related Posts
+        fields:
+          -
+            handle: related_posts_source
+            field:
+              type: select
+              display: Source
+              options:
+                same_category: 'Latest posts (from same category)'
+                selected: 'Selected posts'
+              default: same_category
+              instructions: Choose whether to show 3 posts from the same category or manually select specific posts.
+          -
+            handle: selected_posts
+            field:
+              type: entries
+              display: Selected Posts
+              collections:
+                - blog
+              max_items: 3
+              instructions: Choose which posts to show.
+              if:
+                related_posts_source: 'equals selected'
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'
+          -
+            handle: date
+            field:
+              type: date
+              required: true
+              default: now
+              validate:
+                - required
+          -
+            handle: author
+            field:
+              type: users
+              display: Author
+              default: current
+              localizable: true
+              max_items: 1
+          -
+            handle: blog_categories
+            field:
+              type: terms
+              taxonomies:
+                - blog_categories
+              display: Categories
+              mode: select

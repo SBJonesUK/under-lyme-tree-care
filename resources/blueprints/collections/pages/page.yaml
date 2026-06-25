@@ -1,0 +1,101 @@
+title: Page
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: page_builder
+    field:
+      type: replicator
+      display: Page Builder
+      collapse: true
+      sets:
+        hero_001:
+          display: Hero
+          fields:
+            -
+              import: builder/hero_001
+        hero_002:
+          display: Hero (Split)
+          fields:
+            -
+              import: builder/hero_002
+        text_media_001:
+          display: Text + Media
+          fields:
+            -
+              import: builder/text_media_001
+        text_001:
+          display: Text
+          fields:
+            -
+              import: builder/text_001
+        stats_001:
+          display: Stats
+          fields:
+            -
+              import: builder/stats_001
+        featured_blog_posts_001:
+          display: Featured Blog Posts
+          fields:
+            -
+              import: builder/featured_blog_posts_001
+        featured_case_studies_001:
+          display: Featured Case Studies
+          fields:
+            -
+              import: builder/featured_case_studies_001
+        gallery_001:
+          display: Gallery
+          fields:
+            -
+              import: builder/gallery_001
+        accordion_001:
+          display: Accordion
+          fields:
+            -
+              import: builder/accordion_001
+        timeline_001:
+          display: Timeline
+          fields:
+            -
+              import: builder/timeline_001
+        cta_001:
+          display: CTA
+          fields:
+            -
+              import: builder/cta_001
+        cta_form_001:
+          display: CTA Form
+          fields:
+            -
+              import: builder/cta_form_001
+        media_001:
+          display: Media
+          fields:
+            -
+              import: builder/media_001
+        icon_cards_001:
+          display: Features
+          fields:
+            -
+              import: builder/icon_cards_001
+        image_cards_001:
+          display: Image Cards
+          fields:
+            -
+              import: builder/image_cards_001
+        logos_001:
+          display: Logos
+          fields:
+            -
+              import: builder/logos_001
+        testimonials_001:
+          display: Testimonials
+          fields:
+            -
+              import: builder/testimonials_001

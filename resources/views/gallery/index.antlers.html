@@ -1,0 +1,70 @@
+<section class="section gallery-page">
+  <div class="container gallery-page__inner">
+    <div class="gallery-page__instance" data-gallery>
+      <div class="gallery-page__header">
+        <div class="gallery-page__header-copy">
+          {{ partial:section_intro_heading level="1" eyebrow="{eyebrow}" title="{title}" }}
+
+          {{ if intro }}
+            <p class="section-intro__description section-intro__description--large">
+              {{ intro }}
+            </p>
+          {{ /if }}
+        </div>
+
+        <form class="gallery-page__filter" action="{{ url }}" method="get">
+          <label class="sr-only" for="gallery-category-select">Choose a gallery category</label>
+
+          <div class="gallery-page__select-wrap">
+            <select id="gallery-category-select" class="gallery-page__select" data-gallery-filter>
+              <option value="">Show all</option>
+              {{ taxonomy:gallery_categories sort="title:asc" }}
+                <option value="{{ slug }}">{{ title }}</option>
+              {{ /taxonomy:gallery_categories }}
+            </select>
+
+            <iconify-icon class="gallery-page__select-caret" icon="ph:caret-down" aria-hidden="true"></iconify-icon>
+          </div>
+        </form>
+      </div>
+
+      <div class="gallery-grid gallery-grid--4" data-gallery-grid>
+        {{ gallery_assets container="gallery" as="items" }}
+          {{ items }}
+          {{ partial:gallery/item }}
+          {{ /items }}
+        {{ /gallery_assets }}
+      </div>
+
+      <p class="gallery-empty-state" data-gallery-empty>No gallery images match this filter yet.</p>
+
+      {{ partial:gallery_lightbox instance_title="{title}" }}
+    </div>
+  </div>
+</section>
+
+{{ if gallery_cta_title || gallery_cta_intro || gallery_cta_buttons }}
+  <section class="cta-001 boxed">
+    <div class="container cta-001__inner theme-dark">
+      <div class="section-intro section-intro--center">
+        {{ partial:section_intro_heading level="2" eyebrow="{gallery_cta_eyebrow}" title="{gallery_cta_title}" title_modifier="cta" }}
+
+        {{ if gallery_cta_intro }}
+          <p class="section-intro__description section-intro__description--large">
+            {{ gallery_cta_intro }}
+          </p>
+        {{ /if }}
+
+        {{ if gallery_cta_buttons }}
+          <div class="button-group button-group--center">
+            {{ gallery_cta_buttons }}
+              <a href="{{ url }}" class="button button--{{ style }}">
+                {{ label }}
+              </a>
+            {{ /gallery_cta_buttons }}
+          </div>
+        {{ /if }}
+      </div>
+    </div>
+  </section>
+{{ /if }}

@@ -1,0 +1,30 @@
+.error-404 {
+  display: flex;
+  align-items: center;
+}
+
+.error-404__inner {
+  text-align: center;
+  gap: var(--space-xl);
+}
+
+.error-404__content {
+  max-width: 42rem;
+}
+
+.error-404__code {
+  font-size: clamp(4.5rem, 8vw, 8rem);
+  line-height: 0.9;
+}
+
+.error-404__title {
+  font-size: var(--h2);
+}
+
+.error-404__description {
+  margin-block-start: var(--space-md);
+}
+
+.error-404 .button {
+  margin-block-start: var(--space-lg);
+}

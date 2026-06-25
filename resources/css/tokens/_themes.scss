@@ -1,0 +1,152 @@
+:root {
+  /* Backgrounds */
+  --theme-bg-section: var(--color-neutral-50);
+  --theme-bg-container: var(--color-white);
+  --theme-bg-surface: var(--color-white);
+  --theme-bg-header: var(--color-white);
+
+  /* Overlays */
+  --theme-overlay: var(--color-white-a50);
+
+  /* Borders */
+  --theme-border-subtle: var(--color-black-a10);
+  --theme-border: var(--color-black-a20);
+  --theme-border-strong: var(--color-black-a40);
+  --theme-border-accent: var(--color-primary-400);
+
+  /* Text */
+  --theme-text: var(--color-black);
+  --theme-text-muted: var(--color-black-a80);
+  --theme-text-inverse: var(--color-white);
+  --theme-text-muted-inverse: var(--color-white-a80);
+  --theme-link: var(--color-primary-600);
+  --theme-link-hover: oklch(from var(--theme-link) calc(l - 0.06) c h);
+
+  /* Icons */
+  --theme-icon-wrapper: var(--color-primary-50);
+  --theme-icon: var(--color-primary-400);
+
+  /* Inputs */
+  --theme-input-text: var(--color-black-a80);
+  --theme-input-bg: var(--color-white);
+  --theme-input-border: var(--color-black-a10);
+
+  /* Buttons */
+  --theme-button-primary-bg: var(--brand);
+  --theme-button-primary-bg-hover: oklch(from var(--theme-button-primary-bg) calc(l - 0.06) c h);
+  --theme-button-primary-text: var(--color-black);
+
+  --theme-button-secondary-bg: var(--color-black-a20);
+  --theme-button-secondary-bg-hover: oklch(from var(--theme-button-secondary-bg) l c h / calc(alpha + 0.06));
+  --theme-button-secondary-text: var(--color-black);
+
+  /* Status */  
+  --theme-danger: var(--color-danger-600);
+}
+
+.theme-muted {
+  /* Backgrounds */
+  --theme-bg-section: var(--color-neutral-100);
+  --theme-bg-container: var(--color-neutral-100);
+}
+
+.theme-accent {
+  /* Backgrounds */
+  --theme-bg-section: var(--brand);
+  --theme-bg-container: var(--brand);
+  --theme-border-subtle: var(--color-primary-300);
+  --theme-border-strong: var(--color-primary-400);
+  --theme-link: var(--color-primary-800);
+
+  /* Inputs */
+  --theme-input-border: var(--color-primary-300);
+
+  /* Buttons */
+  --theme-button-primary-bg: var(--color-black);
+  --theme-button-primary-bg-hover: oklch(from var(--theme-button-primary-bg) calc(l + 0.08) c h);
+  --theme-button-primary-text: var(--color-white);
+}
+
+.theme-dark {
+  /* Backgrounds */
+  --theme-bg-section: var(--color-primary-800);
+  --theme-bg-container: var(--color-primary-800);
+  --theme-bg-surface: var(--color-white-a10);
+  --theme-bg-header: var(--color-primary-800);
+
+  /* Overlays */
+  --theme-overlay: var(--color-black-a50);
+
+  /* Borders */
+  --theme-border-subtle: var(--color-white-a10);
+  --theme-border: var(--color-white-a20);
+  --theme-border-strong: var(--color-white-a40);
+
+  /* Text */
+  --theme-text: var(--color-white);
+  --theme-text-muted: var(--color-white-a80);
+  --theme-text-inverse: var(--color-black);
+  --theme-text-muted-inverse: var(--color-black-a80);
+  --theme-link: var(--brand);
+
+  /* Icons */
+  --theme-icon-wrapper: var(--color-primary-600);
+
+  /* Buttons */
+  --theme-button-secondary-bg: var(--color-white-a20);
+  --theme-button-secondary-text: var(--color-white);
+
+  /* Status */  
+  --theme-danger: var(--color-danger-200);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  .theme-muted,
+  .theme-accent,
+  .theme-dark {
+  /* Backgrounds */
+  --theme-bg-section: var(--color-primary-800);
+  --theme-bg-container: var(--color-white-a20);
+  --theme-bg-surface: var(--color-white-a10);
+  --theme-bg-header: var(--color-primary-800);
+
+  /* Overlays */
+  --theme-overlay: var(--color-black-a50);
+
+  /* Borders */
+  --theme-border-subtle: var(--color-white-a10);
+  --theme-border: var(--color-white-a20);
+  --theme-border-strong: var(--color-white-a40);
+  --theme-border-accent: var(--color-primary-400);
+
+  /* Text */
+  --theme-text: var(--color-white);
+  --theme-text-muted: var(--color-white-a80);
+  --theme-text-inverse: var(--color-black);
+  --theme-text-muted-inverse: var(--color-black-a80);
+  --theme-link: var(--brand);
+  --theme-link-hover: oklch(from var(--theme-link) calc(l - 0.06) c h);
+
+  /* Icons */
+  --theme-icon-wrapper: var(--color-primary-600);
+  --theme-icon: var(--color-primary-400);
+
+  /* Inputs */
+  --theme-input-text: var(--color-black-a80);
+  --theme-input-bg: var(--color-white);
+  --theme-input-border: var(--color-black-a10);
+
+  /* Buttons */
+  --theme-button-primary-bg: var(--brand);
+  --theme-button-primary-bg-hover: oklch(from var(--theme-button-primary-bg) calc(l - 0.06) c h);
+  --theme-button-primary-text: var(--color-black);
+
+  --theme-button-secondary-bg: var(--color-white-a20);
+  --theme-button-secondary-bg-hover: oklch(from var(--theme-button-secondary-bg) l c h / calc(alpha + 0.06));
+  --theme-button-secondary-text: var(--color-white);
+
+  /* Status */  
+  --theme-danger: var(--color-danger-200);
+  }
+}

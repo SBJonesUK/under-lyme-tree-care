@@ -1,0 +1,91 @@
+title: Media
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: media_source
+    field:
+      type: button_group
+      display: Media Source
+      options:
+        upload: Upload
+        embed: Embed
+      default: upload
+
+  -
+    handle: media_asset
+    field:
+      type: assets
+      display: Media Asset
+      container: assets
+      max_files: 1
+      instructions: Upload or select an image or video file.
+      if:
+        media_source: 'equals upload'
+
+  -
+    handle: embed_type
+    field:
+      type: button_group
+      display: Embed Type
+      options:
+        url: URL
+        code: Embed code
+      default: url
+      if:
+        media_source: 'equals embed'
+
+  -
+    handle: video_url
+    field:
+      type: video
+      display: Video URL
+      instructions: Add a YouTube, Vimeo, or direct embeddable video URL.
+      if:
+        media_source: 'equals embed'
+        embed_type: 'equals url'
+
+  -
+    handle: embed_code
+    field:
+      type: textarea
+      display: Embed Code
+      instructions: Paste iframe embed code from YouTube, Vimeo, Wistia, Loom, or another video host.
+      if:
+        media_source: 'equals embed'
+        embed_type: 'equals code'
+
+  -
+    handle: caption
+    field:
+      type: text
+      display: Caption
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

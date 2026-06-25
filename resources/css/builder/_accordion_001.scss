@@ -1,0 +1,116 @@
+.accordion-001__inner {
+  display: grid;
+  gap: var(--space-lg);
+  align-items: start;
+
+  @media (width >= 960px) {
+    & {
+      gap: var(--space-2xl);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+  }
+}
+
+.accordion-001__content,
+.accordion-001__items {
+  display: grid;
+}
+
+.accordion-001__content {
+  gap: var(--space-md);
+}
+
+.accordion-001__items {
+  gap: var(--space-sm);
+}
+
+.accordion-001__item {
+  background: var(--theme-bg-surface);
+  color: var(--theme-text);
+  padding: var(--space-lg);
+  border: 1px solid var(--theme-border-subtle);
+  border-radius: var(--border-radius-lg);
+}
+
+.accordion-001__summary {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  gap: var(--space-md);
+  justify-content: space-between;
+  list-style: none;
+}
+
+.accordion-001__summary::-webkit-details-marker {
+  display: none;
+}
+
+.accordion-001__question {
+  font-size: var(--text-lg);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.4;
+}
+
+.accordion-001__icon {
+  display: block;
+  flex: 0 0 auto;
+  height: 0.75rem;
+  position: relative;
+  transition: transform 0.2s ease;
+  width: 0.75rem;
+}
+
+.accordion-001__icon::before,
+.accordion-001__icon::after {
+  background: currentColor;
+  content: '';
+  height: var(--border-width-medium);
+  inset: 50% auto auto 50%;
+  position: absolute;
+  transform-origin: center;
+  width: 100%;
+}
+
+.accordion-001__icon::before {
+  transform: translate(-50%, -50%);
+}
+
+.accordion-001__icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.accordion-001__item[open] .accordion-001__icon {
+  transform: rotate(180deg);
+}
+
+.accordion-001__item[open] .accordion-001__icon::after {
+  opacity: 0;
+}
+
+.accordion-001__answer {
+  color: var(--theme-text-muted);
+  margin-block-start: var(--space-md);
+
+  a {
+  color: var(--theme-link);
+  text-decoration: underline;
+
+    &:hover {
+      color: var(--theme-link-hover);
+    }
+  }
+}
+
+.accordion-001__footer {
+  color: var(--theme-text-muted);
+  font-size: var(--text-sm);
+
+  a {
+    color: var(--theme-link);
+    text-decoration: underline;
+
+    &:hover {
+      color: var(--theme-link-hover);
+    }
+  }
+}

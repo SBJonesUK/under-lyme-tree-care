@@ -1,0 +1,40 @@
+<section class="accordion-001{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  <div class="container accordion-001__inner">
+    <div class="section-intro">
+      {{ partial:section_intro_heading level="2" }}
+
+      {{ if intro }}
+        <p class="section-intro__description section-intro__description--large">
+          {{ intro }}
+        </p>
+      {{ /if }}
+    </div>
+
+    <div class="accordion-001__content">
+      {{ if items }}
+        <div class="accordion-001__items">
+          {{ items }}
+            <details class="accordion-001__item">
+              <summary class="accordion-001__summary">
+                <span class="accordion-001__question">{{ question }}</span>
+                <span class="accordion-001__icon" aria-hidden="true"></span>
+              </summary>
+
+              {{ if answer }}
+                <div class="accordion-001__answer flow">
+                  {{ answer }}
+                </div>
+              {{ /if }}
+            </details>
+          {{ /items }}
+        </div>
+      {{ /if }}
+
+      {{ if footer }}
+        <div class="accordion-001__footer flow">
+          {{ footer }}
+        </div>
+      {{ /if }}
+    </div>
+  </div>
+</section>

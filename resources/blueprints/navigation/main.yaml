@@ -1,0 +1,27 @@
+title: Main Navigation
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      width: 100
+      required: true
+  -
+    handle: url
+    field:
+      type: link
+      display: URL
+      width: 100
+      required: true
+  -
+    handle: link_style
+    field:
+      type: button_group
+      display: Link Style
+      instructions: Choose whether this navigation item should look like a standard link or a button.
+      default: link
+      options:
+        link: Link
+        button_primary: Primary Button
+        button_secondary: Secondary Button

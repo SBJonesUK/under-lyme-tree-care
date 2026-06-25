@@ -1,0 +1,150 @@
+<nav class="pagination" aria-label="Pagination">
+  <p class="pagination__summary">
+    Showing {{ ((current_page - 1) * items_per_page) + 1 }}
+    to
+    {{ if current_page == total_pages }}
+      {{ total_items }}
+    {{ else }}
+      {{ current_page * items_per_page }}
+    {{ /if }}
+    of {{ total_items }} {{ summary_label ?? 'results' }}
+  </p>
+
+  {{# Mobile Pagination #}}
+
+  <ul class="pagination__controls pagination__controls--mobile">
+    {{ if prev_page }}
+      <li class="pagination__item">
+        <a href="{{ prev_page }}" class="pagination__link">{{ prev_label ?? '&laquo;' }}</a>
+      </li>
+    {{ else }}
+      <li class="pagination__item">
+        <span class="pagination__link pagination__link--disabled">{{ prev_label ?? '&laquo;' }}</span>
+      </li>
+    {{ /if }}
+
+    {{ if current_page != 1 }}
+      {{ links:all }}
+        {{ if page == 1 }}
+          <li class="pagination__item">
+            <a href="{{ url }}" class="pagination__link">{{ page }}</a>
+          </li>
+        {{ /if }}
+      {{ /links:all }}
+    {{ /if }}
+
+    {{ if current_page > 3 }}
+      <li class="pagination__item">
+        <span class="pagination__ellipsis">...</span>
+      </li>
+    {{ /if }}
+
+    <li class="pagination__item">
+      <span class="pagination__link pagination__link--active">{{ current_page }}</span>
+    </li>
+
+    {{ if current_page < total_pages - 2 }}
+      <li class="pagination__item">
+        <span class="pagination__ellipsis">...</span>
+      </li>
+    {{ /if }}
+
+    {{ if current_page != total_pages }}
+      {{ links:all }}
+        {{ if page == total_pages }}
+          <li class="pagination__item">
+            <a href="{{ url }}" class="pagination__link">{{ page }}</a>
+          </li>
+        {{ /if }}
+      {{ /links:all }}
+    {{ /if }}
+
+    {{ if next_page }}
+      <li class="pagination__item">
+        <a href="{{ next_page }}" class="pagination__link">{{ next_label ?? '&raquo;' }}</a>
+      </li>
+    {{ else }}
+      <li class="pagination__item">
+        <span class="pagination__link pagination__link--disabled">{{ next_label ?? '&raquo;' }}</span>
+      </li>
+    {{ /if }}
+  </ul>
+
+  {{# Desktop Pagination #}}
+
+  <ul class="pagination__controls pagination__controls--desktop">
+    {{ if prev_page }}
+      <li class="pagination__item">
+        <a href="{{ prev_page }}" class="pagination__link">{{ prev_label ?? '&laquo;' }}</a>
+      </li>
+    {{ else }}
+      <li class="pagination__item">
+        <span class="pagination__link pagination__link--disabled">{{ prev_label ?? '&laquo;' }}</span>
+      </li>
+    {{ /if }}
+
+    {{ links:all }}
+      {{ if page == 1 }}
+        {{ if page == current_page }}
+          <li class="pagination__item">
+            <span class="pagination__link pagination__link--active">{{ page }}</span>
+          </li>
+        {{ else }}
+          <li class="pagination__item">
+            <a href="{{ url }}" class="pagination__link">{{ page }}</a>
+          </li>
+        {{ /if }}
+      {{ /if }}
+    {{ /links:all }}
+
+    {{ if current_page > 3 }}
+      <li class="pagination__item">
+        <span class="pagination__ellipsis">...</span>
+      </li>
+    {{ /if }}
+
+    {{ links:all }}
+      {{ if page != 1 && page != total_pages && page >= current_page - 1 && page <= current_page + 1 }}
+        {{ if page == current_page }}
+          <li class="pagination__item">
+            <span class="pagination__link pagination__link--active">{{ page }}</span>
+          </li>
+        {{ else }}
+          <li class="pagination__item">
+            <a href="{{ url }}" class="pagination__link">{{ page }}</a>
+          </li>
+        {{ /if }}
+      {{ /if }}
+    {{ /links:all }}
+
+    {{ if current_page < total_pages - 2 }}
+      <li class="pagination__item">
+        <span class="pagination__ellipsis">...</span>
+      </li>
+    {{ /if }}
+
+    {{ links:all }}
+      {{ if page == total_pages && total_pages > 1 }}
+        {{ if page == current_page }}
+          <li class="pagination__item">
+            <span class="pagination__link pagination__link--active">{{ page }}</span>
+          </li>
+        {{ else }}
+          <li class="pagination__item">
+            <a href="{{ url }}" class="pagination__link">{{ page }}</a>
+          </li>
+        {{ /if }}
+      {{ /if }}
+    {{ /links:all }}
+
+    {{ if next_page }}
+      <li class="pagination__item">
+        <a href="{{ next_page }}" class="pagination__link">{{ next_label ?? '&raquo;' }}</a>
+      </li>
+    {{ else }}
+      <li class="pagination__item">
+        <span class="pagination__link pagination__link--disabled">{{ next_label ?? '&raquo;' }}</span>
+      </li>
+    {{ /if }}
+  </ul>
+</nav>

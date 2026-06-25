@@ -1,0 +1,109 @@
+title: Features
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: items_per_row
+    field:
+      type: button_group
+      display: Items Per Row
+      options:
+        2: '2'
+        3: '3'
+        4: '4'
+      default: 3
+      instructions: Choose how many feature cards to show per row on larger screens.
+
+  -
+    handle: items
+    field:
+      type: replicator
+      display: Items
+      collapse: true
+      min_sets: 1
+      sets:
+        item:
+          display: Item
+          fields:
+            -
+              handle: icon
+              field:
+                type: text
+                display: Icon
+                instructions: 'Paste an Iconify icon name, for example `ph:rocket-launch` or `mdi:flag`. Find icons at [Iconify](https://icon-sets.iconify.design/).'
+
+            -
+              handle: title
+              field:
+                type: text
+                display: Title
+                validate: required
+
+            -
+              handle: text
+              field:
+                type: textarea
+                display: Text
+
+  -
+    handle: button
+    field:
+      type: replicator
+      display: Button
+      collapse: true
+      max_sets: 1
+      sets:
+        button:
+          display: Button
+          fields:
+            -
+              handle: label
+              field:
+                type: text
+                display: Label
+                validate: required
+
+            -
+              handle: url
+              field:
+                type: link
+                display: URL
+
+            -
+              handle: style
+              field:
+                type: select
+                display: Style
+                options:
+                  primary: Primary
+                  secondary: Secondary
+                default: primary
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

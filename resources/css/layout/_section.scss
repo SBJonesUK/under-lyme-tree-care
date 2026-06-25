@@ -1,0 +1,18 @@
+section {
+  padding-block: var(--section-block-padding);
+  padding-inline: var(--section-inline-padding);
+  background: var(--theme-bg-section);
+}
+
+section:not(.no-collapse).theme-muted:has(+ section.theme-muted),
+section:not(.no-collapse).theme-accent:has(+ section.theme-accent),
+section:not(.no-collapse).theme-dark:has(+ section.theme-dark),
+section:not(.no-collapse):not(.theme-muted):not(.theme-accent):not(.theme-dark):has(+ section:not(.no-collapse):not(.theme-muted):not(.theme-accent):not(.theme-dark)) {
+  padding-block-end: 0;
+}
+
+@media (prefers-color-scheme: dark) {
+  section:not(.no-collapse):not(:last-child) {
+      padding-block-end: 0;
+  }
+}

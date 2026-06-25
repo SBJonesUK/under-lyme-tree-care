@@ -1,0 +1,113 @@
+title: Featured Blog Posts
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: post_source
+    field:
+      type: select
+      display: Post Source
+      options:
+        latest: Latest posts
+        selected: Selected posts
+      default: latest
+      instructions: Choose whether to show the most recent blog posts or manually select specific posts.
+
+  -
+    handle: posts_limit
+    field:
+      type: integer
+      display: Number of Posts
+      default: 4
+      min: 2
+      max: 4
+      instructions: Choose the total number of posts to show.
+      if:
+        post_source: 'equals latest'
+
+  -
+    handle: selected_posts
+    field:
+      type: entries
+      display: Selected Posts
+      collections:
+        - blog
+      max_items: 4
+      instructions: Choose which posts to show.
+      if:
+        post_source: 'equals selected'
+
+  -
+    handle: items_per_row
+    field:
+      type: button_group
+      display: Items Per Row
+      options:
+        2: '2'
+        3: '3'
+        4: '4'
+      default: 3
+      instructions: Choose how many posts to show per row on larger screens.
+
+  -
+    handle: button
+    field:
+      type: replicator
+      display: Button
+      collapse: true
+      max_sets: 1
+      sets:
+        button:
+          display: Button
+          fields:
+            -
+              handle: label
+              field:
+                type: text
+                display: Label
+                validate: required
+
+            -
+              handle: url
+              field:
+                type: link
+                display: URL
+
+            -
+              handle: style
+              field:
+                type: select
+                display: Style
+                options:
+                  primary: Primary
+                  secondary: Secondary
+                default: primary
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

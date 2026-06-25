@@ -1,0 +1,16 @@
+column_one_heading: Services
+column_two_heading: 'The Practice'
+contact_heading: 'Get In Touch'
+social_heading: 'Follow Us'
+address: '19 Lugar Street, Cumnock KA18 1AD'
+phone: '01782 118118'
+email: sam@threeparkscreative.com
+social_links:
+  -
+    id: mbedemgl
+    platform: facebook
+    url: 'https://facebook.com'
+  -
+    id: ksxwgtol
+    platform: instagram
+    url: 'https://instagram.com'

@@ -1,0 +1,57 @@
+title: Stats
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: stats
+    field:
+      type: replicator
+      display: Stats
+      collapse: true
+      min_sets: 1
+      sets:
+        stat:
+          display: Stat
+          fields:
+            -
+              handle: value
+              field:
+                type: text
+                display: Value
+                validate: required
+
+            -
+              handle: label
+              field:
+                type: textarea
+                display: Label
+                validate: required
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

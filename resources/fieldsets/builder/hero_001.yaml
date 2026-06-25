@@ -1,0 +1,72 @@
+title: Hero
+fields:
+  -
+    handle: eyebrow
+    field:
+      type: text
+      display: Eyebrow
+
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: background_image
+    field:
+      type: assets
+      display: Background Image
+      container: assets
+      max_files: 1
+
+  -
+    handle: buttons
+    field:
+      type: replicator
+      display: Buttons
+      collapse: true
+      max_sets: 2
+      sets:
+        button:
+          display: Button
+          fields:
+            -
+              handle: label
+              field:
+                type: text
+                display: Label
+                validate: required
+
+            -
+              handle: url
+              field:
+                type: link
+                display: URL
+
+            -
+              handle: style
+              field:
+                type: select
+                display: Style
+                options:
+                  primary: Primary
+                  secondary: Secondary
+                default: primary
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-dark: Dark
+      default: theme-light

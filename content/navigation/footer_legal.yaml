@@ -1,0 +1,6 @@
+title: 'Footer Legal'
+collections:
+  - pages
+  - blog
+  - case_studies
+max_depth: 1

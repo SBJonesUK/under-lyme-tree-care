@@ -1,0 +1,20 @@
+<form class="blog-index__filter" action="/blog" method="get">
+  <label class="sr-only" for="blog-category-select">Choose a blog category</label>
+
+  <div class="blog-index__select-wrap">
+    <select
+      id="blog-category-select"
+      class="blog-index__select"
+      onchange="if (this.value) window.location.href = this.value"
+    >
+      <option value="/blog"{{ if !selected }} selected{{ /if }}>Show All</option>
+      {{ taxonomy:blog_categories sort="title:asc" }}
+        <option value="/blog/category/{{ slug }}"{{ if selected == slug }} selected{{ /if }}>
+          {{ title }}
+        </option>
+      {{ /taxonomy:blog_categories }}
+    </select>
+
+    <iconify-icon class="blog-index__select-caret" icon="ph:caret-down" aria-hidden="true"></iconify-icon>
+  </div>
+</form>
