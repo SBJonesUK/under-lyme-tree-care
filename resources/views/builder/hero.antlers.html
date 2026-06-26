@@ -1,13 +1,15 @@
 <section class="hero{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
   <div class="container hero__inner">
     <div class="section-intro">
-      <div class="google-rating"></div>
-        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
-        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
-        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
-        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
-        <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
-        <p class="">Rated 5 stars on Google</p>
+      <div class="google-rating">
+        <div class="google-rating__stars">
+          <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+          <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+          <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+          <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+          <iconify-icon icon="ph:star-fill" aria-hidden="true"></iconify-icon>
+        </div>
+        <p class="google-rating__text">Rated 5 stars on Google</p>
      </div>
       {{ partial:section_intro_heading level="1" }}
 
@@ -26,6 +28,26 @@
           {{ /buttons }}
         </div>
       {{ /if }}
+
+      
+      <div class="usp-list">
+        <div class="usp-list__item">
+          <iconify-icon icon="ph:check-fat-fill" aria-hidden="true"></iconify-icon>
+          <p>NPTC Qualified</p>
+        </div>
+        <div class="usp-list__item">
+          <iconify-icon icon="ph:check-fat-fill" aria-hidden="true"></iconify-icon>
+          <p>20+ Years Experience</p>
+        </div>
+        <div class="usp-list__item">
+          <iconify-icon icon="ph:check-fat-fill" aria-hidden="true"></iconify-icon>
+          <p>£5M Public Liability Insurance</p>
+        </div>
+        <div class="usp-list__item">
+          <iconify-icon icon="ph:check-fat-fill" aria-hidden="true"></iconify-icon>
+          <p>Domestic & Commercial</p>
+        </div>
+      </div>
     </div>
 
     {{ if image }}

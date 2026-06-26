@@ -1,9 +1,9 @@
 ---
-id: home
+id: 4f2473c5-3a90-4672-bacb-76fe3aac5031
 blueprint: page
-title: Home
+title: 'Builder Samples'
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1782465610
+updated_at: 1782461334
 page_builder:
   -
     id: oN8NQ1Am
@@ -28,167 +28,6 @@ page_builder:
         enabled: true
     theme: theme-light
     image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
-  -
-    id: 2oSXHwNYGXQNGebhgyH6C
-    eyebrow: Services
-    title: 'Professional arboricultural services for homes,  businesses and landowners'
-    items_per_row: 3
-    items:
-      -
-        id: p38j29EF7LdTWrYxvk2Fh
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: 'Tree Pruning'
-        text: 'Maintain the health, safety and appearance of your trees with expert pruning, including crown reduction, crown lifting, crown thinning and deadwood removal.'
-        type: item
-        enabled: true
-      -
-        id: _WkkZHEo2ilLcWGeP9FYF
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: 'Tree Removal'
-        text: 'Safe and controlled tree removal for trees that are dead, dangerous, diseased or no longer suitable for their surroundings.'
-        type: item
-        enabled: true
-      -
-        id: 75ZxHExcT9BSJy7tJp9XL
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: 'Hedge Cutting'
-        text: 'Professional hedge trimming and maintenance for domestic gardens, commercial premises and large estates, leaving hedges neat, healthy and well maintained.'
-        type: item
-        enabled: true
-      -
-        id: soWb5QNuI_YOg65SIvPA2
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: 'Tree Surveys'
-        text: 'Professional tree surveys for planning applications, development sites, mortgage reports and ongoing tree management, carried out by an experienced arborist.'
-        type: item
-        enabled: true
-      -
-        id: CESXaUZZHxPpiPL-YPUl_
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: 'Tree Reports'
-        text: 'Detailed arboricultural reports providing clear, professional advice for homeowners, developers, insurers and local authorities.'
-        type: item
-        enabled: true
-      -
-        id: 3gKR4g-Bqusgs3KjXSEuC
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: 'Tree Consultancy'
-        text: 'Independent arboricultural advice to help you make informed decisions about tree safety, management, planning and long-term care.'
-        type: item
-        enabled: true
-    theme: theme-muted
-    type: image_cards
-    enabled: true
-    button:
-      -
-        id: hKJuR4DA2zKe1mNypK6Nt
-        label: 'Book a Call'
-        url: /blog
-        style: primary
-        type: button
-        enabled: true
-  -
-    id: ycjEvPfCpE3AfwbCT3FtB
-    eyebrow: 'Why Under Lyme Tree Care'
-    title: '20+ Years of Professional Tree Care'
-    items_per_row: 4
-    items:
-      -
-        id: oegPubaAogpkWAZ-3tpiq
-        icon: 'ph:certificate'
-        title: 'NPTC Qualified'
-        text: 'All tree work is carried out by a qualified arborist using recognised industry best practices, giving you complete confidence that the job will be completed safely and professionally.'
-        type: item
-        enabled: true
-      -
-        id: jI3a-ckctvb76h26mXazC
-        icon: 'ph:shield-check'
-        title: 'Fully Insured'
-        text: 'With £5 million public liability insurance, you’re protected from the moment work begins until the job is complete.'
-        type: item
-        enabled: true
-      -
-        id: axv4XYyJv1LXsoWL2qaOX
-        icon: 'ph:chat-centered-dots'
-        title: 'Honest Advice'
-        text: 'I’ll always recommend the most appropriate solution for your trees, even if that means less work for us. Healthy trees are worth preserving wherever possible.'
-        type: item
-        enabled: true
-      -
-        id: OTnOri2nD3duQ_9RRhpbs
-        icon: 'ph:broom'
-        title: 'Clean & Tidy'
-        text: 'I treat every property as if it were my own, working carefully and leaving gardens, driveways and surrounding areas clean and tidy when the job is finished.'
-        type: item
-        enabled: true
-    theme: theme-light
-    type: icon_cards
-    enabled: true
-    button:
-      -
-        id: x5j22U0jwbFG3tjytnB3o
-        label: 'Book a Call'
-        url: /blog
-        style: primary
-        type: button
-        enabled: true
-  -
-    id: qmxA0rNQtVGzc8KEDw-qc
-    eyebrow: 'Lorem ipsum'
-    title: Testimonials
-    intro: 'Adipisicing nisi incididunt ut non consequat commodo. Laborum cupidatat sint cupidatat consectetur eiusmod pariatur fugiat enim velit. Irure qui do sint occaecat tempor minim.'
-    testimonials:
-      -
-        id: eOSw9yPNyfF6OeR8d9Mjs
-        quote: 'My family has used Daniel for many years with their trees/hedges and he recently carried out some tree and stump removal for us. Extremely pleasant and so easy to deal with, always does a fantastic job. Would highly recommend to anyone!'
-        name: 'Benjamin Simpson'
-        details: 'Domestic Customer'
-        type: testimonial
-        enabled: true
-      -
-        id: 8GbQx8nvLcTp0GkTFV6St
-        quote: 'Thank you Under Lyme Tree Care. We required an Arboricultural report for our tree that had a Tree presentation order on it. Dan was great from start to finish, his report was very thorough & they did a brilliant job when it came to the actual tree removal. Everywhere was tidy as clean once work was complete. Thanks again!'
-        name: 'Eddie Roe'
-        details: 'Domestic Customer'
-        type: testimonial
-        enabled: true
-      -
-        id: 1DrIUei96_V54Cv2VSqu9
-        quote: 'Daniel was very knowledgeable, friendly and my very large hedge looks fabulous. I would highly recommend Daniel, and I will definitely book in again in the autumn for my other hedges.'
-        name: 'Karon Halliday'
-        details: 'Domestic Customer'
-        type: testimonial
-        enabled: true
-    button:
-      -
-        id: kqhEMIWJVOuE8Bkn0dKt8
-        label: 'Book a Call'
-        url: /contact
-        style: primary
-        type: button
-        enabled: true
-    theme: theme-light
-    type: testimonials
-    enabled: true
-    items_per_row: 3
-    testimonials_per_row: 3
-  -
-    id: gLIf3sMYOB9Zdf9X6dck7
-    eyebrow: 'Lorem ipsum'
-    title: Gallery
-    intro: 'Irure aute ea aliqua labore. Mollit veniam nisi sunt velit et et do laborum.'
-    gallery_source: selected
-    items_per_row: 4
-    theme: theme-light
-    type: gallery
-    enabled: true
-    selected_gallery_items:
-      - deep-doshi-a-k7e3u0-gc-unsplash.jpg
-      - herman-haradzetskiy-6wre-bhjyck-unsplash.jpg
-      - intricate-explorer-xck0x60ysck-unsplash.jpg
-      - peter-thomas-afiyovlkcqw-unsplash.jpg
-      - dmytro-koplyk-2d9hswrqfg8-unsplash.jpg
-      - maverick-frame-rxq2vzsulrg-unsplash.jpg
   -
     id: UUed4X_Fyxic1hdFrWuz8
     eyebrow: 'Lorem Ipsum'
@@ -489,6 +328,112 @@ page_builder:
             type: text
             text: .
   -
+    id: ycjEvPfCpE3AfwbCT3FtB
+    eyebrow: 'Lorem ipsum'
+    title: Features
+    intro: 'Duis aliqua amet non consequat reprehenderit excepteur elit pariatur consectetur officia consequat esse aliquip. In aute voluptate nulla deserunt incididunt id proident nostrud exercitation officia aliquip.'
+    items_per_row: 3
+    items:
+      -
+        id: oegPubaAogpkWAZ-3tpiq
+        icon: 'ph:rocket-launch'
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+      -
+        id: jI3a-ckctvb76h26mXazC
+        icon: 'ph:rocket-launch'
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+      -
+        id: axv4XYyJv1LXsoWL2qaOX
+        icon: 'ph:rocket-launch'
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+      -
+        id: '-1dNTVIMrRuWIuZC9gBb2'
+        icon: 'ph:rocket-launch'
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+      -
+        id: 4QTMukueFnPIu2_Ytxbgk
+        icon: 'ph:rocket-launch'
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+      -
+        id: RFHKewvZP9AsZPq5hy7xK
+        icon: 'ph:rocket-launch'
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+    theme: theme-light
+    type: icon_cards
+    enabled: true
+    button:
+      -
+        id: x5j22U0jwbFG3tjytnB3o
+        label: 'Book a Call'
+        url: /blog
+        style: primary
+        type: button
+        enabled: true
+  -
+    id: 2oSXHwNYGXQNGebhgyH6C
+    eyebrow: 'Lorem ipsum'
+    title: 'Image Cards'
+    intro: 'Ad ipsum elit amet sint dolore cillum cillum id mollit cillum. Pariatur voluptate aute nisi ullamco commodo. Reprehenderit aliqua elit in enim do dolore velit dolor exercitation duis.'
+    items_per_row: 4
+    items:
+      -
+        id: p38j29EF7LdTWrYxvk2Fh
+        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+      -
+        id: _WkkZHEo2ilLcWGeP9FYF
+        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+      -
+        id: 75ZxHExcT9BSJy7tJp9XL
+        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+      -
+        id: soWb5QNuI_YOg65SIvPA2
+        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
+        title: Testing
+        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        type: item
+        enabled: true
+    theme: theme-light
+    type: image_cards
+    enabled: true
+    button:
+      -
+        id: hKJuR4DA2zKe1mNypK6Nt
+        label: 'Book a Call'
+        url: /blog
+        style: primary
+        type: button
+        enabled: true
+  -
     id: C2yZy4W7884K6q3g4DaL7
     eyebrow: 'Lorem ipsum'
     title: 'Media section'
@@ -531,6 +476,63 @@ page_builder:
     type: timeline
     enabled: true
   -
+    id: qmxA0rNQtVGzc8KEDw-qc
+    eyebrow: 'Lorem ipsum'
+    title: Testimonials
+    intro: 'Adipisicing nisi incididunt ut non consequat commodo. Laborum cupidatat sint cupidatat consectetur eiusmod pariatur fugiat enim velit. Irure qui do sint occaecat tempor minim.'
+    testimonials:
+      -
+        id: eOSw9yPNyfF6OeR8d9Mjs
+        quote: 'Tempor fugiat veniam pariatur ea duis laboris sint. Ullamco ipsum fugiat excepteur magna excepteur duis eiusmod esse ullamco ullamco fugiat id occaecat duis. Veniam ad do anim exercitation sint. Ex esse fugiat labore nisi eiusmod sint non in cupidatat nisi excepteur labore minim.'
+        name: 'Mike Fisher'
+        details: 'Purelec, Director'
+        type: testimonial
+        enabled: true
+      -
+        id: 8GbQx8nvLcTp0GkTFV6St
+        quote: 'Tempor fugiat veniam pariatur ea duis laboris sint. Ullamco ipsum fugiat excepteur magna excepteur duis eiusmod esse ullamco ullamco fugiat id occaecat duis. Veniam ad do anim exercitation sint. Ex esse fugiat labore nisi eiusmod sint non in cupidatat nisi excepteur labore minim.'
+        name: 'Jane Ellis'
+        details: 'Google, CTO'
+        type: testimonial
+        enabled: true
+      -
+        id: 1DrIUei96_V54Cv2VSqu9
+        quote: 'Tempor fugiat veniam pariatur ea duis laboris sint. Ullamco ipsum fugiat excepteur magna excepteur duis eiusmod esse ullamco ullamco fugiat id occaecat duis. Veniam ad do anim exercitation sint. Ex esse fugiat labore nisi eiusmod sint non in cupidatat nisi excepteur labore minim.'
+        name: 'Zach Brown'
+        details: 'McLaren, Team Principle'
+        type: testimonial
+        enabled: true
+    button:
+      -
+        id: kqhEMIWJVOuE8Bkn0dKt8
+        label: 'Book a Call'
+        url: /contact
+        style: primary
+        type: button
+        enabled: true
+    theme: theme-light
+    type: testimonials
+    enabled: true
+    items_per_row: 3
+    testimonials_per_row: 3
+  -
+    id: gLIf3sMYOB9Zdf9X6dck7
+    eyebrow: 'Lorem ipsum'
+    title: Gallery
+    intro: 'Irure aute ea aliqua labore. Mollit veniam nisi sunt velit et et do laborum.'
+    gallery_source: selected
+    items_per_row: 4
+    theme: theme-light
+    type: gallery
+    enabled: true
+    selected_gallery_items:
+      - deep-doshi-a-k7e3u0-gc-unsplash.jpg
+      - herman-haradzetskiy-6wre-bhjyck-unsplash.jpg
+      - intricate-explorer-xck0x60ysck-unsplash.jpg
+      - peter-thomas-afiyovlkcqw-unsplash.jpg
+      - dmytro-koplyk-2d9hswrqfg8-unsplash.jpg
+      - maverick-frame-rxq2vzsulrg-unsplash.jpg
+  -
     id: Dp-mybdQDA5i5QhG3DDF7
     eyebrow: 'Lorem ipsum'
     title: 'Call to Action'
@@ -556,4 +558,5 @@ page_builder:
     type: cta_form
     enabled: true
     intro: 'Anim reprehenderit non adipisicing sunt adipisicing cillum officia. Voluptate proident dolore reprehenderit mollit proident aliqua elit elit pariatur nulla labore ea ut aliquip laborum. Eu id elit nisi labore duis non incididunt cillum ut dolor id ea.'
+duplicated_from: home
 ---

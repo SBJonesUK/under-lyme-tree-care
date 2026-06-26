@@ -35,6 +35,7 @@
   color: var(--theme-text);
   display: grid;
   gap: var(--space-sm);
+  align-content: space-between;
   margin: 0;
   padding: var(--space-lg);
   border-radius: var(--border-radius-lg);
