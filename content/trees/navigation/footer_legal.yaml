@@ -1,9 +1,5 @@
 tree:
   -
-    id: 8d0fbbec-9d84-48aa-aec8-68f34dcd3f14
-    title: 'Terms & Conditions'
-    url: /terms-and-conditions
-  -
     id: a8c45cc6-aa52-4304-b06f-67fe777c77b2
     title: 'Privacy Policy'
     url: /privacy-policy
@@ -11,7 +7,3 @@ tree:
     id: f4f87fe8-4c8b-47aa-b558-98a6fa8d56b2
     title: 'Cookie Policy'
     url: /cookie-policy
-  -
-    id: e5da11d9-f13f-4bc8-9dda-923db7da23f0
-    title: 'Complaints Procedure'
-    url: /complaints-procedure
