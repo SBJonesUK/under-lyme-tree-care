@@ -3,7 +3,7 @@
   --theme-bg-section: var(--color-neutral-50);
   --theme-bg-container: var(--color-white);
   --theme-bg-surface: var(--color-white);
-  --theme-bg-header: var(--color-white);
+  --theme-bg-menu: var(--color-white);
 
   /* Overlays */
   --theme-overlay: var(--color-white-a50);
@@ -25,6 +25,7 @@
   /* Icons */
   --theme-icon-wrapper: var(--color-primary-50);
   --theme-icon: var(--color-primary-400);
+  --theme-icon-accent: var(--brand);
 
   /* Inputs */
   --theme-input-text: var(--color-black-a80);
@@ -34,11 +35,11 @@
   /* Buttons */
   --theme-button-primary-bg: var(--brand);
   --theme-button-primary-bg-hover: oklch(from var(--theme-button-primary-bg) calc(l - 0.06) c h);
-  --theme-button-primary-text: var(--color-black);
+  --theme-button-primary-text: var(--color-white);
 
-  --theme-button-secondary-bg: var(--color-black-a20);
-  --theme-button-secondary-bg-hover: oklch(from var(--theme-button-secondary-bg) l c h / calc(alpha + 0.06));
-  --theme-button-secondary-text: var(--color-black);
+  --theme-button-secondary-bg-hover: oklch(from var(--theme-button-primary-bg) l c h / calc(alpha - 0.9));
+  --theme-button-secondary-border: var(--theme-button-primary-bg);
+  --theme-button-secondary-text: var(--theme-button-primary-bg);
 
   /* Status */  
   --theme-danger: var(--color-danger-600);

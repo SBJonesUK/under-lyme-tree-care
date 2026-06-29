@@ -41,6 +41,17 @@
   border-radius: var(--border-radius-lg);
 }
 
+.testimonials-card__rating {
+  display: flex;
+  gap: var(--space-3xs);
+  margin-block-end: var(--space-sm);
+  color: var(--theme-icon);
+}
+
+.testimonials-card__star {
+  font-size: 1.1rem;
+}
+
 .testimonials-card__quote {
   color: var(--theme-text-muted);
   font-size: var(--text-md);

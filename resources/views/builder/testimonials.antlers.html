@@ -13,10 +13,26 @@
     {{ if testimonials }}
       <div class="testimonials__grid testimonials__grid--{{ testimonials_per_row }}">
         {{ testimonials }}
-          <figure class="testimonials-card">
-            <blockquote class="testimonials-card__quote">
-              <p>{{ quote }}</p>
-            </blockquote>
+            <figure class="testimonials-card">
+              <div>
+                {{ if rating }}
+                  <div class="testimonials-card__rating" aria-label="Rated {{ rating }} out of 5">
+                    {{ loop from="1" to="5" }}
+                      {{ icon = 'ph:star' }}
+                      {{ if rating >= value }}
+                        {{ icon = 'ph:star-fill' }}
+                      {{ elseif rating >= (value - 0.5) }}
+                        {{ icon = 'ph:star-half-fill' }}
+                      {{ /if }}
+                      <iconify-icon icon="{{ icon }}" class="testimonials-card__star" aria-hidden="true"></iconify-icon>
+                    {{ /loop }}
+                  </div>
+                {{ /if }}
+
+                <blockquote class="testimonials-card__quote">
+                  <p>{{ quote }}</p>
+                </blockquote>
+             </div>
 
             <figcaption class="testimonials-card__author">
               <p class="testimonials-card__name">{{ name }}</p>

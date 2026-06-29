@@ -43,7 +43,7 @@
 .google-rating__stars {
   display: flex;
   align-items: center;
-  gap: var(--space-3xs);
+  color: #C4AE08;
 }
 
 .google-rating__text {
@@ -75,4 +75,8 @@
   display: flex;
   align-items: center;
   gap: var(--space-2xs);
+}
+
+.usp-list__icon {
+  color: var(--theme-icon-accent);
 }

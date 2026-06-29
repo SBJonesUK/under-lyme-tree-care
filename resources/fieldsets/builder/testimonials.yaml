@@ -43,6 +43,16 @@ fields:
           display: Testimonial
           fields:
             -
+              handle: rating
+              field:
+                type: range
+                display: Rating
+                default: 5
+                min: 0
+                max: 5
+                step: 0.5
+                append: stars
+            -
               handle: quote
               field:
                 type: textarea

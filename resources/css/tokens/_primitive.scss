@@ -32,14 +32,14 @@
   --text-xl: clamp(1.11rem, 0.39cqi + 1.03rem, 1.44rem);
 
     /* colors */
-  --color-primary-base: oklch(86.452% 0.20676 125.937);
+  --color-primary-base: oklch(43.657% 0.09585 144.844);
   --color-primary-50: oklch(from var(--color-primary-base) 98% calc(c * 0.1) h);
   --color-primary-100: oklch(from var(--color-primary-base) 94% calc(c * 0.5) h);
   --color-primary-200: oklch(from var(--color-primary-base) 86% c h);
   --color-primary-300: oklch(from var(--color-primary-base) 78% c h);
   --color-primary-400: oklch(from var(--color-primary-base) 66% c h);
   --color-primary-500: oklch(from var(--color-primary-base) 56% c h);
-  --color-primary-600: oklch(from var(--color-primary-base) 43% c h);
+  --color-primary-600: oklch(from var(--color-primary-base) 43.657% c h);
   --color-primary-700: oklch(from var(--color-primary-base) 32% c h);
   --color-primary-800: oklch(from var(--color-primary-base) 24% c h);
   --color-primary-900: oklch(from var(--color-primary-base) 15% c h);

@@ -13,11 +13,12 @@
   align-items: center;
   justify-content: center;
   min-height: 2.75rem;
-  padding-inline: var(--space-md);
-  padding-block: var(--space-xs);
+  padding: var(--space-xs) var(--space-md);
   border: none;
-  border-radius: var(--border-radius-lg);
+  border-radius: var(--border-radius-md);
   font-weight: var(--font-weight-semibold);
+  text-transform: uppercase;
+  letter-spacing: 10%;
   line-height: 1;
   text-decoration: none;
 }
@@ -32,7 +33,7 @@
 }
 
 .button--secondary {
-  background: var(--theme-button-secondary-bg);
+  border: 1px solid var(--theme-button-secondary-border);
   color: var(--theme-button-secondary-text);
 
   &:hover {
