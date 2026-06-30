@@ -359,7 +359,7 @@ page_builder:
         style: primary
         type: button
         enabled: true
-    theme: theme-dark
+    theme: theme-accent
     type: cta
     enabled: true
     intro: 'Anim reprehenderit non adipisicing sunt adipisicing cillum officia. Voluptate proident dolore reprehenderit mollit proident aliqua elit elit pariatur nulla labore ea ut aliquip laborum. Eu id elit nisi labore duis non incididunt cillum ut dolor id ea.'

@@ -47,7 +47,7 @@
 
 .theme-muted {
   /* Backgrounds */
-  --theme-bg-section: var(--color-neutral-100);
+  --theme-bg-section: var(--test-col);
   --theme-bg-container: var(--color-neutral-100);
 }
 
@@ -58,6 +58,13 @@
   --theme-border-subtle: var(--color-primary-300);
   --theme-border-strong: var(--color-primary-400);
   --theme-link: var(--color-primary-800);
+
+  /* Text */
+  --theme-text: var(--color-white);
+  --theme-text-muted: var(--color-white-a80);
+  --theme-text-inverse: var(--color-black);
+  --theme-text-muted-inverse: var(--color-black-a80);
+  --theme-link: var(--color-primary-400);
 
   /* Inputs */
   --theme-input-border: var(--color-primary-300);
@@ -70,7 +77,7 @@
 
 .theme-dark {
   /* Backgrounds */
-  --theme-bg-section: var(--color-primary-800);
+  --theme-bg-section: var(--color-neutral-800);
   --theme-bg-container: var(--color-primary-800);
   --theme-bg-surface: var(--color-white-a10);
   --theme-bg-header: var(--color-primary-800);
@@ -88,7 +95,7 @@
   --theme-text-muted: var(--color-white-a80);
   --theme-text-inverse: var(--color-black);
   --theme-text-muted-inverse: var(--color-black-a80);
-  --theme-link: var(--brand);
+  --theme-link: var(--color-primary-400);
 
   /* Icons */
   --theme-icon-wrapper: var(--color-primary-600);

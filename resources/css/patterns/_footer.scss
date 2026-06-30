@@ -1,6 +1,8 @@
 .footer {
-  padding: 0 var(--section-inline-padding);
+  padding-block: calc(var(--section-block-padding) / 2) 0;
+  padding-inline: var(--section-inline-padding);
   background: var(--theme-bg-section);
+  color: var(--theme-text-muted);
 
   ul {
     list-style: none;
@@ -85,10 +87,10 @@
 }
 
 .footer__social-link {
-  --social-link-bg: var(--color-white);
+  --social-link-bg: var(--color-white-a5);
 
   @media (prefers-color-scheme: dark) {
-    --social-link-bg: var(--color-white-a10);
+    --social-link-bg: var(--color-white-a5);
   }
 
   width: 3rem;
