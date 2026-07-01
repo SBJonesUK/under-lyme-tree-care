@@ -1,6 +1,6 @@
 .icon-cards__inner {
   display: grid;
-  gap: var(--space-xl);
+  gap: var(--space-2xl);
 }
 
 .icon-cards__grid {
@@ -67,13 +67,11 @@
 
 .icon-cards-card__content {
   display: grid;
-  gap: var(--space-2xs);
+  gap: var(--space-sm);
 }
 
 .icon-cards-card__title {
-  font-size: var(--text-xl);
-  font-weight: var(--font-weight-bold);
-  line-height: var(--line-height-md);
+  font-size: var(--text-lg);
 }
 
 .icon-cards-card__text {

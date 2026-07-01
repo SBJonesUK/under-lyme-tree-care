@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1782765740
+updated_at: 1782910130
 page_builder:
   -
     id: oN8NQ1Am
@@ -56,7 +56,16 @@ page_builder:
             text: 'Under Lyme Tree Care'
           -
             type: text
-            text: ', with an expanded focus on professional arboriculture, consultancy and tree management.'
+            text: ', with an expanded focus on '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: 'professional arboriculture'
+          -
+            type: text
+            text: ', consultancy and tree management.'
       -
         type: bulletList
         content:
@@ -107,6 +116,39 @@ page_builder:
           -
             type: text
             text: ' too.'
+      -
+        type: orderedList
+        attrs:
+          start: 1
+          type: null
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Testing to'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'See how numbered'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Lists work in practice'
     button:
       -
         id: hzih4iAJ6cTiejdeaxHUG

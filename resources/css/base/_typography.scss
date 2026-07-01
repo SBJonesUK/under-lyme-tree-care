@@ -1,14 +1,20 @@
-h1, h2, h3, h4, h5, h6 {
+h1, h2 {
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-sm);
-  color: var(--theme-text);
+}
+
+h3, h4, h5, h6 {
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-sm);
+  text-transform: uppercase;
+  letter-spacing: 4%;
 }
 
 h1, .h1 {
   font-size: var(--h1);
   line-height: var(--line-height-xs);
-  letter-spacing: -4%;
 }
 
 h2, .h2 {
@@ -53,4 +59,18 @@ b {
 em,
 i {
   font-style: italic;
+}
+
+.flow {
+  ul {
+      padding-inline-start: 1em;
+  }
+
+  ol {
+      padding-inline-start: 1.2em;
+  }
+}
+
+a {
+  color: var(--theme-link);
 }

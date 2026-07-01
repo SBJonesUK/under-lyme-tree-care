@@ -1,6 +1,6 @@
 .accordion__inner {
   display: grid;
-  gap: var(--space-lg);
+  gap: var(--space-xl);
   align-items: start;
 
   @media (width >= 960px) {

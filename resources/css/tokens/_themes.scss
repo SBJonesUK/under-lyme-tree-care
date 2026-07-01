@@ -19,6 +19,7 @@
   --theme-text-muted: var(--color-black-a80);
   --theme-text-inverse: var(--color-white);
   --theme-text-muted-inverse: var(--color-white-a80);
+  --theme-text-accent: var(--brand);
   --theme-link: var(--color-primary-600);
   --theme-link-hover: oklch(from var(--theme-link) calc(l - 0.06) c h);
 
@@ -64,6 +65,7 @@
   --theme-text-muted: var(--color-white-a80);
   --theme-text-inverse: var(--color-black);
   --theme-text-muted-inverse: var(--color-black-a80);
+  --theme-text-accent: var(--color-white);
   --theme-link: var(--color-primary-400);
 
   /* Inputs */
@@ -95,6 +97,7 @@
   --theme-text-muted: var(--color-white-a80);
   --theme-text-inverse: var(--color-black);
   --theme-text-muted-inverse: var(--color-black-a80);
+  --theme-text-accent: var(--color-white);
   --theme-link: var(--color-primary-400);
 
   /* Icons */

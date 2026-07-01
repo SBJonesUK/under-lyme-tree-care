@@ -19,17 +19,18 @@
     font-family: var(--font-family-secondary);
     font-weight: var(--font-weight-bold);
     letter-spacing: 10%;
-    color: var(--theme-text);
+    color: var(--theme-text-muted);
     margin-block-end: var(--space-sm);
 }
 
 .section-intro__title {
-  color: var(--theme-text);
+  color: var(--theme-text-accent);
   font-family: var(--font-family-primary);
   font-weight: var(--font-weight-bold);
   line-height: var(--line-height-xs);
   max-width: 56ch;
   text-wrap: balance;
+  letter-spacing: -3%;
 }
 
 .section-intro__title--h1 {
@@ -46,7 +47,7 @@
 }
 
 .section-intro__description {
-  margin-block-start: var(--space-sm);
+  margin-block-start: var(--space-md);
   color: var(--theme-text-muted);
   max-width: 56ch;
 

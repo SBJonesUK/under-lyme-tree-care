@@ -37,9 +37,9 @@
 }
 
 .blog-article__content {
-  ul, ol {
-    padding-left: 1.5rem;
-  }
+  // ul, ol {
+  //   padding-left: 1.5rem;
+  // }
 
   > * + *:not(.blog-article__text) {
     margin-block-start: var(--space-2xl);
