@@ -13,3 +13,15 @@
 .flow > * + * {
   margin-block-start: 1.4em;
 }
+
+// .stack
+
+.pile {
+  display: grid;
+  grid-template-areas: "pile";
+  place-items: center;
+
+  > * {
+    grid-area: pile;
+  }
+}

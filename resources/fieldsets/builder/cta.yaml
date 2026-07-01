@@ -20,6 +20,14 @@ fields:
       display: Intro
 
   -
+    handle: background_image
+    field:
+      type: assets
+      display: Background Image
+      container: assets
+      max_files: 1
+
+  -
     handle: button
     field:
       type: replicator

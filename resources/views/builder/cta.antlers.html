@@ -1,4 +1,10 @@
 <section class="cta{{ if theme && theme != 'theme-light' }} {{ theme }}{{ /if }}">
+  {{ if background_image }}
+      {{ background_image }}
+        <img src="{{ url }}" alt="" class="cta__image">
+      {{ /background_image }}
+  {{ /if }}
+
   <div class="container cta__inner">
     <div class="section-intro section-intro--center">
       {{ partial:section_intro_heading level="2" title_modifier="cta" }}
