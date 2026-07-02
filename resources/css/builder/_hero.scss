@@ -49,6 +49,7 @@
 .google-rating__text {
   text-transform: uppercase;
   font-weight: var(--font-weight-bold);
+  color: var(--theme-text-muted);
 }
 
 .usp-list {
@@ -59,8 +60,9 @@
   border-block-start: 1px solid var(--theme-border-subtle);
 
   p {
-    font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-semibold);
     line-height: var(--line-height-sm);
+    color: var(--theme-text)
   }
 
   @media (width >= 1440px) {

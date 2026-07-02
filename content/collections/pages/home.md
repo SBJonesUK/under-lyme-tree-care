@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1782917741
+updated_at: 1782994801
 page_builder:
   -
     id: oN8NQ1Am
@@ -38,117 +38,7 @@ page_builder:
         content:
           -
             type: text
-            text: 'Daniel has been providing professional tree care throughout Staffordshire and Cheshire for over 20 years. Formerly trading as '
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'Daniel James Tree Services'
-          -
-            type: text
-            text: ', he now continues that same trusted service under '
-          -
-            type: text
-            marks:
-              -
-                type: bold
-            text: 'Under Lyme Tree Care'
-          -
-            type: text
-            text: ', with an expanded focus on '
-          -
-            type: text
-            marks:
-              -
-                type: italic
-            text: 'professional arboriculture'
-          -
-            type: text
-            text: ', consultancy and tree management.'
-      -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Style lists'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'And make sure'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'To do it globally'
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: "Don't forget to "
-          -
-            type: text
-            marks:
-              -
-                type: link
-                attrs:
-                  href: 'https://google.com'
-                  rel: null
-                  target: null
-                  title: null
-            text: 'style links'
-          -
-            type: text
-            text: ' too.'
-      -
-        type: orderedList
-        attrs:
-          start: 1
-          type: null
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Testing to'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'See how numbered'
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: 'Lists work in practice'
+            text: 'Daniel has been providing professional tree care throughout Staffordshire and Cheshire for over 20 years. Formerly trading as Daniel James Tree Services, he now continues that same trusted service under Under Lyme Tree Care, with an expanded focus on professional arboriculture, consultancy and tree management.'
     button:
       -
         id: hzih4iAJ6cTiejdeaxHUG
@@ -159,7 +49,7 @@ page_builder:
         enabled: true
     image: placeholder_view_vector.svg
     media_position: left
-    theme: theme-muted
+    theme: theme-accent
     type: text_media
     enabled: true
   -
@@ -170,42 +60,42 @@ page_builder:
     items:
       -
         id: p38j29EF7LdTWrYxvk2Fh
-        image: placeholder_view_vector.svg
+        image: hero-shot.jpg
         title: 'Tree Pruning'
         text: 'Maintain the health, safety and appearance of your trees with expert pruning, including crown reduction, crown lifting, crown thinning and deadwood removal.'
         type: item
         enabled: true
       -
         id: _WkkZHEo2ilLcWGeP9FYF
-        image: placeholder_view_vector.svg
+        image: hero-shot.jpg
         title: 'Tree Removal'
         text: 'Safe and controlled tree removal for trees that are dead, dangerous, diseased or no longer suitable for their surroundings.'
         type: item
         enabled: true
       -
         id: 75ZxHExcT9BSJy7tJp9XL
-        image: placeholder_view_vector.svg
+        image: hero-shot.jpg
         title: 'Hedge Cutting'
         text: 'Professional hedge trimming and maintenance for domestic gardens, commercial premises and large estates, leaving hedges neat, healthy and well maintained.'
         type: item
         enabled: true
       -
         id: soWb5QNuI_YOg65SIvPA2
-        image: placeholder_view_vector.svg
+        image: hero-shot.jpg
         title: 'Tree Surveys'
         text: 'Professional tree surveys for planning applications, development sites, mortgage reports and ongoing tree management, carried out by an experienced arborist.'
         type: item
         enabled: true
       -
         id: CESXaUZZHxPpiPL-YPUl_
-        image: placeholder_view_vector.svg
+        image: hero-shot.jpg
         title: 'Tree Reports'
         text: 'Detailed arboricultural reports providing clear, professional advice for homeowners, developers, insurers and local authorities.'
         type: item
         enabled: true
       -
         id: 3gKR4g-Bqusgs3KjXSEuC
-        image: placeholder_view_vector.svg
+        image: hero-shot.jpg
         title: 'Tree Consultancy'
         text: 'Independent arboricultural advice to help you make informed decisions about tree safety, management, planning and long-term care.'
         type: item
@@ -213,14 +103,6 @@ page_builder:
     theme: theme-light
     type: image_cards
     enabled: true
-    button:
-      -
-        id: hKJuR4DA2zKe1mNypK6Nt
-        label: 'Book a Call'
-        url: /blog
-        style: primary
-        type: button
-        enabled: true
   -
     id: ycjEvPfCpE3AfwbCT3FtB
     eyebrow: 'Why Under Lyme Tree Care'
@@ -255,21 +137,13 @@ page_builder:
         text: 'I treat every property as if it were my own, working carefully and leaving gardens, driveways and surrounding areas clean and tidy when the job is finished.'
         type: item
         enabled: true
-    theme: theme-light
+    theme: theme-muted
     type: icon_cards
     enabled: true
-    button:
-      -
-        id: x5j22U0jwbFG3tjytnB3o
-        label: 'Book a Call'
-        url: /blog
-        style: primary
-        type: button
-        enabled: true
   -
     id: qmxA0rNQtVGzc8KEDw-qc
     eyebrow: Testimonials
-    title: 'What my customers have to say'
+    title: 'What my customers say'
     testimonials:
       -
         id: eOSw9yPNyfF6OeR8d9Mjs
@@ -297,13 +171,13 @@ page_builder:
         rating: 5
     button:
       -
-        id: kqhEMIWJVOuE8Bkn0dKt8
-        label: 'Book a Call'
+        id: 1bwqlJn9Mm7j-gb8jcUvB
+        label: 'Get a free quote'
         url: /contact
         style: primary
         type: button
         enabled: true
-    theme: theme-muted
+    theme: theme-accent
     type: testimonials
     enabled: true
     items_per_row: 3
