@@ -46,6 +46,13 @@ tabs:
               type: textarea
               display: Intro
           -
+            handle: gallery_cta_background_image
+            field:
+              type: assets
+              display: Background Image
+              container: assets
+              max_files: 1
+          -
             handle: gallery_cta_buttons
             field:
               type: replicator

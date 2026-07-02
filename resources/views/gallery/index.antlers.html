@@ -44,8 +44,13 @@
 </section>
 
 {{ if gallery_cta_title || gallery_cta_intro || gallery_cta_buttons }}
-  <section class="cta boxed">
-    <div class="container cta__inner theme-dark">
+  <section class="cta theme-accent">
+    {{ if gallery_cta_background_image }}
+      {{ gallery_cta_background_image }}
+        <img src="{{ url }}" alt="" class="cta__image">
+      {{ /gallery_cta_background_image }}
+    {{ /if }}
+    <div class="container cta__inner">
       <div class="section-intro section-intro--center">
         {{ partial:section_intro_heading level="2" eyebrow="{gallery_cta_eyebrow}" title="{gallery_cta_title}" title_modifier="cta" }}
 
