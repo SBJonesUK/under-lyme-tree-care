@@ -44,7 +44,7 @@ tree:
       link_style: link
   -
     id: f45dbb74-e1dd-42cb-897e-8d27a36c16b2
-    title: Contact
+    title: 'Get a quote'
     url: /contact
     data:
       link_style: button_primary

@@ -1,61 +1,66 @@
 ---
-id: home
+id: fb65aaa3-2a28-494b-afbe-7f15e3879673
 blueprint: page
-title: Home
+title: About
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1782996769
+updated_at: 1782999378
 page_builder:
   -
-    id: oN8NQ1Am
-    type: hero
-    enabled: true
-    title: 'Professional Tree Care Across Staffordshire & Cheshire'
-    intro: 'Safe, expert tree pruning, tree removal, hedge cutting and arboricultural consultancy carried out by a qualified tree surgeon.'
-    buttons:
-      -
-        id: rqDIgdHj
-        label: 'Request a free quote'
-        url: /contact
-        style: primary
-        type: button
-        enabled: true
-      -
-        id: Y7SX1OZ05HZlgnh0yDRFV
-        label: 'Learn more'
-        url: /about
-        style: secondary
-        type: button
-        enabled: true
-    theme: theme-light
-    image: hero-shot.jpg
-  -
     id: PyYJYdb_E5RR1EFuLrkYv
-    eyebrow: About
-    title: 'Owned and operated by Daniel James'
+    eyebrow: 'Tree surgeon and aboricultual consultant'
+    title: 'Meet Daniel James'
     body:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Daniel has been providing professional tree care throughout Staffordshire and Cheshire for over 20 years. Formerly trading as Daniel James Tree Services, he now continues that same trusted service under Under Lyme Tree Care, with an expanded focus on professional arboriculture, consultancy and tree management.'
-    button:
+            text: 'Daniel is a fully qualified tree surgeon and arboricultural consultant with over 20 years’ experience providing professional tree care across Staffordshire, Cheshire, Derbyshire and Shropshire. Based in Newcastle-under-Lyme, he works with homeowners, businesses and landowners, delivering everything from tree pruning and removals to specialist surveys, reports and arboricultural consultancy.'
       -
-        id: hzih4iAJ6cTiejdeaxHUG
-        label: 'Learn more about Dan'
-        url: 'https://www.google.com'
-        style: primary
-        type: button
-        enabled: true
+        type: paragraph
+        content:
+          -
+            type: text
+            text: 'Holding NPTC qualifications, a Level 2 Royal Forestry Society Certificate in Arboriculture and £5 million public liability insurance, Daniel is committed to carrying out every project safely, professionally and in accordance with British Standards. Whether advising on Tree Preservation Orders and conservation areas or undertaking complex tree work, his focus is always on providing honest advice, exceptional workmanship and a personal service.'
     image: paula-morin-2gmf-wl6l6a-unsplash-(1).jpg
     media_position: left
     theme: theme-accent
     type: text_media
     enabled: true
   -
+    id: ycjEvPfCpE3AfwbCT3FtB
+    eyebrow: 'Qualifications & experience'
+    title: '20+ Years of Professional Tree Care'
+    items_per_row: 3
+    items:
+      -
+        id: axv4XYyJv1LXsoWL2qaOX
+        icon: 'ph:hourglass-low'
+        title: '20+ years experience'
+        text: 'More than two decades of practical experience caring for trees across Staffordshire, Cheshire and the surrounding counties.'
+        type: item
+        enabled: true
+      -
+        id: oegPubaAogpkWAZ-3tpiq
+        icon: 'ph:certificate'
+        title: 'NPTC Qualified'
+        text: 'Professionally trained and certified to carry out tree work safely, responsibly and to recognised industry standards.'
+        type: item
+        enabled: true
+      -
+        id: jI3a-ckctvb76h26mXazC
+        icon: 'ph:shield-check'
+        title: 'Royal Forestry Society Certified'
+        text: 'Holding a Level 2 Certificate in Arboriculture, providing recognised knowledge in tree biology, management and best practice.'
+        type: item
+        enabled: true
+    theme: theme-muted
+    type: icon_cards
+    enabled: true
+  -
     id: 2oSXHwNYGXQNGebhgyH6C
     eyebrow: Services
-    title: 'For homeowners, businesses, and landowners'
+    title: 'Specialist Arboricultural Services'
     items_per_row: 3
     items:
       -
@@ -102,43 +107,6 @@ page_builder:
         enabled: true
     theme: theme-light
     type: image_cards
-    enabled: true
-  -
-    id: ycjEvPfCpE3AfwbCT3FtB
-    eyebrow: 'Why Under Lyme Tree Care'
-    title: '20+ Years of Professional Tree Care'
-    items_per_row: 4
-    items:
-      -
-        id: oegPubaAogpkWAZ-3tpiq
-        icon: 'ph:certificate'
-        title: 'NPTC Qualified'
-        text: 'All tree work is carried out by a qualified arborist using recognised industry best practices, giving you complete confidence that the job will be completed safely and professionally.'
-        type: item
-        enabled: true
-      -
-        id: jI3a-ckctvb76h26mXazC
-        icon: 'ph:shield-check'
-        title: 'Fully Insured'
-        text: 'With £5 million public liability insurance, you’re protected from the moment work begins until the job is complete.'
-        type: item
-        enabled: true
-      -
-        id: axv4XYyJv1LXsoWL2qaOX
-        icon: 'ph:chat-centered-dots'
-        title: 'Honest Advice'
-        text: 'I’ll always recommend the most appropriate solution for your trees, even if that means less work for us. Healthy trees are worth preserving wherever possible.'
-        type: item
-        enabled: true
-      -
-        id: OTnOri2nD3duQ_9RRhpbs
-        icon: 'ph:broom'
-        title: 'No mess'
-        text: 'I treat every property as if it were my own, working carefully and leaving gardens, driveways and surrounding areas clean and tidy when the job is finished.'
-        type: item
-        enabled: true
-    theme: theme-muted
-    type: icon_cards
     enabled: true
   -
     id: qmxA0rNQtVGzc8KEDw-qc
@@ -287,4 +255,5 @@ page_builder:
     enabled: true
     intro: "No matter the size of the job, I'll take the time to understand your requirements and recommend the most appropriate solution. Get in touch today to arrange a free, no-obligation quote."
     background_image: henry-perks-uakf5izvcgc-unsplash-(1).jpg
+duplicated_from: home
 ---

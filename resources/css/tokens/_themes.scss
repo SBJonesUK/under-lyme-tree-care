@@ -9,7 +9,7 @@
   --theme-overlay: var(--color-white-a50);
 
   /* Borders */
-  --theme-border-subtle: var(--color-black-a10);
+  --theme-border-subtle: oklch(from var(--color-primary-400) l c h / 0.20);
   --theme-border: var(--color-black-a20);
   --theme-border-strong: var(--color-black-a40);
   --theme-border-accent: var(--color-primary-400);
@@ -50,9 +50,6 @@
   /* Backgrounds */
   --theme-bg-section: var(--test-col);
   --theme-bg-container: var(--color-neutral-100);
-
-  /* Borders */
-  --theme-border-subtle: oklch(from var(--color-primary-400) l c h / 0.20);
 }
 
 .theme-accent {
