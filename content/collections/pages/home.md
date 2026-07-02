@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1782996769
+updated_at: 1783007421
 page_builder:
   -
     id: oN8NQ1Am
@@ -257,7 +257,7 @@ page_builder:
                   -
                     type: text
                     text: Derbyshire
-    image: placeholder_view_vector.svg
+    image: depositphotos_149476514_xl-(1).jpg
     media_position: right
     theme: theme-muted
     type: text_media

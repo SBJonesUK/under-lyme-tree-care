@@ -13,12 +13,11 @@
 }
 
 .error-404__code {
-  font-size: clamp(4.5rem, 8vw, 8rem);
-  line-height: 0.9;
+  font-size: calc(var(--display-3xl) * 2);
 }
 
 .error-404__title {
-  font-size: var(--h2);
+  font-size: var(--display-lg);
 }
 
 .error-404__description {

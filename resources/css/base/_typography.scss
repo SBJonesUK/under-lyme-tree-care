@@ -13,32 +13,32 @@ h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-  font-size: var(--h1);
+  font-size: var(--display-xl);
   line-height: var(--line-height-xs);
 }
 
 h2, .h2 {
-  font-size: var(--h2);
+  font-size: var(--display-lg);
   line-height: var(--line-height-xs);
 }
 
 h3, .h3 {
-  font-size: var(--h3);
+  font-size: var(--display-md);
   line-height: var(--line-height-sm); 
 }
 
 h4, .h4 {
-  font-size: var(--h4);
+  font-size: var(--display-sm);
   line-height: var(--line-height-sm);
 }
 
 h5, .h5 {
-  font-size: var(--h5);
+  font-size: var(--display-sm);
   line-height: var(--line-height-sm);
 }
 
 h6,.h6 {
-  font-size: var(--h6);
+  font-size: var(--display-xs);
   line-height: var(--line-height-xs);
 }
 

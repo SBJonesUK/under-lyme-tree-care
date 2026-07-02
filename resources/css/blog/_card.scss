@@ -33,12 +33,11 @@
 
 .blog-card__title {
   flex: 1;
-  line-height: var(--line-height-2xs);
+  font-size: var(--display-xs);
   margin-block-start: var(--space-2xs);
 
   a {
     color: var(--theme-text);
-    font-size: var(--h5);
     text-decoration: none;
   }
 }

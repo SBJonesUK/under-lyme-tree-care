@@ -3,12 +3,12 @@ id: fb65aaa3-2a28-494b-afbe-7f15e3879673
 blueprint: page
 title: About
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1782999378
+updated_at: 1783003063
 page_builder:
   -
     id: PyYJYdb_E5RR1EFuLrkYv
-    eyebrow: 'Tree surgeon and aboricultual consultant'
-    title: 'Meet Daniel James'
+    eyebrow: 'Meet Daniel James'
+    title: 'A trusted local tree surgeon'
     body:
       -
         type: paragraph
@@ -30,7 +30,7 @@ page_builder:
   -
     id: ycjEvPfCpE3AfwbCT3FtB
     eyebrow: 'Qualifications & experience'
-    title: '20+ Years of Professional Tree Care'
+    title: 'Expertise you can trust'
     items_per_row: 3
     items:
       -
@@ -60,7 +60,7 @@ page_builder:
   -
     id: 2oSXHwNYGXQNGebhgyH6C
     eyebrow: Services
-    title: 'Specialist Arboricultural Services'
+    title: 'Ways I can help'
     items_per_row: 3
     items:
       -
@@ -109,126 +109,37 @@ page_builder:
     type: image_cards
     enabled: true
   -
-    id: qmxA0rNQtVGzc8KEDw-qc
-    eyebrow: Testimonials
-    title: 'What my customers say'
-    testimonials:
-      -
-        id: eOSw9yPNyfF6OeR8d9Mjs
-        quote: 'My family has used Daniel for many years with their trees/hedges and he recently carried out some tree and stump removal for us. Extremely pleasant and so easy to deal with, always does a fantastic job. Would highly recommend to anyone!'
-        name: 'Benjamin Simpson'
-        details: 'Domestic Customer'
-        type: testimonial
-        enabled: true
-        rating: 5
-      -
-        id: 8GbQx8nvLcTp0GkTFV6St
-        quote: 'We required an Arboricultural report for our tree that had a Tree presentation order on it. Dan was great from start to finish, his report was very thorough & they did a brilliant job when it came to the actual tree removal. Everywhere was tidy as clean once work was complete.'
-        name: 'Eddie Roe'
-        details: 'Domestic Customer'
-        type: testimonial
-        enabled: true
-        rating: 5
-      -
-        id: 1DrIUei96_V54Cv2VSqu9
-        quote: 'Daniel was very knowledgeable, friendly and my very large hedge looks fabulous. I would highly recommend Daniel, and I will definitely book in again in the autumn for my other hedges.'
-        name: 'Karon Halliday'
-        details: 'Domestic Customer'
-        type: testimonial
-        enabled: true
-        rating: 5
-    button:
-      -
-        id: kqhEMIWJVOuE8Bkn0dKt8
-        label: 'Request a free quote'
-        url: /contact
-        style: primary
-        type: button
-        enabled: true
-    theme: theme-accent
-    type: testimonials
-    enabled: true
-    items_per_row: 3
-    testimonials_per_row: 3
-  -
-    id: gLIf3sMYOB9Zdf9X6dck7
-    eyebrow: 'My work'
-    title: 'Recent projects'
-    intro: 'No tree surgery job is too big or small. Here is a small selection of pictures from recent tree surgeon jobs I have undertaken for customers.'
-    gallery_source: selected
+    id: 8SaCidlAMVTu3VkR5r6xX
+    eyebrow: 'My approach'
+    title: 'Tree care done the right way'
     items_per_row: 4
-    theme: theme-light
-    type: gallery
-    enabled: true
-    selected_gallery_items:
-      - deep-doshi-a-k7e3u0-gc-unsplash.jpg
-      - herman-haradzetskiy-6wre-bhjyck-unsplash.jpg
-      - intricate-explorer-xck0x60ysck-unsplash.jpg
-      - peter-thomas-afiyovlkcqw-unsplash.jpg
-      - dmytro-koplyk-2d9hswrqfg8-unsplash.jpg
-      - maverick-frame-rxq2vzsulrg-unsplash.jpg
-  -
-    id: yZeNzA1escfBbsq-qc-id
-    title: 'Areas I cover'
-    body:
+    items:
       -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Based in Newcastle-under-Lyme, Under Lyme Tree Care provides professional arboricultural services throughout the following:'
+        id: _vSxRH2khZ8PpO2YvY23l
+        title: 'Preserve where possible'
+        text: 'Healthy trees are valuable. Wherever possible, I’ll recommend management and maintenance before removal, helping protect the long-term health of your trees.'
+        type: item
+        enabled: true
       -
-        type: bulletList
-        content:
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: Stoke-on-Trent
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: Staffordshire
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: Cheshire
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: Shropshire
-          -
-            type: listItem
-            content:
-              -
-                type: paragraph
-                content:
-                  -
-                    type: text
-                    text: Derbyshire
-    image: placeholder_view_vector.svg
-    media_position: right
+        id: 8ZkvmEs02uqKuSnuP88Mq
+        title: 'Honest advice'
+        text: 'I’ll only recommend work that’s genuinely needed, explaining your options clearly so you can make an informed decision with confidence.'
+        type: item
+        enabled: true
+      -
+        id: 9dyG6ZK_tO6IT3AMY-tAF
+        title: 'Safety first'
+        text: 'Every project is carefully planned and carried out using recognised industry best practices, ensuring the safety of people, property and the surrounding environment.'
+        type: item
+        enabled: true
+      -
+        id: 7i9XRpFpQsZxVwIfzxvDr
+        title: 'Respect for your property'
+        text: 'I treat every garden and site as if it were my own, working carefully, minimising disruption and leaving everything clean and tidy when the job is complete.'
+        type: item
+        enabled: true
     theme: theme-muted
-    type: text_media
+    type: icon_cards
     enabled: true
   -
     id: Dp-mybdQDA5i5QhG3DDF7

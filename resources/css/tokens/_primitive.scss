@@ -1,4 +1,7 @@
 @use 'sass:map';
+@use 'sass:math';
+
+// Color ramp generator
 
 $color-steps: (
   50: (l: 98.901%, c: calc(c * 0.1)),
@@ -27,6 +30,103 @@ $color-steps: (
   }
 }
 
+// Type scale generator
+
+$type-screen-min: 20;
+$type-screen-max: 106;
+
+$type-defaults: (
+  base-mobile: 0.875rem,
+  base-desktop: 1rem,
+  body-scale-mobile: 1.125,
+  body-scale-desktop: 1.2,
+  display-scale-mobile: 1.125,
+  display-scale-desktop: 1.25,
+);
+
+$text-steps: (
+  '2xs': -3,
+  'xs': -2,
+  'sm': -1,
+  'md': 0,
+  'lg': 1,
+  'xl': 2,
+);
+
+$display-steps: (
+  'xs': 1,
+  'sm': 2,
+  'md': 3,
+  'lg': 4,
+  'xl': 5,
+  '2xl': 6,
+  '3xl': 7,
+);
+
+@function pow($base, $exponent) {
+  $result: 1;
+  $absolute-exponent: math.abs($exponent);
+
+  @if $absolute-exponent == 0 {
+    @return $result;
+  }
+
+  @for $_ from 1 through $absolute-exponent {
+    $result: $result * $base;
+  }
+
+  @if $exponent < 0 {
+    @return math.div(1, $result);
+  }
+
+  @return $result;
+}
+
+@function round-to($number, $places: 4) {
+  $factor: pow(10, $places);
+
+  @return math.div(math.round($number * $factor), $factor);
+}
+
+@function fluid-clamp($min-size, $max-size, $min-screen: $type-screen-min, $max-screen: $type-screen-max) {
+  $slope: math.div($max-size - $min-size, $max-screen - $min-screen);
+  $intercept: $min-size - ($slope * $min-screen);
+  $slope-vw: $slope * 100;
+
+  @return clamp(
+    #{round-to($min-size)}rem,
+    #{round-to($slope-vw)}vw + #{round-to($intercept)}rem,
+    #{round-to($max-size)}rem
+  );
+}
+
+@function type-step-size($base-size, $scale, $step) {
+  @return $base-size * pow($scale, $step);
+}
+
+@mixin type-tokens($config) {
+  $base-mobile: math.div(map.get($config, base-mobile), 1rem);
+  $base-desktop: math.div(map.get($config, base-desktop), 1rem);
+  $body-scale-mobile: map.get($config, body-scale-mobile);
+  $body-scale-desktop: map.get($config, body-scale-desktop);
+  $display-scale-mobile: map.get($config, display-scale-mobile);
+  $display-scale-desktop: map.get($config, display-scale-desktop);
+
+  @each $token, $step in $text-steps {
+    $min-size: type-step-size($base-mobile, $body-scale-mobile, $step);
+    $max-size: type-step-size($base-desktop, $body-scale-desktop, $step);
+
+    --text-#{$token}: #{fluid-clamp($min-size, $max-size)};
+  }
+
+  @each $token, $step in $display-steps {
+    $min-size: type-step-size($base-mobile, $display-scale-mobile, $step);
+    $max-size: type-step-size($base-desktop, $display-scale-desktop, $step);
+
+    --display-#{$token}: #{fluid-clamp($min-size, $max-size)};
+  }
+}
+
 :root {
   /* typography */
   --font-family-primary: 'Noto Serif', serif;
@@ -43,22 +143,39 @@ $color-steps: (
   --line-height-md: 1.6; 
   --line-height-lg: 1.8;
 
-  /* heading font sizes: https://www.fluid-type-scale.com/calculate?minFontSize=18&minWidth=320&minRatio=1.125&maxFontSize=22&maxWidth=1696&maxRatio=1.25&steps=6%2C5%2C4%2C3%2C2%2C1%2Ctitle&baseStep=5&prefix=h&useContainerWidth=false&includeFallbacks=false&useRems=true&remValue=16&decimals=2&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=900 */
-  --h6: clamp(1rem, 0.12vi + 0.98rem, 1.1rem);
-  --h5: clamp(1.13rem, 0.29vi + 1.07rem, 1.38rem);
-  --h4: clamp(1.27rem, 0.53vi + 1.16rem, 1.72rem);
-  --h3: clamp(1.42rem, 0.84vi + 1.26rem, 2.15rem);
-  --h2: clamp(1.6rem, 1.26vi + 1.35rem, 2.69rem);
-  --h1: clamp(1.8rem, 1.81vi + 1.44rem, 3.36rem);
-  --h-title: clamp(2.03rem, 2.52vi + 1.52rem, 4.2rem);
+   /* type scale inputs */
+  --type-screen-min: #{$type-screen-min}rem;
+  --type-screen-max: #{$type-screen-max}rem;
+  --type-base-mobile: #{map.get($type-defaults, base-mobile)};
+  --type-base-desktop: #{map.get($type-defaults, base-desktop)};
+  --type-body-scale-mobile: #{map.get($type-defaults, body-scale-mobile)};
+  --type-body-scale-desktop: #{map.get($type-defaults, body-scale-desktop)};
+  --type-display-scale-mobile: #{map.get($type-defaults, display-scale-mobile)};
+  --type-display-scale-desktop: #{map.get($type-defaults, display-scale-desktop)};
 
-  /* body font sizes: */ 
-  --text-2xs: clamp(0.61rem, -0.04cqi + 0.62rem, 0.58rem);
-  --text-xs: clamp(0.69rem, 0cqi + 0.69rem, 0.69rem);
-  --text-sm: clamp(0.78rem, 0.06cqi + 0.76rem, 0.83rem);
-  --text-md: 0.875rem;
-  --text-lg: clamp(0.98rem, 0.25cqi + 0.93rem, 1.2rem);
-  --text-xl: clamp(1.11rem, 0.39cqi + 1.03rem, 1.44rem);
+  /* generated type tokens */
+  @include type-tokens($type-defaults);
+
+  @media (width >= 640px) {
+    --text-md: 1rem;
+  }
+
+  // /* heading font sizes: https://www.fluid-type-scale.com/calculate?minFontSize=18&minWidth=320&minRatio=1.125&maxFontSize=22&maxWidth=1696&maxRatio=1.25&steps=6%2C5%2C4%2C3%2C2%2C1%2Ctitle&baseStep=5&prefix=h&useContainerWidth=false&includeFallbacks=false&useRems=true&remValue=16&decimals=2&previewFont=Inter&previewText=Almost+before+we+knew+it%2C+we+had+left+the+ground&previewWidth=900 */
+  // --h6: clamp(1rem, 0.12vi + 0.98rem, 1.1rem);
+  // --h5: clamp(1.13rem, 0.29vi + 1.07rem, 1.38rem);
+  // --h4: clamp(1.27rem, 0.53vi + 1.16rem, 1.72rem);
+  // --h3: clamp(1.42rem, 0.84vi + 1.26rem, 2.15rem);
+  // --h2: clamp(1.6rem, 1.26vi + 1.35rem, 2.69rem);
+  // --h1: clamp(1.8rem, 1.81vi + 1.44rem, 3.36rem);
+  // --h-title: clamp(2.03rem, 2.52vi + 1.52rem, 4.2rem);
+
+  // /* body font sizes: */ 
+  // --text-2xs: clamp(0.61rem, -0.04cqi + 0.62rem, 0.58rem);
+  // --text-xs: clamp(0.69rem, 0cqi + 0.69rem, 0.69rem);
+  // --text-sm: clamp(0.78rem, 0.06cqi + 0.76rem, 0.83rem);
+  // --text-md: 0.875rem;
+  // --text-lg: clamp(0.98rem, 0.25cqi + 0.93rem, 1.2rem);
+  // --text-xl: clamp(1.11rem, 0.39cqi + 1.03rem, 1.44rem);
 
     /* colors */
   --color-primary-base: oklch(43.657% 0.09585 144.844);
@@ -124,9 +241,5 @@ $color-steps: (
   --space-2xl: clamp(3rem, 2.8rem + 1vw, 4rem);
   --space-3xl: clamp(4.5rem, 4.2rem + 1.5vw, 6rem);
   --grid-gap: clamp(1rem, 1vw + 0.8rem, 2rem);
-
-  @media (width >= 768px) {
-      --text-md: 1rem;
-  }
 
 }
