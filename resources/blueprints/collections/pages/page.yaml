@@ -14,16 +14,16 @@ fields:
       display: Page Builder
       collapse: true
       sets:
-        page_heading:
-          display: Page Heading
-          fields:
-            -
-              import: builder/page_heading
         hero:
           display: Hero
           fields:
             -
               import: builder/hero
+        page_heading:
+          display: Page Heading
+          fields:
+            -
+              import: builder/page_heading
         text_media:
           display: Text + Media
           fields:
@@ -59,16 +59,6 @@ fields:
           fields:
             -
               import: builder/timeline
-        cta:
-          display: CTA
-          fields:
-            -
-              import: builder/cta
-        cta_form:
-          display: CTA Form
-          fields:
-            -
-              import: builder/cta_form
         media:
           display: Media
           fields:
@@ -94,3 +84,13 @@ fields:
           fields:
             -
               import: builder/testimonials
+        cta:
+          display: CTA
+          fields:
+            -
+              import: builder/cta
+        cta_form:
+          display: CTA Form
+          fields:
+            -
+              import: builder/cta_form

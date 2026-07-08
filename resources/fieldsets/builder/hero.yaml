@@ -1,10 +1,30 @@
 title: Hero (Split)
 fields:
   -
+    handle: lead_content
+    field:
+      type: button_group
+      display: Content Above Title
+      options:
+        rating: Rating
+        eyebrow: Eyebrow
+      default: rating
+
+  -
     handle: eyebrow
     field:
       type: text
       display: Eyebrow
+      if:
+        lead_content: 'equals eyebrow'
+
+  -
+    handle: rating_text
+    field:
+      type: text
+      display: Rating Text
+      if:
+        lead_content: 'equals rating'
 
   -
     handle: title
@@ -52,6 +72,24 @@ fields:
                   primary: Primary
                   secondary: Secondary
                 default: primary
+
+  -
+    handle: usps
+    field:
+      type: replicator
+      display: USPs
+      collapse: true
+      max_sets: 4
+      sets:
+        item:
+          display: USP
+          fields:
+            -
+              handle: text
+              field:
+                type: text
+                display: Text
+                validate: required
 
   -
     handle: image

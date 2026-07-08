@@ -3,7 +3,7 @@ id: 4f2473c5-3a90-4672-bacb-76fe3aac5031
 blueprint: page
 title: 'Builder Samples'
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1782461334
+updated_at: 1783527517
 page_builder:
   -
     id: oN8NQ1Am
@@ -28,6 +28,7 @@ page_builder:
         enabled: true
     theme: theme-light
     image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
+    lead_content: rating
   -
     id: UUed4X_Fyxic1hdFrWuz8
     eyebrow: 'Lorem Ipsum'
@@ -88,7 +89,7 @@ page_builder:
         enabled: true
     image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
     media_position: left
-    theme: theme-light
+    theme: theme-accent
     type: text_media
     enabled: true
   -
@@ -213,7 +214,7 @@ page_builder:
     eyebrow: 'Lorem ipsum'
     title: Accordion
     intro: 'Dolor exercitation reprehenderit est excepteur fugiat consectetur proident labore magna quis aliqua voluptate commodo.'
-    theme: theme-light
+    theme: theme-accent
     type: accordion
     enabled: true
     items:
@@ -488,6 +489,7 @@ page_builder:
         details: 'Purelec, Director'
         type: testimonial
         enabled: true
+        rating: 5
       -
         id: 8GbQx8nvLcTp0GkTFV6St
         quote: 'Tempor fugiat veniam pariatur ea duis laboris sint. Ullamco ipsum fugiat excepteur magna excepteur duis eiusmod esse ullamco ullamco fugiat id occaecat duis. Veniam ad do anim exercitation sint. Ex esse fugiat labore nisi eiusmod sint non in cupidatat nisi excepteur labore minim.'
@@ -495,6 +497,7 @@ page_builder:
         details: 'Google, CTO'
         type: testimonial
         enabled: true
+        rating: 5
       -
         id: 1DrIUei96_V54Cv2VSqu9
         quote: 'Tempor fugiat veniam pariatur ea duis laboris sint. Ullamco ipsum fugiat excepteur magna excepteur duis eiusmod esse ullamco ullamco fugiat id occaecat duis. Veniam ad do anim exercitation sint. Ex esse fugiat labore nisi eiusmod sint non in cupidatat nisi excepteur labore minim.'
@@ -502,6 +505,7 @@ page_builder:
         details: 'McLaren, Team Principle'
         type: testimonial
         enabled: true
+        rating: 5
     button:
       -
         id: kqhEMIWJVOuE8Bkn0dKt8
@@ -510,7 +514,7 @@ page_builder:
         style: primary
         type: button
         enabled: true
-    theme: theme-light
+    theme: theme-accent
     type: testimonials
     enabled: true
     items_per_row: 3
@@ -545,16 +549,17 @@ page_builder:
         style: primary
         type: button
         enabled: true
-    theme: theme-dark
+    theme: theme-muted
     type: cta
     enabled: true
     intro: 'Anim reprehenderit non adipisicing sunt adipisicing cillum officia. Voluptate proident dolore reprehenderit mollit proident aliqua elit elit pariatur nulla labore ea ut aliquip laborum. Eu id elit nisi labore duis non incididunt cillum ut dolor id ea.'
+    background_image: depositphotos_149476514_xl-(1).jpg
   -
     id: hmMYiFkN-SdvN3bbNjw0B
     eyebrow: 'Lorem ipsum'
     title: 'CTA w/ Form'
     description: 'Nisi ipsum amet culpa mollit et eu irure pariatur consectetur elit. Eiusmod pariatur veniam ea laboris. Aliqua dolore est excepteur aliquip officia officia eu esse aliqua dolore.'
-    theme: theme-dark
+    theme: theme-accent
     type: cta_form
     enabled: true
     intro: 'Anim reprehenderit non adipisicing sunt adipisicing cillum officia. Voluptate proident dolore reprehenderit mollit proident aliqua elit elit pariatur nulla labore ea ut aliquip laborum. Eu id elit nisi labore duis non incididunt cillum ut dolor id ea.'

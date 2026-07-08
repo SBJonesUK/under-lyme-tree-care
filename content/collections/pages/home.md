@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1783007421
+updated_at: 1783525660
 page_builder:
   -
     id: oN8NQ1Am
@@ -28,6 +28,28 @@ page_builder:
         enabled: true
     theme: theme-light
     image: hero-shot.jpg
+    lead_content: rating
+    usps:
+      -
+        id: o9_meW0P_OZYyJC-QPx8C
+        text: 'NPTC Qualified'
+        type: item
+        enabled: true
+      -
+        id: bUzwCAJZtQQMh4DwHFuH5
+        text: '20+ Years Experience'
+        type: item
+        enabled: true
+      -
+        id: J39ixHizCqBd-A8OWES0d
+        text: '£5M Public Liability Insurance'
+        type: item
+        enabled: true
+      -
+        id: iJ91dHC_xKDKP_YSKA01w
+        text: 'Domestic & Commercial'
+        type: item
+        enabled: true
   -
     id: PyYJYdb_E5RR1EFuLrkYv
     eyebrow: About

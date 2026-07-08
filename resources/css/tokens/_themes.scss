@@ -69,7 +69,8 @@
   --theme-text-inverse: var(--color-black);
   --theme-text-muted-inverse: var(--color-black-a80);
   --theme-text-accent: var(--color-white);
-  --theme-link: var(--color-primary-400);
+  --theme-link: var(--color-primary-200);
+  --theme-link-hover: oklch(from var(--theme-link) calc(l - 0.06) c h);
 
     /* Icons */
   --theme-icon-accent: var(--color-primary-300);

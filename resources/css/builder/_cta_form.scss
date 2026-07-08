@@ -1,9 +1,6 @@
 .cta-form__inner {
   display: grid;
   gap: var(--space-xl);
-  background: var(--theme-bg-container);
-  padding: clamp(2rem, 3vw + 1.4rem, 4rem);
-  border-radius: var(--border-radius-lg);
 
   @media (width >= 960px) {
     & {

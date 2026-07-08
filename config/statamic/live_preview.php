@@ -43,7 +43,7 @@ return [
     |
     */
 
-    'force_reload_js_modules' => false,
+    'force_reload_js_modules' => true,
 
     /*
     |--------------------------------------------------------------------------

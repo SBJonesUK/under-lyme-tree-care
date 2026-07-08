@@ -52,7 +52,8 @@
 }
 }
 
-.theme-dark .logos__image {
+.theme-dark .logos__image,
+.theme-accent .logos__image {
   filter: brightness(0) invert(1);
 }
 
