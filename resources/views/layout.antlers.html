@@ -57,7 +57,7 @@
 
         <!-- Custom morphing for Statamic Live Preview -->
 
-        <script>
+        {{# <script>
             window.StatamicLivePreviewMorph = (currentDocument, updatedDocument) => {
                 const currentMain = currentDocument.querySelector('main');
                 const updatedMain = updatedDocument.querySelector('main');
@@ -88,7 +88,7 @@
 
                 window.scrollTo(fallbackScrollX, fallbackScrollY);
             };
-        </script>
+        </script> #}}
 
     </body>
 
