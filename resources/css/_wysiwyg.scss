@@ -1,0 +1,27 @@
+@use 'tokens/primitive' as *;
+
+.wysiwyg-page__header {
+  display: grid;
+  gap: var(--space-sm);
+  margin-inline: auto;
+  margin-bottom: var(--space-xl);
+  max-width: 56ch;
+  text-align: center;
+}
+
+.wysiwyg-page__content {
+  @include type-tokens((
+    display-scale-desktop: 1.125,
+  ));
+
+  margin-inline: auto;
+  max-width: 56ch;
+
+  h2 {
+    color: var(--theme-text-accent);
+  }
+
+  h3,h4, h5 {
+    color: var(--theme-text);
+  }
+}

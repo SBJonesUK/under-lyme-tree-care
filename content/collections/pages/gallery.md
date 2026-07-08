@@ -5,7 +5,7 @@ title: Gallery
 template: gallery/index
 intro: 'Browse recent project imagery and filter by category to find the work most relevant to each service.'
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1783005056
+updated_at: 1783539141
 gallery_cta_eyebrow: 'Get in touch'
 gallery_cta_title: 'Request a FREE quote'
 gallery_cta_intro: "No matter the size of the job, I'll take the time to understand your requirements and recommend the most appropriate solution. Get in touch today to arrange a free, no-obligation quote."

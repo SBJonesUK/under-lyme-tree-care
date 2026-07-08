@@ -1,0 +1,42 @@
+title: 'WYSIWYG'
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              display: Title
+              validate: required
+          -
+            handle: template
+            field:
+              type: hidden
+              default: wysiwyg
+          -
+            handle: body
+            field:
+              type: bard
+              display: Body
+              buttons:
+                - h2
+                - h3
+                - bold
+                - italic
+                - unorderedlist
+                - orderedlist
+                - anchor
+              remove_empty_nodes: false
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              validate: 'max:200'

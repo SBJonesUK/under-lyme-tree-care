@@ -1,25 +1,12 @@
 ---
-id: 97fec400-f274-43d6-9af8-361d69980ec8
-blueprint: page
+id: contact
+blueprint: contact
 title: Contact
-page_builder:
-  -
-    id: OJobRZZfmTvkTs7A8IA9A
-    title: Contact
-    theme: theme-accent
-    type: page_heading
-    enabled: true
-  -
-    id: 295-nI5G80PbY-1h-IQMK
-    title: 'Send a message'
-    intro: |-
-      Use the form or contact me using the details below:
-
-      Email: info@underlymetreecare.com
-      Tel: 07585 097051
-    theme: theme-muted
-    type: cta_form
-    enabled: true
+template: contact
+eyebrow: 'Get in touch'
+intro: 'Whether you need advice, a free quote, or want to talk through a specific job, get in touch and I will come back to you as soon as possible.'
+form_title: 'Send a message'
+form_intro: 'Use the form to tell me a little about the work you need help with and I will get back to you shortly.'
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1783527883
+updated_at: 1783539187
 ---

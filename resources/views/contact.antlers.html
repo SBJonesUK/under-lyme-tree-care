@@ -1,0 +1,49 @@
+<section class="section contact-page">
+  <div class="container contact-page__inner">
+    <div class="contact-page__content">
+      <div class="section-intro">
+        {{ partial:section_intro_heading level="1" eyebrow="{eyebrow}" title="{title}" }}
+
+        {{ if intro }}
+          <p class="section-intro__description section-intro__description--large">
+            {{ intro }}
+          </p>
+        {{ /if }}
+      </div>
+
+      <ul class="contact-page__details">
+        {{ if contact_details:phone }}
+          <li>
+            <a href="tel:{{ contact_details:phone | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}" class="contact-page__detail-link">
+              <iconify-icon icon="ph:phone-call" aria-hidden="true"></iconify-icon>
+              <span>{{ contact_details:phone }}</span>
+            </a>
+          </li>
+        {{ /if }}
+
+        {{ if contact_details:email }}
+          <li>
+            <a href="mailto:{{ contact_details:email }}" class="contact-page__detail-link">
+              <iconify-icon icon="ph:envelope-simple" aria-hidden="true"></iconify-icon>
+              <span>{{ contact_details:email }}</span>
+            </a>
+          </li>
+        {{ /if }}
+      </ul>
+    </div>
+
+    <div class="contact-page__form-panel theme-accent">
+      <div class="section-intro">
+        {{ partial:section_intro_heading level="2" eyebrow="" title="{form_title}" }}
+
+        {{ if form_intro }}
+          <p class="section-intro__description section-intro__description--large">
+            {{ form_intro }}
+          </p>
+        {{ /if }}
+      </div>
+
+      {{ partial:contact_form }}
+    </div>
+  </div>
+</section>

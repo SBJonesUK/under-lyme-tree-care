@@ -15,7 +15,9 @@
 @use 'blog/index' as blog-index;
 @use 'blog/show' as blog-show;
 @use 'blog/card' as blog-card;
+@use 'contact';
 @use 'gallery/index' as gallery-index;
+@use 'wysiwyg';
 @use 'errors/404' as error-404;
 
 @use 'builder/hero';

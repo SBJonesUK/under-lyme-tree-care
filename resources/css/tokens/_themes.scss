@@ -87,6 +87,9 @@
   --theme-button-secondary-bg-hover: oklch(from var(--theme-button-primary-bg) l c h / calc(alpha - 0.9));
   --theme-button-secondary-border: var(--theme-button-primary-bg);
   --theme-button-secondary-text: var(--theme-button-primary-bg);
+
+  /* Status */  
+  --theme-danger: var(--color-danger-300);
 }
 
 .theme-dark {
@@ -127,7 +130,7 @@
   --theme-button-secondary-text: var(--color-white);
 
   /* Status */  
-  --theme-danger: var(--color-danger-200);
+  --theme-danger: var(--color-danger-300);
 }
 
 @media (prefers-color-scheme: dark) {

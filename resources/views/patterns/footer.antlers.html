@@ -26,25 +26,25 @@
       <div class="footer__column">
         <h2 class="footer__heading">{{ footer:contact_heading }}</h2>
 
-        {{ if footer:address }}
-          <p class="footer__address">{{ footer:address }}</p>
+        {{ if contact_details:address }}
+          <p class="footer__address">{{ contact_details:address }}</p>
         {{ /if }}
 
         <ul class="footer__contact-list">
-          {{ if footer:phone }}
+          {{ if contact_details:phone }}
             <li>
-              <a href="tel:{{ footer:phone | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}" class="footer__contact-link">
+              <a href="tel:{{ contact_details:phone | replace(' ', '') | replace('(', '') | replace(')', '') | replace('-', '') }}" class="footer__contact-link">
                 <iconify-icon icon="ph:phone-call" aria-hidden="true"></iconify-icon>
-                <span>{{ footer:phone }}</span>
+                <span>{{ contact_details:phone }}</span>
               </a>
             </li>
           {{ /if }}
 
-          {{ if footer:email }}
+          {{ if contact_details:email }}
             <li>
-              <a href="mailto:{{ footer:email }}" class="footer__contact-link">
+              <a href="mailto:{{ contact_details:email }}" class="footer__contact-link">
                 <iconify-icon icon="ph:envelope-simple" aria-hidden="true"></iconify-icon>
-                <span>{{ footer:email }}</span>
+                <span>{{ contact_details:email }}</span>
               </a>
             </li>
           {{ /if }}

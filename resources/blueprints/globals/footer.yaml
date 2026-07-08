@@ -31,26 +31,6 @@ tabs:
               display: 'Social Heading'
               required: true
       -
-        display: Contact Details
-        fields:
-          -
-            handle: address
-            field:
-              type: textarea
-              display: Address
-              instructions: 'Displayed with line breaks preserved.'
-          -
-            handle: phone
-            field:
-              type: text
-              display: 'Phone'
-          -
-            handle: email
-            field:
-              type: text
-              input_type: email
-              display: Email
-      -
         display: Social
         fields:
           -
