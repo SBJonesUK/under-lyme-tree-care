@@ -64,6 +64,12 @@ fields:
                 type: textarea
                 display: Text
 
+            -
+              handle: url
+              field:
+                type: link
+                display: URL
+
   -
     handle: button
     field:

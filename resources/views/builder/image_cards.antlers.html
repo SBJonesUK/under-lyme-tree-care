@@ -14,17 +14,23 @@
       <div class="image-cards__grid image-cards__grid--{{ items_per_row }}">
         {{ items }}
           <article class="image-cards-card">
-            {{ image }}
-              <img src="{{ url }}" alt="{{ alt ?? title }}" class="image-cards-card__image">
-            {{ /image }}
+            {{ if url }}
+              <a href="{{ url }}" class="image-cards-card__link">
+            {{ /if }}
+                {{ image }}
+                  <img src="{{ url }}" alt="{{ alt ?? title }}" class="image-cards-card__image">
+                {{ /image }}
 
-            <div class="image-cards-card__content">
-              <h3 class="image-cards-card__title">{{ title }}</h3>
+                <div class="image-cards-card__content">
+                  <h3 class="image-cards-card__title">{{ title }}</h3>
 
-              {{ if text }}
-                <p class="image-cards-card__text">{{ text }}</p>
-              {{ /if }}
-            </div>
+                  {{ if text }}
+                    <p class="image-cards-card__text">{{ text }}</p>
+                  {{ /if }}
+                </div>
+            {{ if url }}
+              </a>
+            {{ /if }}
           </article>
         {{ /items }}
       </div>
