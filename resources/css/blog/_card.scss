@@ -33,7 +33,10 @@
 
 .blog-card__title {
   flex: 1;
-  font-size: var(--display-xs);
+  font-family: var(--font-family-primary);
+  text-transform: none;
+  letter-spacing: 0;
+  font-size: var(--display-sm);
   margin-block-start: var(--space-2xs);
 
   a {

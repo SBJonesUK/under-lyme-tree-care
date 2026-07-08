@@ -104,13 +104,15 @@ $display-steps: (
   @return $base-size * pow($scale, $step);
 }
 
-@mixin type-tokens($config) {
-  $base-mobile: math.div(map.get($config, base-mobile), 1rem);
-  $base-desktop: math.div(map.get($config, base-desktop), 1rem);
-  $body-scale-mobile: map.get($config, body-scale-mobile);
-  $body-scale-desktop: map.get($config, body-scale-desktop);
-  $display-scale-mobile: map.get($config, display-scale-mobile);
-  $display-scale-desktop: map.get($config, display-scale-desktop);
+@mixin type-tokens($config: ()) {
+  $resolved-config: map.merge($type-defaults, $config);
+
+  $base-mobile: math.div(map.get($resolved-config, base-mobile), 1rem);
+  $base-desktop: math.div(map.get($resolved-config, base-desktop), 1rem);
+  $body-scale-mobile: map.get($resolved-config, body-scale-mobile);
+  $body-scale-desktop: map.get($resolved-config, body-scale-desktop);
+  $display-scale-mobile: map.get($resolved-config, display-scale-mobile);
+  $display-scale-desktop: map.get($resolved-config, display-scale-desktop);
 
   @each $token, $step in $text-steps {
     $min-size: type-step-size($base-mobile, $body-scale-mobile, $step);

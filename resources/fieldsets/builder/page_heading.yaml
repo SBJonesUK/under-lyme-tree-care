@@ -1,0 +1,26 @@
+title: Page Heading
+fields:
+  -
+    handle: title
+    field:
+      type: text
+      display: Title
+      validate: required
+
+  -
+    handle: intro
+    field:
+      type: textarea
+      display: Intro
+
+  -
+    handle: theme
+    field:
+      type: select
+      display: Theme
+      options:
+        theme-light: Light
+        theme-muted: Muted
+        theme-accent: Accent
+        theme-dark: Dark
+      default: theme-light

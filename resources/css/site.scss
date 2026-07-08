@@ -19,6 +19,7 @@
 @use 'errors/404' as error-404;
 
 @use 'builder/hero';
+@use 'builder/page_heading';
 @use 'builder/text';
 @use 'builder/text_media';
 @use 'builder/stats';

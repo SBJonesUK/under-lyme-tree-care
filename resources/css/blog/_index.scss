@@ -12,11 +12,6 @@
   }
 }
 
-.blog-index__header-copy {
-  display: grid;
-  gap: var(--space-sm);
-}
-
 .blog-index__select {
   width: 100%;
   padding: var(--space-sm) var(--space-md);
@@ -40,16 +35,6 @@
   font-size: 1rem;
   color: var(--theme-text);
   pointer-events: none;
-}
-
-.blog-index__eyebrow {
-  color: var(--theme-text-muted);
-  font-size: var(--text-md);
-}
-
-.blog-index__intro {
-  color: var(--theme-text-muted);
-  font-size: var(--text-lg);
 }
 
 .blog-index__grid {

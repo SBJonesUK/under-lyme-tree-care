@@ -1,13 +1,23 @@
+@use '../tokens/primitive' as *;
+
 // Article
 
 .blog-article {
-  padding-block-start: var(--section-block-padding);
+  padding-block: var(--section-block-padding);
   padding-inline: var(--section-inline-padding);
+  
+  &:has(+ .featured-blog-posts) { 
+    padding-block-end: 0; 
+  }
 }
 
 .blog-article__meta {
   color: var(--theme-text-muted);
   font-size: var(--text-md);
+}
+
+.blog-article__title {
+  color: var(--theme-text-accent);
 }
 
 .blog-article__excerpt {
@@ -37,9 +47,17 @@
 }
 
 .blog-article__content {
-  // ul, ol {
-  //   padding-left: 1.5rem;
-  // }
+  @include type-tokens((
+    display-scale-desktop: 1.125,
+  ));
+
+  h2 {
+    color: var(--theme-text-accent);
+  }
+
+  h3, h4, h5 {
+    color: var(--theme-text);
+  }
 
   > * + *:not(.blog-article__text) {
     margin-block-start: var(--space-2xl);

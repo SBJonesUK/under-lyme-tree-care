@@ -3,8 +3,15 @@ id: fb65aaa3-2a28-494b-afbe-7f15e3879673
 blueprint: page
 title: About
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1783003063
+updated_at: 1783502091
 page_builder:
+  -
+    id: rYcuDIwG0hbPXxRBBAA4n
+    title: 'About Under Lyme Tree Care'
+    intro: 'Non irure sunt consectetur qui proident voluptate sint esse reprehenderit commodo elit et labore officia. Et ipsum duis dolor do nulla cillum tempor reprehenderit aliquip. Fugiat laboris enim eu magna commodo consectetur sunt. Consectetur sit proident quis deserunt ut et sit.'
+    type: page_heading
+    enabled: true
+    theme: theme-accent
   -
     id: PyYJYdb_E5RR1EFuLrkYv
     eyebrow: 'Meet Daniel James'
@@ -24,7 +31,7 @@ page_builder:
             text: 'Holding NPTC qualifications, a Level 2 Royal Forestry Society Certificate in Arboriculture and £5 million public liability insurance, Daniel is committed to carrying out every project safely, professionally and in accordance with British Standards. Whether advising on Tree Preservation Orders and conservation areas or undertaking complex tree work, his focus is always on providing honest advice, exceptional workmanship and a personal service.'
     image: paula-morin-2gmf-wl6l6a-unsplash-(1).jpg
     media_position: left
-    theme: theme-accent
+    theme: theme-light
     type: text_media
     enabled: true
   -

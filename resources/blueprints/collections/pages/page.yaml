@@ -14,6 +14,11 @@ fields:
       display: Page Builder
       collapse: true
       sets:
+        page_heading:
+          display: Page Heading
+          fields:
+            -
+              import: builder/page_heading
         hero:
           display: Hero
           fields:
