@@ -10,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
-        <script defer src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
+        {{# <script defer src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script> #}}
         {{ vite src="resources/js/site.js|resources/css/site.scss" }}
 
         <!-- Google Tag Manager -->
@@ -57,7 +57,7 @@
 
         <!-- Custom morphing for Statamic Live Preview -->
 
-        {{# <script>
+        <script>
             window.StatamicLivePreviewMorph = (currentDocument, updatedDocument) => {
                 const currentMain = currentDocument.querySelector('main');
                 const updatedMain = updatedDocument.querySelector('main');
@@ -88,7 +88,7 @@
 
                 window.scrollTo(fallbackScrollX, fallbackScrollY);
             };
-        </script> #}}
+        </script>
 
     </body>
 
