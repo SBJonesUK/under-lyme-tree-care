@@ -5,7 +5,7 @@
     <select
       id="blog-category-select"
       class="blog-index__select"
-      onchange="if (this.value) window.location.href = this.value"
+      data-category-select
     >
       <option value="/blog"{{ if !selected }} selected{{ /if }}>Show All</option>
       {{ taxonomy:blog_categories sort="title:asc" }}

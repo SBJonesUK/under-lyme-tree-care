@@ -12,6 +12,8 @@ tabs:
               display: Name
               validate:
                 - required
+                - string
+                - max:120
           -
             handle: email_address
             field:
@@ -22,11 +24,15 @@ tabs:
               validate:
                 - required
                 - email
+                - max:255
           -
             handle: company
             field:
               type: text
               display: Company
+              validate:
+                - string
+                - max:120
           -
             handle: message
             field:
@@ -34,6 +40,8 @@ tabs:
               display: Message
               validate:
                 - required
+                - string
+                - max:5000
           -
             handle: privacy_policy
             field:

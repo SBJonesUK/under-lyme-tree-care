@@ -204,7 +204,7 @@ return [
     |
     */
 
-    'two_factor_enforced_roles' => [],
+    'two_factor_enforced_roles' => ['super_users'],
 
     /*
     |--------------------------------------------------------------------------

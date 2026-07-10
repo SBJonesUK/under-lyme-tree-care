@@ -26,7 +26,7 @@ return [
     |
     */
 
-    'create_user' => true,
+    'create_user' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -64,6 +64,6 @@ return [
     |
     */
 
-    'remember_me' => true,
+    'remember_me' => false,
 
 ];
