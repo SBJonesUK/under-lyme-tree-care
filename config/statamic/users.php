@@ -191,7 +191,7 @@ return [
     |
     */
 
-    'two_factor_enabled' => env('STATAMIC_TWO_FACTOR_ENABLED', true),
+    'two_factor_enabled' => env('STATAMIC_TWO_FACTOR_ENABLED', false),
 
     /*
     |--------------------------------------------------------------------------
@@ -204,7 +204,7 @@ return [
     |
     */
 
-    'two_factor_enforced_roles' => ['super_users'],
+    'two_factor_enforced_roles' => [],
 
     /*
     |--------------------------------------------------------------------------
