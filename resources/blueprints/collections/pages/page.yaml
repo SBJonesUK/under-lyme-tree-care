@@ -1,96 +1,132 @@
 title: Page
-fields:
-  -
-    handle: title
-    field:
-      type: text
-      display: Title
-      validate: required
-
-  -
-    handle: page_builder
-    field:
-      type: replicator
-      display: Page Builder
-      collapse: true
-      sets:
-        hero:
-          display: Hero
-          fields:
-            -
-              import: builder/hero
-        page_heading:
-          display: Page Heading
-          fields:
-            -
-              import: builder/page_heading
-        text_media:
-          display: Text + Media
-          fields:
-            -
-              import: builder/text_media
-        text:
-          display: Text
-          fields:
-            -
-              import: builder/text
-        stats:
-          display: Stats
-          fields:
-            -
-              import: builder/stats
-        featured_blog_posts:
-          display: Featured Blog Posts
-          fields:
-            -
-              import: builder/featured_blog_posts
-        gallery:
-          display: Gallery
-          fields:
-            -
-              import: builder/gallery
-        accordion:
-          display: Accordion
-          fields:
-            -
-              import: builder/accordion
-        timeline:
-          display: Timeline
-          fields:
-            -
-              import: builder/timeline
-        media:
-          display: Media
-          fields:
-            -
-              import: builder/media
-        icon_cards:
-          display: Features
-          fields:
-            -
-              import: builder/icon_cards
-        image_cards:
-          display: Image Cards
-          fields:
-            -
-              import: builder/image_cards
-        logos:
-          display: Logos
-          fields:
-            -
-              import: builder/logos
-        testimonials:
-          display: Testimonials
-          fields:
-            -
-              import: builder/testimonials
-        cta:
-          display: CTA
-          fields:
-            -
-              import: builder/cta
-        cta_form:
-          display: CTA Form
-          fields:
-            -
-              import: builder/cta_form
+tabs:
+  main:
+    display: Main
+    sections:
+      -
+        fields:
+          -
+            handle: title
+            field:
+              type: text
+              required: true
+              display: Title
+              validate:
+                - required
+          -
+            handle: page_builder
+            field:
+              type: replicator
+              display: 'Page Builder'
+              collapse: true
+              sets:
+                main:
+                  display: Main
+                  sets:
+                    hero:
+                      display: Hero
+                      image: preview_hero.png
+                      fields:
+                        -
+                          import: builder/hero
+                    page_heading:
+                      display: 'Page Heading'
+                      image: preview_page-heading.png
+                      fields:
+                        -
+                          import: builder/page_heading
+                    text_media:
+                      display: 'Text + Media'
+                      image: preview_text-media.png
+                      fields:
+                        -
+                          import: builder/text_media
+                    text:
+                      display: Text
+                      image: preview_text.png
+                      fields:
+                        -
+                          import: builder/text
+                    stats:
+                      display: Stats
+                      image: preview_stats.png
+                      fields:
+                        -
+                          import: builder/stats
+                    featured_blog_posts:
+                      display: 'Featured Blog Posts'
+                      image: preview_features-blog-posts.png
+                      fields:
+                        -
+                          import: builder/featured_blog_posts
+                    gallery:
+                      display: Gallery
+                      image: preview_gallery.png
+                      fields:
+                        -
+                          import: builder/gallery
+                    accordion:
+                      display: Accordion
+                      image: preview_accordion.png
+                      fields:
+                        -
+                          import: builder/accordion
+                    timeline:
+                      display: Timeline
+                      image: preview_timeline.png
+                      fields:
+                        -
+                          import: builder/timeline
+                    media:
+                      display: Media
+                      image: preview_media.png
+                      fields:
+                        -
+                          import: builder/media
+                    icon_cards:
+                      display: Features
+                      image: preview_features.png
+                      fields:
+                        -
+                          import: builder/icon_cards
+                    image_cards:
+                      display: 'Image Cards'
+                      image: preview_image-cards.png
+                      fields:
+                        -
+                          import: builder/image_cards
+                    logos:
+                      display: Logos
+                      image: preview_logos.png
+                      fields:
+                        -
+                          import: builder/logos
+                    testimonials:
+                      display: Testimonials
+                      image: preview_testimonials.png
+                      fields:
+                        -
+                          import: builder/testimonials
+                    cta:
+                      display: CTA
+                      image: preview_cta.png
+                      fields:
+                        -
+                          import: builder/cta
+                    cta_form:
+                      display: 'CTA Form'
+                      image: preview_cta-form.png
+                      fields:
+                        -
+                          import: builder/cta_form
+  sidebar:
+    display: Sidebar
+    sections:
+      -
+        fields:
+          -
+            handle: slug
+            field:
+              type: slug
+              localizable: true
+              validate: 'max:200'

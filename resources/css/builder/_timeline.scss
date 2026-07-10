@@ -1,12 +1,16 @@
 .timeline {
   --timeline-marker: var(--color-white);
 
+  &.theme-accent {
+    --timeline-marker: var(--color-primary-500);
+  }
+
   &.theme-dark {
-    --timeline-marker: var(--color-primary-700);
+    --timeline-marker: var(--color-neutral-700);
   }
   
   @media (prefers-color-scheme: dark) {
-    --timeline-marker: var(--color-primary-700);
+    --timeline-marker: var(--color-neutral-700);
   }
 }
 

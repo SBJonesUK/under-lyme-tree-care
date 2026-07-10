@@ -3,37 +3,66 @@ id: 4f2473c5-3a90-4672-bacb-76fe3aac5031
 blueprint: page
 title: 'Builder Samples'
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1783527517
+updated_at: 1783668679
 page_builder:
   -
     id: oN8NQ1Am
     type: hero
     enabled: true
-    title: 'Professional Tree Care Across Staffordshire & Cheshire'
-    intro: 'Safe, expert tree pruning, tree removal, hedge cutting and arboricultural consultancy carried out by a qualified tree surgeon.'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy explaining the purpose of this content block.'
     buttons:
       -
         id: rqDIgdHj
-        label: 'Get a FREE quote'
+        label: 'Primary CTA'
         url: /contact
         style: primary
         type: button
         enabled: true
       -
         id: Y7SX1OZ05HZlgnh0yDRFV
-        label: 'Learn more'
+        label: 'Secondary CTA'
         url: /about
         style: secondary
         type: button
         enabled: true
     theme: theme-light
-    image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
-    lead_content: rating
+    image: placeholder_view_vector.svg
+    lead_content: eyebrow
+    eyebrow: 'Example Eyebrow'
+    usps:
+      -
+        id: _i1ba1f8FnVIS_wGdy1T5
+        text: 'Key benefit'
+        type: item
+        enabled: true
+      -
+        id: 1JH45GrjsWDrhOupoo-n8
+        text: 'Another benefit'
+        type: item
+        enabled: true
+      -
+        id: fNPt9PoFOKRxX2vQ2r_E_
+        text: 'Supporting feature'
+        type: item
+        enabled: true
+      -
+        id: HVIHyzZYA9LT-audhGwv7
+        text: 'Final selling point'
+        type: item
+        enabled: true
+  -
+    id: i83RRUv5jiPIE3Gsq2UHO
+    title: 'Example Heading'
+    intro: 'Brief supporting copy explaining the purpose of this content block and introducing the content that follows.'
+    theme: theme-accent
+    type: page_heading
+    enabled: true
   -
     id: UUed4X_Fyxic1hdFrWuz8
-    eyebrow: 'Lorem Ipsum'
-    title: Logos
-    intro: 'Aliqua dolore deserunt consequat sunt esse sunt sit ipsum do occaecat. Ad nostrud adipisicing aliquip sunt ut irure. Adipisicing esse ad sunt.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the logos below and demonstrating how this section can be used to showcase trusted partners or clients.'
     items:
       -
         id: cWiSWfTNVSkgBUZBat267
@@ -64,127 +93,184 @@ page_builder:
         enabled: true
         logo_height: 2.5
         url: 'https://www.google.com'
-    theme: theme-muted
+    theme: theme-light
     type: logos
     enabled: true
-    text: 'Trusted by some of the biggest names in the industry'
+    text: 'Trusted by businesses across the UK'
   -
     id: PyYJYdb_E5RR1EFuLrkYv
-    eyebrow: 'Lorem ipsum'
-    title: 'Text + media'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
     body:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Quis aliqua enim amet ipsum ex aliqua adipisicing consequat Lorem incididunt sint aliquip consequat pariatur et. Labore eu dolore qui elit eu non nostrud voluptate duis proident et exercitation nisi veniam adipisicing. Consequat consequat eu aliquip minim amet mollit ullamco esse. Testing to see how this works?'
+            text: 'Brief supporting copy explaining the purpose of this content block. Add a short description to introduce the content alongside the accompanying image.'
     button:
       -
         id: hzih4iAJ6cTiejdeaxHUG
-        label: 'Learn More'
+        label: 'Primary CTA'
         url: 'https://www.google.com'
         style: primary
         type: button
         enabled: true
-    image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
+    image: placeholder_view_vector.svg
     media_position: left
-    theme: theme-accent
-    type: text_media
-    enabled: true
-  -
-    id: KbUcs7WycrXx6Oh1uQQYz
-    eyebrow: 'Lorem ipsum'
-    title: 'Text + media'
-    body:
-      -
-        type: paragraph
-        content:
-          -
-            type: text
-            text: 'Quis aliqua enim amet ipsum ex aliqua adipisicing consequat Lorem incididunt sint aliquip consequat pariatur et. Labore eu dolore qui elit eu non nostrud voluptate duis proident et exercitation nisi veniam adipisicing. Consequat consequat eu aliquip minim amet mollit ullamco esse.'
-    button:
-      -
-        id: hzih4iAJ6cTiejdeaxHUG
-        label: 'Learn More'
-        url: 'https://www.google.com'
-        style: primary
-        type: button
-        enabled: true
-    image: 'firefly_gemini-flash_photorealistic-cinematic-shot-of-a-person-standing-outdoors-at-sunrise,-back-to-camer-222896.png'
-    media_position: right
     theme: theme-light
     type: text_media
     enabled: true
   -
     id: t7erVgrUdh8Mvpx-AUKeO
-    eyebrow: 'Lorem ipsum'
-    title: 'Text section'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
     body:
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Non nisi adipisicing laboris occaecat ea nostrud aliquip incididunt incididunt incididunt aliqua sunt labore ad. Elit adipisicing eiusmod aliquip sunt esse labore magna ea sint magna id sint qui enim. '
+            text: 'Brief supporting copy explaining the purpose of this content block. Use this area for longer-form content where additional context or detail is needed.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Aute et dolor occaecat velit commodo id cupidatat magna. Non pariatur minim veniam non minim ut est irure nisi exercitation sit dolore eu ad. Ipsum excepteur occaecat sit adipisicing sit velit voluptate qui culpa. Eu eu labore est.'
+            text: 'This flexible text section supports '
+          -
+            type: text
+            marks:
+              -
+                type: bold
+            text: 'bold text'
+          -
+            type: text
+            text: ', '
+          -
+            type: text
+            marks:
+              -
+                type: italic
+            text: 'italic text'
+          -
+            type: text
+            text: ', links, quotes, and other rich formatting.'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Laborum non dolore aliquip amet id ex sit magna commodo ullamco sit eu. Eu quis adipisicing qui laborum consectetur magna deserunt dolore labore fugiat Lorem deserunt cupidatat. Cupidatat consequat qui eiusmod culpa. Magna eu sunt laborum mollit excepteur exercitation. Ullamco fugiat nulla qui dolor eiusmod qui labore nisi nisi ad adipisicing reprehenderit adipisicing esse quis. Reprehenderit amet et sit culpa deserunt velit consequat.'
+            text: 'Lists are useful for highlighting key points or explaining a sequence of steps.'
+      -
+        type: bulletList
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Example list item'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Another list item'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Final list item'
       -
         type: paragraph
         content:
           -
             type: text
-            text: 'Lorem ea dolore qui culpa. Qui nostrud proident aliqua occaecat quis amet sit do laborum reprehenderit ea. Ea irure exercitation amet fugiat nisi in enim ut. Laborum veniam culpa nisi enim veniam et. Et sunt enim labore ullamco ut cillum sint cillum occaecat reprehenderit cupidatat eiusmod Lorem sit consequat. Cillum amet sint exercitation dolore enim nostrud ea. Eiusmod tempor irure Lorem eu eu pariatur et laboris.'
-    theme: theme-muted
+            text: 'For content that follows a specific sequence, an ordered list may be more appropriate.'
+      -
+        type: orderedList
+        attrs:
+          start: 1
+          type: null
+        content:
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'First step'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Second step'
+          -
+            type: listItem
+            content:
+              -
+                type: paragraph
+                content:
+                  -
+                    type: text
+                    text: 'Third step'
+    theme: theme-light
     type: text
     enabled: true
     button:
       -
         id: UlSfAmcZZeo3-fopWP3Bj
-        label: 'Book a Call'
+        label: 'Primary CTA'
         url: /blog
         style: primary
         type: button
         enabled: true
       -
         id: tPWhEm8uD0Vs7slQy6ynO
-        label: 'Learn More'
+        label: 'Secondary CTA'
         url: /blog
         style: secondary
         type: button
         enabled: true
   -
     id: QTDRi2ZKvwZCy2cRTRZFw
-    eyebrow: 'Lorem ipsum'
-    title: Stats
-    intro: 'Ad ipsum elit amet sint dolore cillum cillum id mollit cillum. Pariatur voluptate aute nisi ullamco commodo. Reprehenderit aliqua elit in enim do dolore velit dolor exercitation duis.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the statistics below and providing additional context for the figures.'
     stats:
       -
         id: aazbdyaLn54KXy6Oo59b1
         value: 80%
-        label: 'Pariatur tempor officia et sint ex Lorem et culpa fugiat.'
+        label: 'Example statistic with a short supporting description.'
         type: stat
         enabled: true
       -
         id: Bcn2H3NCLUpTzVAplagTe
         value: 4x
-        label: 'Cupidatat ea culpa occaecat labore voluptate esse quis ad Lorem.'
+        label: 'Another example statistic highlighting a key metric.'
         type: stat
         enabled: true
       -
         id: cgHSnZyNP5X7L2s02Z8Vy
         value: '100 million'
-        label: 'Et enim culpa Lorem duis incididunt commodo et proident adipisicing non aliqua nisi dolore.'
+        label: 'Final example statistic with supporting context.'
         type: stat
         enabled: true
     theme: theme-light
@@ -192,9 +278,9 @@ page_builder:
     enabled: true
   -
     id: aeFGkPygVpr-ogTpW4BrW
-    eyebrow: 'Lorem ipsum'
-    title: 'Featured posts'
-    intro: 'Irure veniam magna ut in esse elit sunt eiusmod voluptate aliqua sit nulla est quis. Aliquip aute esse voluptate eu sunt voluptate et amet excepteur non anim aliqua tempor. Consectetur dolor incididunt non commodo ad veniam.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the selected blog posts below and explaining how this section can surface related or recent content.'
     post_source: latest
     posts_limit: 3
     theme: theme-light
@@ -203,7 +289,7 @@ page_builder:
     button:
       -
         id: SsKSTvRSc83-GnHXMjGur
-        label: 'View more'
+        label: 'Primary CTA'
         url: /blog
         style: primary
         type: button
@@ -211,99 +297,61 @@ page_builder:
     items_per_row: 3
   -
     id: 5JYjmSblYse3u57jJTDWx
-    eyebrow: 'Lorem ipsum'
-    title: Accordion
-    intro: 'Dolor exercitation reprehenderit est excepteur fugiat consectetur proident labore magna quis aliqua voluptate commodo.'
-    theme: theme-accent
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the frequently asked questions below.'
+    theme: theme-light
     type: accordion
     enabled: true
     items:
       -
         id: 5Qoh2JRamB8WUISdRdYs8
-        question: 'Ea ad commodo veniam sunt occaecat consequat in irure?'
+        question: 'Example question?'
         answer:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Cillum anim in sint ut non ullamco velit ex ad dolore. Culpa non ullamco laborum minim adipisicing nisi magna occaecat aliqua incididunt duis irure quis. Ad Lorem laboris nulla adipisicing magna culpa excepteur. '
-              -
-                type: text
-                marks:
-                  -
-                    type: bold
-                text: 'Proident anim dolor minim do'
-              -
-                type: text
-                text: ' Lorem aute adipisicing mollit mollit laborum aute ipsum veniam eiusmod culpa. Dolor id tempor pariatur nostrud nisi. Adipisicing mollit veniam ex do aliquip qui eiusmod. Amet fugiat do eiusmod est ut adipisicing. '
-          -
-            type: paragraph
-            content:
-              -
-                type: text
-                text: 'Pariatur enim sunt '
-              -
-                type: text
-                marks:
-                  -
-                    type: italic
-                text: 'nostrud elit enim officia eu'
-              -
-                type: text
-                text: ' consequat proident laborum Lorem aute. Dolore proident labore eiusmod. Veniam sint velit velit. Quis aliqua do ullamco in ullamco ullamco consectetur. Cillum et proident elit amet ipsum dolor consectetur. Dolor labore magna amet ex '
-              -
-                type: text
-                marks:
-                  -
-                    type: link
-                    attrs:
-                      href: /blog
-                      rel: null
-                      target: null
-                      title: null
-                text: 'minim est pariatur veniam'
-              -
-                type: text
-                text: .
+                text: 'This is an example answer demonstrating how accordion content is displayed. Use this space to provide additional information, answer common questions, or expand on a particular topic.'
         open_by_default: false
         type: item
         enabled: true
       -
         id: yTEsFNsLqBRKjFAHY384P
-        question: 'Ea ad commodo veniam sunt occaecat consequat in irure?'
+        question: 'Another example question?'
         answer:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Cillum anim in sint ut non ullamco velit ex ad dolore. Culpa non ullamco laborum minim adipisicing nisi magna occaecat aliqua incididunt duis irure quis. Ad Lorem laboris nulla adipisicing magna culpa excepteur. Proident anim dolor minim do Lorem aute adipisicing mollit mollit laborum aute ipsum veniam eiusmod culpa. Dolor id tempor pariatur nostrud nisi. Adipisicing mollit veniam ex do aliquip qui eiusmod. Amet fugiat do eiusmod est ut adipisicing. '
+                text: 'Use this second answer to show how slightly longer accordion content behaves when more explanation is needed. It can include a couple of paragraphs without feeling cramped.'
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Pariatur enim sunt nostrud elit enim officia eu consequat proident laborum Lorem aute. Dolore proident labore eiusmod. Veniam sint velit velit. Quis aliqua do ullamco in ullamco ullamco consectetur. Cillum et proident elit amet ipsum dolor consectetur. Dolor labore magna amet ex minim est pariatur veniam.'
+                text: 'This is helpful for FAQs, service explanations, or any extra detail that should stay hidden until the user chooses to expand it.'
         open_by_default: false
         type: item
         enabled: true
       -
         id: o5W66Xd8rSUlYxhNNsArQ
-        question: 'Ea ad commodo veniam sunt occaecat consequat in irure?'
+        question: 'Final example question?'
         answer:
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Cillum anim in sint ut non ullamco velit ex ad dolore. Culpa non ullamco laborum minim adipisicing nisi magna occaecat aliqua incididunt duis irure quis. Ad Lorem laboris nulla adipisicing magna culpa excepteur. Proident anim dolor minim do Lorem aute adipisicing mollit mollit laborum aute ipsum veniam eiusmod culpa. Dolor id tempor pariatur nostrud nisi. Adipisicing mollit veniam ex do aliquip qui eiusmod. Amet fugiat do eiusmod est ut adipisicing. '
+                text: 'The final answer can reinforce how flexible this set is for common questions, supporting guidance, or additional clarifications.'
           -
             type: paragraph
             content:
               -
                 type: text
-                text: 'Pariatur enim sunt nostrud elit enim officia eu consequat proident laborum Lorem aute. Dolore proident labore eiusmod. Veniam sint velit velit. Quis aliqua do ullamco in ullamco ullamco consectetur. Cillum et proident elit amet ipsum dolor consectetur. Dolor labore magna amet ex minim est pariatur veniam.'
+                text: 'It also helps demonstrate how multiple accordion items work together as a scannable content pattern.'
         open_by_default: false
         type: item
         enabled: true
@@ -330,51 +378,51 @@ page_builder:
             text: .
   -
     id: ycjEvPfCpE3AfwbCT3FtB
-    eyebrow: 'Lorem ipsum'
-    title: Features
-    intro: 'Duis aliqua amet non consequat reprehenderit excepteur elit pariatur consectetur officia consequat esse aliquip. In aute voluptate nulla deserunt incididunt id proident nostrud exercitation officia aliquip.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the key features, benefits, or services highlighted below.'
     items_per_row: 3
     items:
       -
         id: oegPubaAogpkWAZ-3tpiq
         icon: 'ph:rocket-launch'
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        title: 'Example Feature'
+        text: 'Brief supporting copy describing this feature or benefit in a concise and easy-to-read format.'
         type: item
         enabled: true
       -
         id: jI3a-ckctvb76h26mXazC
         icon: 'ph:rocket-launch'
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        title: 'Another Feature'
+        text: 'Short description explaining the purpose or value of this feature.'
         type: item
         enabled: true
       -
         id: axv4XYyJv1LXsoWL2qaOX
         icon: 'ph:rocket-launch'
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        title: 'Key Benefit'
+        text: 'Use this area to highlight another important feature or selling point.'
         type: item
         enabled: true
       -
         id: '-1dNTVIMrRuWIuZC9gBb2'
         icon: 'ph:rocket-launch'
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        title: 'Example Feature'
+        text: 'Brief supporting copy describing this feature or benefit.'
         type: item
         enabled: true
       -
         id: 4QTMukueFnPIu2_Ytxbgk
         icon: 'ph:rocket-launch'
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        title: 'Another Feature'
+        text: 'Supporting text introducing this feature or capability.'
         type: item
         enabled: true
       -
         id: RFHKewvZP9AsZPq5hy7xK
         icon: 'ph:rocket-launch'
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        title: 'Final Feature'
+        text: 'Finish with one last example feature and supporting description.'
         type: item
         enabled: true
     theme: theme-light
@@ -383,44 +431,44 @@ page_builder:
     button:
       -
         id: x5j22U0jwbFG3tjytnB3o
-        label: 'Book a Call'
+        label: 'Primary CTA'
         url: /blog
         style: primary
         type: button
         enabled: true
   -
     id: 2oSXHwNYGXQNGebhgyH6C
-    eyebrow: 'Lorem ipsum'
-    title: 'Image Cards'
-    intro: 'Ad ipsum elit amet sint dolore cillum cillum id mollit cillum. Pariatur voluptate aute nisi ullamco commodo. Reprehenderit aliqua elit in enim do dolore velit dolor exercitation duis.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the image cards below and explaining how they can be used to highlight services, categories, or key topics.'
     items_per_row: 4
     items:
       -
         id: p38j29EF7LdTWrYxvk2Fh
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        image: placeholder_view_vector.svg
+        title: 'Example Card'
+        text: 'Brief supporting copy describing this card and the content it links to or highlights.'
         type: item
         enabled: true
       -
         id: _WkkZHEo2ilLcWGeP9FYF
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        image: placeholder_view_vector.svg
+        title: 'Another Card'
+        text: 'Use this area to add a short summary or supporting description for the card.'
         type: item
         enabled: true
       -
         id: 75ZxHExcT9BSJy7tJp9XL
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        image: placeholder_view_vector.svg
+        title: 'Featured Card'
+        text: 'This example shows how imagery and copy can work together to create a clear clickable card.'
         type: item
         enabled: true
       -
         id: soWb5QNuI_YOg65SIvPA2
-        image: daniel-storek-jm-qked1gmi-unsplash-(1).jpg
-        title: Testing
-        text: 'Ut veniam qui laborum culpa dolore magna aute ex adipisicing in. Sit et eu aute in enim eu.'
+        image: placeholder_view_vector.svg
+        title: 'Final Card'
+        text: 'Finish with one last example card and a concise supporting description.'
         type: item
         enabled: true
     theme: theme-light
@@ -429,48 +477,47 @@ page_builder:
     button:
       -
         id: hKJuR4DA2zKe1mNypK6Nt
-        label: 'Book a Call'
+        label: 'Primary CTA'
         url: /blog
         style: primary
         type: button
         enabled: true
   -
     id: C2yZy4W7884K6q3g4DaL7
-    eyebrow: 'Lorem ipsum'
-    title: 'Media section'
-    intro: 'Cillum anim in sint ut non ullamco velit ex ad dolore. Culpa non ullamco laborum minim adipisicing nisi magna occaecat aliqua incididunt duis irure quis.'
-    media_source: embed
-    embed_type: url
-    video_url: 'https://www.youtube.com/watch?v=iObuiaspLLI&list=PLBpy-YllkBayfAi3Hc7VfAI2pqQN6Aj3Q&index=48'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the media block and explaining what the embedded video or content is about.'
+    media_source: upload
+    media_asset: placeholder_view_vector.svg
     theme: theme-light
     type: media
     enabled: true
-    caption: 'Anim elit ea nulla laborum cupidatat velit anim.'
+    caption: 'Optional caption text can be used to add context, credit the source, or explain what is being shown.'
   -
     id: aBJUKTK3nRTDGNl--4OWS
-    eyebrow: 'Lorem ipsum'
-    title: Timeline
-    intro: 'Cillum anim in sint ut non ullamco velit ex ad dolore. Culpa non ullamco laborum minim adipisicing nisi magna occaecat aliqua incididunt duis irure quis.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the timeline below and explaining the process, journey, or sequence of steps.'
     items:
       -
         id: rV0WS43A9q6Udb4wSnHg4
         label: 'Step 1'
-        title: Testing
-        text: 'Ea nisi nisi pariatur sint pariatur qui officia. Duis veniam fugiat consectetur. Amet amet amet exercitation eiusmod reprehenderit magna id.'
+        title: 'Initial Step'
+        text: 'Use this item to describe the first stage of a process or timeline in a short and digestible way.'
         type: item
         enabled: true
       -
         id: ABwe6EuSxYn_4rzjr8mq6
         label: 'Step 2'
-        title: Testing
-        text: 'Ea nisi nisi pariatur sint pariatur qui officia. Duis veniam fugiat consectetur. Amet amet amet exercitation eiusmod reprehenderit magna id.'
+        title: 'Second Step'
+        text: 'Add supporting detail here to explain what happens next and what the user should expect.'
         type: item
         enabled: true
       -
         id: qHJyK5Ypu6w22TvItebqJ
         label: 'Step 3'
-        title: Testing
-        text: 'Ea nisi nisi pariatur sint pariatur qui officia. Duis veniam fugiat consectetur. Amet amet amet exercitation eiusmod reprehenderit magna id.'
+        title: 'Final Step'
+        text: 'Finish with a final stage that completes the journey or rounds off the process clearly.'
         type: item
         enabled: true
     theme: theme-light
@@ -478,90 +525,92 @@ page_builder:
     enabled: true
   -
     id: qmxA0rNQtVGzc8KEDw-qc
-    eyebrow: 'Lorem ipsum'
-    title: Testimonials
-    intro: 'Adipisicing nisi incididunt ut non consequat commodo. Laborum cupidatat sint cupidatat consectetur eiusmod pariatur fugiat enim velit. Irure qui do sint occaecat tempor minim.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the testimonials below and reinforcing the value of social proof.'
     testimonials:
       -
         id: eOSw9yPNyfF6OeR8d9Mjs
-        quote: 'Tempor fugiat veniam pariatur ea duis laboris sint. Ullamco ipsum fugiat excepteur magna excepteur duis eiusmod esse ullamco ullamco fugiat id occaecat duis. Veniam ad do anim exercitation sint. Ex esse fugiat labore nisi eiusmod sint non in cupidatat nisi excepteur labore minim.'
-        name: 'Mike Fisher'
-        details: 'Purelec, Director'
+        quote: 'This is an example testimonial showing how longer customer feedback can sit within the card layout. Use this space to highlight a positive experience or outcome.'
+        name: 'Example Client'
+        details: 'Business Owner'
         type: testimonial
         enabled: true
         rating: 5
       -
         id: 8GbQx8nvLcTp0GkTFV6St
-        quote: 'Tempor fugiat veniam pariatur ea duis laboris sint. Ullamco ipsum fugiat excepteur magna excepteur duis eiusmod esse ullamco ullamco fugiat id occaecat duis. Veniam ad do anim exercitation sint. Ex esse fugiat labore nisi eiusmod sint non in cupidatat nisi excepteur labore minim.'
-        name: 'Jane Ellis'
-        details: 'Google, CTO'
+        quote: 'Another example testimonial can be used here to demonstrate how multiple reviews or endorsements will appear side by side.'
+        name: 'Another Client'
+        details: 'Operations Manager'
         type: testimonial
         enabled: true
         rating: 5
       -
         id: 1DrIUei96_V54Cv2VSqu9
-        quote: 'Tempor fugiat veniam pariatur ea duis laboris sint. Ullamco ipsum fugiat excepteur magna excepteur duis eiusmod esse ullamco ullamco fugiat id occaecat duis. Veniam ad do anim exercitation sint. Ex esse fugiat labore nisi eiusmod sint non in cupidatat nisi excepteur labore minim.'
-        name: 'Zach Brown'
-        details: 'McLaren, Team Principle'
+        quote: 'Use the final testimonial to round out the section and show how this layout handles consistent card heights and supporting details.'
+        name: 'Final Client'
+        details: 'Marketing Lead'
         type: testimonial
         enabled: true
         rating: 5
     button:
       -
         id: kqhEMIWJVOuE8Bkn0dKt8
-        label: 'Book a Call'
+        label: 'Primary CTA'
         url: /contact
         style: primary
         type: button
         enabled: true
-    theme: theme-accent
+    theme: theme-light
     type: testimonials
     enabled: true
     items_per_row: 3
     testimonials_per_row: 3
   -
     id: gLIf3sMYOB9Zdf9X6dck7
-    eyebrow: 'Lorem ipsum'
-    title: Gallery
-    intro: 'Irure aute ea aliqua labore. Mollit veniam nisi sunt velit et et do laborum.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    intro: 'Brief supporting copy introducing the gallery below and explaining how selected images can be displayed in a curated layout.'
     gallery_source: selected
     items_per_row: 4
     theme: theme-light
     type: gallery
     enabled: true
     selected_gallery_items:
-      - deep-doshi-a-k7e3u0-gc-unsplash.jpg
-      - herman-haradzetskiy-6wre-bhjyck-unsplash.jpg
-      - intricate-explorer-xck0x60ysck-unsplash.jpg
-      - peter-thomas-afiyovlkcqw-unsplash.jpg
-      - dmytro-koplyk-2d9hswrqfg8-unsplash.jpg
-      - maverick-frame-rxq2vzsulrg-unsplash.jpg
+      - placeholder_view_vector-(1).svg
+      - placeholder_view_vector-(1)-1.svg
+      - placeholder_view_vector-(1)-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1-1-1-1-1.svg
   -
     id: Dp-mybdQDA5i5QhG3DDF7
-    eyebrow: 'Lorem ipsum'
-    title: 'Call to Action'
-    description: 'Ex dolor et aliqua incididunt dolor. Est voluptate reprehenderit labore. Do sint amet ad adipisicing aute consequat incididunt laboris laboris exercitation.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    description: 'Brief supporting copy can be used here to summarise the purpose of the call to action and encourage the next step.'
     button:
       -
         id: x9hMDkEiIGwlFfCat5jvC
-        label: 'Book a Call'
+        label: 'Primary CTA'
         url: /blog
         style: primary
         type: button
         enabled: true
-    theme: theme-muted
+    theme: theme-accent
     type: cta
     enabled: true
-    intro: 'Anim reprehenderit non adipisicing sunt adipisicing cillum officia. Voluptate proident dolore reprehenderit mollit proident aliqua elit elit pariatur nulla labore ea ut aliquip laborum. Eu id elit nisi labore duis non incididunt cillum ut dolor id ea.'
+    intro: 'Brief supporting copy explaining the purpose of this content block. Use this area to reinforce the value of taking the next step.'
     background_image: depositphotos_149476514_xl-(1).jpg
   -
     id: hmMYiFkN-SdvN3bbNjw0B
-    eyebrow: 'Lorem ipsum'
-    title: 'CTA w/ Form'
-    description: 'Nisi ipsum amet culpa mollit et eu irure pariatur consectetur elit. Eiusmod pariatur veniam ea laboris. Aliqua dolore est excepteur aliquip officia officia eu esse aliqua dolore.'
+    eyebrow: 'Example Eyebrow'
+    title: 'Example Heading'
+    description: 'Brief supporting copy can be used here to introduce the form and explain what the user should do next.'
     theme: theme-accent
     type: cta_form
     enabled: true
-    intro: 'Anim reprehenderit non adipisicing sunt adipisicing cillum officia. Voluptate proident dolore reprehenderit mollit proident aliqua elit elit pariatur nulla labore ea ut aliquip laborum. Eu id elit nisi labore duis non incididunt cillum ut dolor id ea.'
+    intro: 'Brief supporting copy explaining the purpose of this content block and introducing the form fields below.'
 duplicated_from: home
 ---

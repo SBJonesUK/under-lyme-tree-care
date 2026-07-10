@@ -75,7 +75,7 @@
 }
 
 .footer__contact-link iconify-icon {
-  color: var(--theme-icon);
+  color: var(--theme-icon-accent);
   font-size: 1.4rem;
   flex-shrink: 0;
 }
@@ -100,7 +100,7 @@
   justify-content: center;
   background: var(--social-link-bg);
   border-radius: var(--border-radius-circle);
-  color: var(--theme-icon);
+  color: var(--theme-icon-accent);
   font-size: 1.4rem;
 
   &:hover,

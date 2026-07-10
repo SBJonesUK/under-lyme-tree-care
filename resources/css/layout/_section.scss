@@ -10,9 +10,3 @@ section:not(.no-collapse).theme-dark:has(+ section.theme-dark),
 section:not(.no-collapse):not(.theme-muted):not(.theme-accent):not(.theme-dark):has(+ section:not(.no-collapse):not(.theme-muted):not(.theme-accent):not(.theme-dark)) {
   padding-block-end: 0;
 }
-
-@media (prefers-color-scheme: dark) {
-  section:not(.no-collapse):not(:last-child) {
-      padding-block-end: 0;
-  }
-}

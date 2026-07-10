@@ -10,6 +10,14 @@
   gap: var(--space-md);
 }
 
+.header__logo {
+  @media (prefers-color-scheme: dark) {
+    & {
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
 .header__menu-toggle {
   display: inline-flex;
   align-items: center;
@@ -87,8 +95,12 @@
   &:not(.button):hover,
   &:not(.button):focus-visible,
   .header__item--active > & {
-    color: var(--theme-text);
+    color: var(--theme-link-hover);
   }
+
+  @media (prefers-color-scheme: dark) {
+    color: var(--theme-text-accent);
+  } 
 }
 
 .header__dropdown-toggle {
