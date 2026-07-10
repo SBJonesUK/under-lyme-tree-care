@@ -25,7 +25,7 @@ preferences:
         - status
     listing_mode: list
   forms:
-    cta_form:
+    contact_form:
       columns:
         - datestamp
         - name
