@@ -3,7 +3,7 @@ id: home
 blueprint: page
 title: Home
 updated_by: 8dcb9f2c-443c-4ca4-8e79-f858b140a57d
-updated_at: 1783525660
+updated_at: 1783686100
 page_builder:
   -
     id: oN8NQ1Am
@@ -215,12 +215,14 @@ page_builder:
     type: gallery
     enabled: true
     selected_gallery_items:
-      - deep-doshi-a-k7e3u0-gc-unsplash.jpg
-      - herman-haradzetskiy-6wre-bhjyck-unsplash.jpg
-      - intricate-explorer-xck0x60ysck-unsplash.jpg
-      - peter-thomas-afiyovlkcqw-unsplash.jpg
-      - dmytro-koplyk-2d9hswrqfg8-unsplash.jpg
-      - maverick-frame-rxq2vzsulrg-unsplash.jpg
+      - placeholder_view_vector-(1)-1-1-1-1-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1-1.svg
+      - placeholder_view_vector-(1)-1-1.svg
+      - placeholder_view_vector-(1)-1.svg
+      - placeholder_view_vector-(1).svg
   -
     id: yZeNzA1escfBbsq-qc-id
     title: 'Areas I cover'

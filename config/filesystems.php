@@ -72,8 +72,8 @@ return [
 
         'gallery' => [
             'driver' => 'local',
-            'root' => public_path('assets/gallery'),
-            'url' => '/assets/gallery',
+            'root' => public_path('gallery-images'),
+            'url' => '/gallery-images',
             'visibility' => 'public',
             'throw' => false,
             'report' => false,
