@@ -1,11 +1,11 @@
-title: Gallery Asset
+title: Gallery Image
 fields:
   -
     handle: alt
     field:
       display: 'Alt Text'
       type: text
-      instructions: Description of the image for accessibility.
+      instructions: Description of the image for accessibility. Upload gallery images here rather than in Site Assets.
 
   -
     handle: caption

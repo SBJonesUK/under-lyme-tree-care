@@ -28,7 +28,7 @@ fields:
         category: Images from a category
         selected: Selected images
       default: category
-      instructions: Choose whether to pull images automatically from one category or manually choose specific gallery items.
+      instructions: Choose whether to pull images automatically from one category or manually choose specific gallery images from the Gallery Images container.
 
   -
     handle: selected_gallery_category
@@ -39,7 +39,7 @@ fields:
       max_items: 1
       display: Gallery Category
       mode: select
-      instructions: Choose which category of gallery images to show.
+      instructions: Choose which category of Gallery Images to show.
       if:
         gallery_source: 'equals category'
 
@@ -59,7 +59,7 @@ fields:
       type: assets
       display: Selected Images
       container: gallery
-      instructions: Choose which gallery items to show. Their selected order will be preserved.
+      instructions: Choose which Gallery Images to show. Their selected order will be preserved.
       if:
         gallery_source: 'equals selected'
 
