@@ -1,24 +1,16 @@
 :root {
   /* Backgrounds */
   --theme-bg-section: var(--color-neutral-50);
-  --theme-bg-container: var(--color-white);
   --theme-bg-surface: var(--color-white);
   --theme-bg-menu: var(--color-white);
 
-  /* Overlays */
-  --theme-overlay: var(--color-white-a50);
-
   /* Borders */
   --theme-border-subtle: oklch(from var(--color-primary-400) l c h / 0.20);
-  --theme-border: var(--color-black-a20);
   --theme-border-strong: oklch(from var(--color-primary-400) l c h / 0.50);
-  --theme-border-accent: var(--color-primary-400);
 
   /* Text */
   --theme-text: var(--color-black);
   --theme-text-muted: var(--color-black-a80);
-  --theme-text-inverse: var(--color-white);
-  --theme-text-muted-inverse: var(--color-white-a80);
   --theme-text-accent: var(--brand);
   --theme-link: var(--color-primary-600);
   --theme-link-hover: oklch(from var(--theme-link) calc(l - 0.06) c h);
@@ -49,25 +41,20 @@
 .theme-muted {
   /* Backgrounds */
   --theme-bg-section: var(--test-col);
-  --theme-bg-container: var(--color-neutral-100);
 }
 
 .theme-accent {
   /* Backgrounds */
   --theme-bg-section: var(--brand);
   --theme-bg-surface: var(--color-white-a10);
-  --theme-bg-container: var(--brand);
 
   /* Borders */
   --theme-border-subtle: var(--color-white-a10);
   --theme-border-strong: var(--color-white-a40);
-  --theme-link: var(--color-primary-800);
 
   /* Text */
   --theme-text: var(--color-white);
   --theme-text-muted: var(--color-white-a80);
-  --theme-text-inverse: var(--color-black);
-  --theme-text-muted-inverse: var(--color-black-a80);
   --theme-text-accent: var(--color-white);
   --theme-link: var(--color-primary-200);
   --theme-link-hover: oklch(from var(--theme-link) calc(l - 0.06) c h);
@@ -95,23 +82,16 @@
 .theme-dark {
   /* Backgrounds */
   --theme-bg-section: var(--color-neutral-800);
-  --theme-bg-container: var(--color-primary-800);
   --theme-bg-surface: var(--color-white-a10);
   --theme-bg-menu: var(--color-white);
 
-  /* Overlays */
-  --theme-overlay: var(--color-black-a50);
-
   /* Borders */
   --theme-border-subtle: var(--color-white-a10);
-  --theme-border: var(--color-white-a20);
   --theme-border-strong: var(--color-white-a40);
 
   /* Text */
   --theme-text: var(--color-white);
   --theme-text-muted: var(--color-white-a80);
-  --theme-text-inverse: var(--color-black);
-  --theme-text-muted-inverse: var(--color-black-a80);
   --theme-text-accent: var(--color-white);
   --theme-link: var(--color-primary-400);
 
@@ -158,20 +138,13 @@
   --theme-bg-surface: var(--color-white-a10);
   --theme-bg-menu: var(--color-neutral-700);
 
-  /* Overlays */
-  --theme-overlay: var(--color-black-a50);
-
   /* Borders */
   --theme-border-subtle: var(--color-white-a10);
-  --theme-border: var(--color-white-a20);
   --theme-border-strong: var(--color-white-a40);
-  --theme-border-accent: var(--color-primary-400);
 
   /* Text */
   --theme-text: var(--color-white);
   --theme-text-muted: var(--color-white-a80);
-  --theme-text-inverse: var(--color-black);
-  --theme-text-muted-inverse: var(--color-black-a80);
   --theme-text-accent: var(--color-white);
   --theme-link: var(--color-primary-400);
   --theme-link-hover: oklch(from var(--theme-link) calc(l - 0.06) c h);

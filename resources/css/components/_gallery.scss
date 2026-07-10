@@ -52,10 +52,6 @@
   outline: none;
 }
 
-.gallery-card__button:focus-visible .gallery-card__image {
-  box-shadow: 0 0 0 3px var(--theme-bg), 0 0 0 5px var(--brand);
-}
-
 .gallery-empty-state {
   color: var(--theme-text-muted);
   text-align: center;
