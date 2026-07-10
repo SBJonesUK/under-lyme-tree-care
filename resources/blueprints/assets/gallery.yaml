@@ -22,4 +22,5 @@ fields:
         - gallery_categories
       display: Categories
       mode: select
+      filterable: false
       instructions: Assign this image to one or more gallery categories.
